@@ -1,72 +1,71 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Clappr M3U Player</title>
-  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Custom Stream Player</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+  <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
       background: #000;
+      font-family: Arial, sans-serif;
     }
-    #player {
+    video {
       width: 100%;
-      max-width: 100%;
-      aspect-ratio: 16 / 9;
+      height: auto;
       background: #000;
     }
   </style>
 </head>
 <body>
-  <div id="player"></div>
 
-  <script>
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
+<video id="video" controls autoplay></video>
 
-    const url = getQueryParam('url');
-    const id = getQueryParam('id');
-    const playerElement = document.getElementById("player");
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const m3uUrl = urlParams.get("url");
+  const channelId = urlParams.get("id");
+  const video = document.getElementById("video");
 
-    function createPlayer(source) {
-      new Clappr.Player({
-        source: source,
-        parentId: '#player',
-        autoPlay: true,
-        width: '100%',
-        height: '100%',
-        plugins: [LevelSelector],
-        levelSelectorConfig: {
-          title: 'Quality',
-        },
-        playback: {
-          playInline: true
-        }
+  function playStream(streamUrl) {
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(streamUrl);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        new Plyr(video);
       });
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = streamUrl;
+      new Plyr(video);
     }
+  }
 
-    if (url) {
-      createPlayer(url);
-    } else if (id) {
-      fetch("https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json")
-        .then(response => response.json())
-        .then(data => {
-          if (data[id] && data[id].file) {
-            createPlayer(data[id].file);
-          } else {
-            playerElement.innerHTML = "<p style='color:white;text-align:center;padding-top:20px;'>Channel not found.</p>";
-          }
-        })
-        .catch(err => {
-          playerElement.innerHTML = "<p style='color:white;text-align:center;padding-top:20px;'>Failed to load channel list.</p>";
-        });
-    } else {
-      playerElement.innerHTML = "<p style='color:white;text-align:center;padding-top:20px;'>No URL or ID specified.</p>";
-    }
-  </script>
+  if (m3uUrl) {
+    playStream(m3uUrl);
+  } else if (channelId) {
+    // Load your external JSON here (change the URL as needed)
+    fetch("https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json")
+      .then(res => res.json())
+      .then(data => {
+        const channelData = data[channelId.toLowerCase()];
+        if (channelData && channelData.file) {
+          playStream(channelData.file);
+        } else {
+          alert("Channel not found");
+        }
+      })
+      .catch(err => {
+        console.error("Error loading JSON:", err);
+        alert("Failed to load channel list");
+      });
+  } else {
+    alert("No stream URL or channel ID provided.");
+  }
+</script>
+
 </body>
 </html>
