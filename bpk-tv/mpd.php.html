@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #jwplayerDiv {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100vh * 0.5625); /* 16:9 ratio */
+        }
+
+        .jwplayer {
+            position: absolute !important;
+        }
+
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="jwplayerDiv"></div>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <script type="text/javascript">
+        // Get the channel ID from the URL (e.g., https://yourdomain.play.html?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const channelId = urlParams.get('id');
+
+        // Fetch the channels data from external JSON file
+        fetch('mpd.json')
+            .then(response => response.json())
+            .then(channels => {
+                // If the channelId exists in the JSON, setup the player
+                if (channelId && channels[channelId]) {
+                    const config = channels[channelId];
+
+                    jwplayer("jwplayerDiv").setup({
+                        file: config.file,
+                        position: 'bottom',
+                        autostart: true,
+                        stretching: "",
+                        width: "100%",
+                        type: "dash",
+                        drm: {
+                            clearkey: {
+                                keyId: config.drm.clearkey.keyId,
+                                key: config.drm.clearkey.key
+                            }
+                        },
+                        advertising: {
+                            client: "vast",
+                            schedule: []  // Disable ads
+                        }
+                    });
+                } else {
+                    alert("Invalid or missing channel ID.");
+                }
+            })
+            .catch(error => {
+                console.error('Error loading channels:', error);
+                alert("Failed to load channel data.");
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "9xm": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/master.m3u8"
+  },
+  "9xjalwa": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9x-jalwa/master.m3u8"
+  },
+  "yrfmusic": {
+    "file": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8"
+  },
+  "mastiii": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mastiii/master.m3u8"
+  },
+  "zoom": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8"
+  },
+  "zing": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/pitaara-tv/playlist.m3u8"
+  },
+  "musicindia": {
+    "file": "https://amg00416-amg00416c5-samsung-in-3259.playouts.now.amagi.tv/playlist/amg00416-travelxp-musicindia-samsungin/playlist.m3u8"
+  },
+  "sangeetbangla": {
+    "file": "https://amg00416-amg00416c8-samsung-in-3261.playouts.now.amagi.tv/playlist/amg00416-travelxp-sangeetbangla-samsungin/playlist.m3u8"
+  },
+  "sangeetbhojpuri": {
+    "file": "https://amg00416-amg00416c7-samsung-in-3262.playouts.now.amagi.tv/playlist/amg00416-travelxp-sangeetbhojpuri-samsungin/playlist.m3u8"
+  },
+  "b4umusic": {
+    "file": "https://amg00877-b4unew-amg00877c3-lg-in-5261.playouts.now.amagi.tv/playlist.m3u8"
+  },
+  "joomusic": {
+    "file": "https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8"
+  },
+  "showbox": {
+    "file": "https://epiconvh.akamaized.net/live/showbox/master.m3u8"
+  },
+  "e24": {
+    "file": "https://live-e24.dailyhunt.in/eternowsa/live/amlst:E24_,b256,b512,b1024,b1824,.smil/playlist_256k.m3u8"
+  },
+  "8xm": {
+    "file": "https://vodzong.mjunoon.tv:8087/streamtest/8XM-131/playlist.m3u8"
+  },
+  "shemaroomusic": {
+    "file": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-filmigaane/master.m3u8"
+  },
+  "mtvk": {
+    "file": "https://amg00857-amg00857c4-samsung-in-4292.playouts.now.amagi.tv/playlist/amg00857-viacom18mediaprivatelimitedfast-kaanphodmusic-samsungin/playlist.m3u8"
+  },
+  "gaanbangla": {
+    "file": "https://stream.gia.tv/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8"
+  } 
+
+}
+
+

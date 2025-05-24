@@ -1,0 +1,182 @@
+{
+  "zing": {
+    "file": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zing/default/manifest.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "f0fb14eebe474a6ab74c8301d55a7224",
+        "key": "f9f8b2e30704458b8db844a285ce32be"
+      }
+    }
+  },
+  "ssp2": {
+    "file": "https://edge4-moblive.yuppcdn.net/drm1/smil:starsports2drm.smil/manifest.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "9872e439f21f4a299cab249c6554daa3",
+        "key": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
+      }
+    }
+  },
+  " ": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "tencricket": {
+    "file": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd",
+    "drm": {
+      "clearkey": {
+        "keyId": "9872e439f21f4a299cab249c6554daa3",
+        "key": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
+      }
+    }
+  },
+  "": {
+    "file": "",
+    "drm": {
+      "clearkey": {
+        "keyId": "",
+        "key": ""
+      }
+    }
+  },
+  "": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "willowsports": {
+    "file": "",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "8": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "9": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "10": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "11": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "12": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "13": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "14": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "15": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "16": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "17": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "primevideo": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "19": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  },
+  "20": {
+    "file": " ",
+    "drm": {
+      "clearkey": {
+        "keyId": " ",
+        "key": " "
+      }
+    }
+  }
+}
