@@ -1,0 +1,16 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:3
+#EXT-X-MEDIA-SEQUENCE:1
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts.ts
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts
+#EXTINF:3.0000,
+http://fortv.cc:8080/live/q8KuDU/354945/58847.ts
