@@ -2,125 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="">
-
-    <!-- Clappr CSS and JS -->
-    <script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        html {
-            font-family: Poppins;
-            background: #000;
+        body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
-        .loading {
-            position: fixed;
+
+        #jwplayerDiv {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: #000;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: calc(100vh * 0.5625); /* 16:9 aspect ratio */
         }
-        .loading-text {
-            text-align: center;
-            font-size: 30px;
-            color: #07f32e;
+
+        .jwplayer {
+            position: absolute !important;
         }
-        .loading-text span {
-            display: inline-block;
-            margin: 0 5px;
-            filter: blur(0px);
-            animation: blur-text 1.5s infinite linear alternate;
-        }
-        .loading-text span:nth-child(odd) {
-            animation-delay: 0.2s;
-        }
-        .loading-text span:nth-child(even) {
-            animation-delay: 0.4s;
-        }
-        @keyframes blur-text {
-            0% { filter: blur(0px); }
-            100% { filter: blur(4px); }
-        }
-        #player {
-            width: 100%;
-            height: 90vh;
+
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
 <body>
+    <div id="jwplayerDiv"></div>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <script type="text/javascript">
+        // Get the channel ID from the URL (e.g., play.html?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const channelId = urlParams.get('id');
 
-    <!-- Loading Spinner -->
-    <div id="loading" class="loading">
-        <div class="loading-text">
-            <span>L</span>
-            <span>O</span>
-            <span>A</span>
-            <span>D</span>
-            <span>I</span>
-            <span>N</span>
-            <span>G</span>
-        </div>
-    </div>
+        // Fetch channel data from external JSON file
+        fetch('https://d75dqofg5kmfk.pages.dev/bpk-tv/style.json')
+            .then(response => response.json())
+            .then(channels => {
+                if (channelId && channels[channelId]) {
+                    const config = channels[channelId];
 
-    <!-- Clappr Player Container -->
-    <div id="player"></div>
-
-    <script>
-        // Hide the loading screen after 3 seconds
-        setTimeout(() => {
-            document.getElementById('loading').style.display = 'none';
-        }, 3000);
-
-        document.addEventListener("DOMContentLoaded", () => {
-            // Get the 'id' parameter from the URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const channelId = urlParams.get('id'); // e.g., ?id=2
-
-            if (!channelId) {
-                alert("No channel ID provided.");
-                return;
-            }
-
-            // Fetch channel data from JSON
-            fetch('https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json')
-                .then(response => response.json())
-                .then(data => {
-                    const channel = data[channelId]; // Get the channel based on the 'id'
-                    if (channel && channel.file) {
-                        // Initialize the Clappr player with the channel's stream URL
-                        const player = new Clappr.Player({
-                            source: channel.file,
-                            parentId: "#player",
-                            autoplay: true,
-                            height: '100%',
-                            width: '100%',
-                            mute: false,
-                            mediacontrol: {
-                                seekbar: "#ffa500",  // Orange color for seekbar
-                                buttons: "#ffa500"   // Orange color for buttons (including the play button)
-                            }
+                    if (config.file.endsWith('.m3u8')) {
+                        jwplayer("jwplayerDiv").setup({
+                            file: config.file,
+                            autostart: true,
+                            stretching: "uniform",
+                            width: "100%",
+                            type: "hls" 
                         });
                     } else {
-                        alert("Invalid channel ID or no stream URL found.");
+                        alert("Love From Free Dish Bhai");
                     }
-                })
-                .catch(error => {
-                    console.error('Error fetching channel data:', error);
-                    alert('Error loading channel data.');
-                });
-        });
+                } else {
+                    alert("Invalid or missing channel ID.");
+                }
+            })
+            .catch(error => {
+                console.error('Error loading channels:', error);
+                alert("Failed to load channel data.");
+            });
     </script>
 </body>
 </html>
