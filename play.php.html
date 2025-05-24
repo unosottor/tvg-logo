@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Custom Stream Player</title>
+  <title>Stream Player</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
   <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -11,18 +11,20 @@
     body {
       margin: 0;
       background: #000;
-      font-family: Arial, sans-serif;
     }
     video {
       width: 100%;
       height: auto;
       background: #000;
     }
+    .plyr__menu__container label {
+      text-transform: none !important;
+    }
   </style>
 </head>
 <body>
 
-<video id="video" controls autoplay></video>
+<video id="video" controls playsinline autoplay></video>
 
 <script>
   const urlParams = new URLSearchParams(window.location.search);
@@ -30,24 +32,64 @@
   const channelId = urlParams.get("id");
   const video = document.getElementById("video");
 
+  const player = new Plyr(video, {
+    controls: [
+      'play-large', 'play', 'progress', 'current-time', 'mute', 'volume',
+      'settings', 'fullscreen'
+    ],
+    settings: ['quality'],
+  });
+
   function playStream(streamUrl) {
     if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(streamUrl);
       hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        new Plyr(video);
+
+      hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+        const availableQualities = hls.levels.map(l => l.height).filter((v, i, a) => a.indexOf(v) === i);
+        player.quality = {
+          default: availableQualities[0],
+          options: availableQualities,
+          forced: true,
+          onChange: (newQuality) => {
+            hls.levels.forEach((level, levelIndex) => {
+              if (level.height === newQuality) {
+                hls.currentLevel = levelIndex;
+              }
+            });
+          }
+        };
       });
+
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = streamUrl;
-      new Plyr(video);
     }
+  }
+
+  function enterLandscapeOnFullscreen() {
+    video.addEventListener("enterfullscreen", async () => {
+      if (screen.orientation && screen.orientation.lock) {
+        try {
+          await screen.orientation.lock("landscape");
+        } catch (err) {
+          console.warn("Orientation lock failed:", err);
+        }
+      }
+    });
+
+    video.addEventListener("exitfullscreen", async () => {
+      if (screen.orientation && screen.orientation.unlock) {
+        try {
+          await screen.orientation.unlock();
+        } catch (err) {}
+      }
+    });
   }
 
   if (m3uUrl) {
     playStream(m3uUrl);
   } else if (channelId) {
-    // Load your external JSON here (change the URL as needed)
     fetch("https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json")
       .then(res => res.json())
       .then(data => {
@@ -65,6 +107,8 @@
   } else {
     alert("No stream URL or channel ID provided.");
   }
+
+  enterLandscapeOnFullscreen();
 </script>
 
 </body>
