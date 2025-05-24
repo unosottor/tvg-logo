@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Stream Player</title>
+  <title>Stream Player New</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
   <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -38,6 +38,12 @@
       'settings', 'fullscreen'
     ],
     settings: ['quality'],
+    quality: {
+      default: 720,
+      options: [],
+      forced: true,
+      onChange: () => {}
+    }
   });
 
   function playStream(streamUrl) {
@@ -46,16 +52,20 @@
       hls.loadSource(streamUrl);
       hls.attachMedia(video);
 
-      hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-        const availableQualities = hls.levels.map(l => l.height).filter((v, i, a) => a.indexOf(v) === i);
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        const levels = hls.levels;
+        const uniqueQualities = [...new Set(levels.map(l => l.height))].sort((a, b) => b - a);
+
+        // Update Plyr's quality settings
+        player.options.quality.options = uniqueQualities;
         player.quality = {
-          default: availableQualities[0],
-          options: availableQualities,
+          default: uniqueQualities[0],
+          options: uniqueQualities,
           forced: true,
           onChange: (newQuality) => {
-            hls.levels.forEach((level, levelIndex) => {
+            hls.levels.forEach((level, i) => {
               if (level.height === newQuality) {
-                hls.currentLevel = levelIndex;
+                hls.currentLevel = i;
               }
             });
           }
@@ -77,7 +87,6 @@
         }
       }
     });
-
     video.addEventListener("exitfullscreen", async () => {
       if (screen.orientation && screen.orientation.unlock) {
         try {
@@ -93,9 +102,9 @@
     fetch("https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json")
       .then(res => res.json())
       .then(data => {
-        const channelData = data[channelId.toLowerCase()];
-        if (channelData && channelData.file) {
-          playStream(channelData.file);
+        const channel = data[channelId.toLowerCase()];
+        if (channel && channel.file) {
+          playStream(channel.file);
         } else {
           alert("Channel not found");
         }
