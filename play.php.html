@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <title> Player - LIVE TV | Powered By Your Abbu</title>
+    <title>Player - LIVE TV | Powered By Your Abbu</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="static/clap.css?v=1"/>
@@ -11,7 +11,18 @@
     <link rel="icon" href="static/favicon.ico"/>
     <link rel="shortcut icon" href="static/favicon.ico"/>
     <style>
-        body { background-color: #000000; margin: 0; padding: 0; }
+        body { background-color: #000000; margin: 0; padding: 0; display: flex; justify-content: center; }
+        #player-container {
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: black;
+            position: relative;
+        }
+        #player {
+            width: 100%;
+            height: 100%;
+        }
         #watermark {
             position: absolute;
             bottom: 10px;
@@ -25,8 +36,10 @@
     </style>
 </head>
 <body>
-    <div id="player" style="height: 100vh; width: 100%; position: relative;"></div>
-    <div id="watermark">YOUR ABBU</div>
+    <div id="player-container">
+        <div id="player"></div>
+        <div id="watermark">YOUR ABBU</div>
+    </div>
 
     <script>
         function getQueryParam(param) {
@@ -34,38 +47,54 @@
             return urlParams.get(param);
         }
 
+        const directUrl = getQueryParam('url');
         const channelId = getQueryParam('id');
-        const defaultStream = 'https://d35j504z0x2vu2.cloudfront.net/v1/master/default/stream.m3u8'; // Replace with your default stream
-        const jsonUrl = 'https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json'; // Replace with your JSON URL
+        const defaultStream = 'https://catchup.yuppcdn.net/amazonv2/36/preview/mtvindia/master/chunklist.m3u8';
+        const jsonUrl = 'https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json';
 
-        fetch(jsonUrl)
-            .then(response => response.json())
-            .then(data => {
-                const streamUrl = data[channelId]?.file || defaultStream;
-                const player = new Clappr.Player({
-                    source: streamUrl,
-                    width: '100%',
-                    height: '100%',
-                    autoPlay: true,
-                    plugins: [HlsjsPlayback, LevelSelector],
-                    mimeType: "application/x-mpegURL",
-                    mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
-                    parentId: "#player"
-                });
-            })
-            .catch(error => {
-                console.error("Error loading JSON:", error);
-                const player = new Clappr.Player({
-                    source: defaultStream,
-                    width: '100%',
-                    height: '100%',
-                    autoPlay: true,
-                    plugins: [HlsjsPlayback, LevelSelector],
-                    mimeType: "application/x-mpegURL",
-                    mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
-                    parentId: "#player"
-                });
+        if (directUrl) {
+            // Play direct M3U8 link
+            new Clappr.Player({
+                source: directUrl,
+                width: '100%',
+                height: '100%',
+                autoPlay: true,
+                plugins: [HlsjsPlayback, LevelSelector],
+                mimeType: "application/x-mpegURL",
+                mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
+                parentId: "#player"
             });
+        } else {
+            // Fetch JSON and play channel by ID
+            fetch(jsonUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const streamUrl = data[channelId]?.file || defaultStream;
+                    new Clappr.Player({
+                        source: streamUrl,
+                        width: '100%',
+                        height: '100%',
+                        autoPlay: true,
+                        plugins: [HlsjsPlayback, LevelSelector],
+                        mimeType: "application/x-mpegURL",
+                        mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
+                        parentId: "#player"
+                    });
+                })
+                .catch(error => {
+                    console.error("Error loading JSON:", error);
+                    new Clappr.Player({
+                        source: defaultStream,
+                        width: '100%',
+                        height: '100%',
+                        autoPlay: true,
+                        plugins: [HlsjsPlayback, LevelSelector],
+                        mimeType: "application/x-mpegURL",
+                        mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
+                        parentId: "#player"
+                    });
+                });
+        }
     </script>
 </body>
 </html>
