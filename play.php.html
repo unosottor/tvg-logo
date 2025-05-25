@@ -1,137 +1,71 @@
-  <!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="">
-
-    <!-- Clappr CSS and JS -->
-    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-
+    <title> Player - LIVE TV | Powered By Your Abbu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="static/clap.css?v=1"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@clappr/hlsjs-playback@1.0.1/dist/hlsjs-playback.min.js"></script>
+    <link rel="icon" href="static/favicon.ico"/>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #1c1c1c;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-            display: none;
-            text-align: center;
-            border-radius: 8px;
-            width: 80%;
-            max-width: 400px;
-            z-index: 1001;
-        }
-        .popup h2 {
-            color: yellow;
-            margin-bottom: 10px;
-        }
-        .popup p {
-            color: #ccc;
-            margin-bottom: 20px;
-        }
-        .popup button, .popup a button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .join-btn {
-            background: #0088cc;
-            color: white;
-        }
-        .joined-btn {
-            background: #555;
-            color: white;
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: none;
-            z-index: 1000;
-        }
-        #player {
-            width: 100%;
-            height: 90vh;
+        body { background-color: #000000; margin: 0; padding: 0; }
+        #watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 9999;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
-
-     
-    
-    <!-- Clappr Player Container -->
-    <div id="player"></div>
+    <div id="player" style="height: 100vh; width: 100%; position: relative;"></div>
+    <div id="watermark">YOUR ABBU</div>
 
     <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
+        function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
-            const channelId = urlParams.get('id');
-            if (!channelId) {
-                alert("No channel ID provided");
-                showPopup();
-                return;
-            }
-            fetch('https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json')
-                .then(response => response.json())
-                .then(data => {
-                    const channel = data[channelId];
-                    if (channel && channel.file) {
-                        const player = new Clappr.Player({
-                            source: channel.file,
-                            parentId: "#player",
-                            autoplay: true,
-                            height: '100%',
-                            width: '100%',
-                            mute: false,
-                            mediacontrol: {
-                                seekbar: "#ffa500",
-                                buttons: "#ffa500"
-                            }
-                        });
-                        setTimeout(showPopup, 1000); // Show popup after 1 second
-                    } else {
-                        alert("Invalid channel ID or no stream URL found.");
-                        showPopup();
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching channel data:', error);
-                    alert('Error loading channel data.');
-                    showPopup();
+            return urlParams.get(param);
+        }
+
+        const channelId = getQueryParam('id');
+        const defaultStream = 'https://d35j504z0x2vu2.cloudfront.net/v1/master/default/stream.m3u8'; // Replace with your default stream
+        const jsonUrl = 'https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json'; // Replace with your JSON URL
+
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                const streamUrl = data[channelId]?.file || defaultStream;
+                const player = new Clappr.Player({
+                    source: streamUrl,
+                    width: '100%',
+                    height: '100%',
+                    autoPlay: true,
+                    plugins: [HlsjsPlayback, LevelSelector],
+                    mimeType: "application/x-mpegURL",
+                    mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
+                    parentId: "#player"
                 });
-        });
+            })
+            .catch(error => {
+                console.error("Error loading JSON:", error);
+                const player = new Clappr.Player({
+                    source: defaultStream,
+                    width: '100%',
+                    height: '100%',
+                    autoPlay: true,
+                    plugins: [HlsjsPlayback, LevelSelector],
+                    mimeType: "application/x-mpegURL",
+                    mediacontrol: { seekbar: "#ff0000", buttons: "#eee" },
+                    parentId: "#player"
+                });
+            });
     </script>
 </body>
 </html>
