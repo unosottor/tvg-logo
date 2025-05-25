@@ -1,71 +1,126 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title></title>
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-  <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      font-family: Arial, sans-serif;
-    }
-    video {
-      width: 100%;
-      height: auto;
-      background: #000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+
+    <!-- Clappr CSS and JS -->
+    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+
+    <style>
+        html {
+            font-family: Poppins;
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading-text {
+            text-align: center;
+            font-size: 30px;
+            color: #07f32e;
+        }
+        .loading-text span {
+            display: inline-block;
+            margin: 0 5px;
+            filter: blur(0px);
+            animation: blur-text 1.5s infinite linear alternate;
+        }
+        .loading-text span:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        .loading-text span:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        @keyframes blur-text {
+            0% { filter: blur(0px); }
+            100% { filter: blur(4px); }
+        }
+        #player {
+            width: 100%;
+            height: 90vh;
+        }
+    </style>
 </head>
 <body>
 
-<video id="video" controls autoplay></video>
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">
+        <div class="loading-text">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
 
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const m3uUrl = urlParams.get("url");
-  const channelId = urlParams.get("id");
-  const video = document.getElementById("video");
+    <!-- Clappr Player Container -->
+    <div id="player"></div>
 
-  function playStream(streamUrl) {
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(streamUrl);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        new Plyr(video);
-      });
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = streamUrl;
-      new Plyr(video);
-    }
-  }
+    <script>
+        // Hide the loading screen after 3 seconds
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+        }, 3000);
 
-  if (m3uUrl) {
-    playStream(m3uUrl);
-  } else if (channelId) {
-    // Load your external JSON here (change the URL as needed)
-    fetch("https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json")
-      .then(res => res.json())
-      .then(data => {
-        const channelData = data[channelId.toLowerCase()];
-        if (channelData && channelData.file) {
-          playStream(channelData.file);
-        } else {
-          alert("Channel not found");
-        }
-      })
-      .catch(err => {
-        console.error("Error loading JSON:", err);
-        alert("Failed to load channel list");
-      });
-  } else {
-    alert("No stream URL or channel ID provided.");
-  }
-</script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get the 'id' parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const channelId = urlParams.get('id'); // e.g., ?id=2
 
+            if (!channelId) {
+                alert("No channel ID provided.");
+                return;
+            }
+
+            // Fetch channel data from JSON
+            fetch('https://d75dqofg5kmfk.pages.dev/bpk-tv/music.json')
+                .then(response => response.json())
+                .then(data => {
+                    const channel = data[channelId]; // Get the channel based on the 'id'
+                    if (channel && channel.file) {
+                        // Initialize the Clappr player with the channel's stream URL
+                        const player = new Clappr.Player({
+                            source: channel.file,
+                            parentId: "#player",
+                            autoplay: true,
+                            height: '100%',
+                            width: '100%',
+                            mute: false,
+                            mediacontrol: {
+                                seekbar: "#ffa500",  // Orange color for seekbar
+                                buttons: "#ffa500"   // Orange color for buttons (including the play button)
+                            }
+                        });
+                    } else {
+                        alert("Invalid channel ID or no stream URL found.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching channel data:', error);
+                    alert('Error loading channel data.');
+                });
+        });
+    </script>
 </body>
 </html>
