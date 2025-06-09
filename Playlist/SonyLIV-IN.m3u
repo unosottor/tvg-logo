@@ -1,31 +1,4 @@
- <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* disables scrolling */
-      touch-action: none; /* disables gestures */
-    }
-    body {
-      pointer-events: none; /* disables all mouse/touch interactions */
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <img src="https://d75dqofg5kmfk.pages.dev/images/notice.jpg" alt="">
-</body>
-</html>
-
-
-
+  
 
 #EXTM3U
  
