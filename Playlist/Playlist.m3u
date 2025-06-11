@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="dishlive24" tvg-name="dishlive24" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="NOTICE", DISH LIVE 24 
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
+http://a-edge.bliscdn.com/Visionbeats/tracks-v1a1/mono.m3u8
  
 
 #EXTINF:-1 tvg-id="" tvg-name="BTV National" tvg-logo="https://dishlive24.vercel.app/images/btv.png" group-title="BANGLADESHI",BTV NATIONAL 
@@ -297,9 +297,124 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 Indian Bangla Channels Free & Paid 
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starjalsha.png" group-title="INDIAN BANGLA", STAR JALSHA 
+http://38.96.178.201/live/STARJALSHA/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starjalsha.png" group-title="INDIAN BANGLA", STAR JALSHA 
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebangla.png" group-title="INDIAN BANGLA", ZEE BANGLA 
  
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Zillar Barta" tvg-logo="https://dishlive24.vercel.app/images/zillarbarta.png" group-title="INDIAN BANGLA", ZILLAR BARTA
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebangla.png" group-title="INDIAN BANGLA", ZEE BANGLA 
+ 
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbangla.png" group-title="INDIAN BANGLA", COLORS BANGLA 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbangla.png" group-title="INDIAN BANGLA", COLORS BANGLA 
+
+ 
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/enterr10bangla.png" group-title="INDIAN BANGLA", ENTER 10 BANGLA 
+https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyaath.png" group-title="INDIAN BANGLA", SONY AATH 
+https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyaath.png" group-title="INDIAN BANGLA", SONY AATH 
+https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/jalshamovies.png" group-title="INDIAN BANGLA", JALSHA MOVIES 
+https://server.playontv.in/SGCNCINEMABANGLA/index.m3u8 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbanglacinema.png" group-title="INDIAN BANGLA", COLORS BANGLA CINEMA 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinema.png" group-title="INDIAN BANGLA", ZEE BANGLA CINEMA 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", KALIYAGANJ TV 
+https://live-stream.utkalbongo.com/utkalbongo/stream1/hls/kaliyaganjtvlive.m3u8
+
+
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", DD BANGLA 
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2e9e32a4-c4f7-49c3-96d6-c4e3660c7e3f/2.m3u8 
+
+ 
+ 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/rplusnews.png" group-title="INDIAN BANGLA", RPLUS NEWS 
+https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", RB BANGLA 
+https://live-stream.utkalbongo.com/utkalbongo/stream6/hls/rbbanglalivestream.m3u8
+
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zillarbarta.png" group-title="INDIAN BANGLA", ZILLAR BARTA 
 https://live-stream.utkalbongo.com/utkalbongo/stream18/hls/zillarbartalive.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/amarbangla.png" group-title="INDIAN BANGLA", AMAR BANGLA 
+https://live-stream.utkalbongo.com/utkalbongo/stream10/hls/amarbangla.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/amardigital.png" group-title="INDIAN BANGLA", AMAR DIGITAL 
+https://live-stream.utkalbongo.com/utkalbongo/stream2/hls/amarbanglatwolivestream.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/banglaplus.png" group-title="INDIAN BANGLA", BANGLA PLUS 
+https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sunbangla.png" group-title="INDIAN BANGLA", SUN BANGLA 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/somoykolkata.png" group-title="INDIAN BANGLA", SAMAY KOLKATA 
+https://server.playontv.in/SAMAYKOLKATA/index.m3u8
+
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ruposhibangla.png" group-title="INDIAN BANGLA", RUPOSHI BANGLA 
+https://cdn-4.pishow.tv/live/1039/master.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/akashaath.png" group-title="INDIAN BANGLA", AAKASH AATH 
+https://cdn-4.pishow.tv/live/969/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/khusboobangla.png" group-title="INDIAN BANGLA", KHUSBOO BANGLA 
+https://cdn-4.pishow.tv/live/1473/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sanandatv.png" group-title="INDIAN BANGLA", SANANDA TV 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/taratv.png" group-title="INDIAN BANGLA", TARA BANGLA 
+https://legitpro.co.in/taratv/taratv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tarabanglacinema.png" group-title="INDIAN BANGLA", TARA BANGLA CINEMA 
+http://103.145.48.150:90/laosat24/taratv/index.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/abpananda.png" group-title="INDIAN BANGLA", ABP ANANDA 
+https://abplivetv.akamaized.net/hls/live/2043012/ananda/master_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/24ghanta.png" group-title="INDIAN BANGLA", ZEE 24 GHANTA (C)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zee24ghantaa-xiaomi/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tv9bangla.png" group-title="INDIAN BANGLA", TV9 BANGLA 
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bangla-lgin/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/rbangla.png" group-title="INDIAN BANGLA", REPUBLIC BANGLA 
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-456368/main.m3u8?ads.partner=republicweb
+
 
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/calcuttanews.png" group-title="INDIAN BANGLA", CALCUTTA NEWS 
 https://akdnetwork.co.in/live/cnnew/index.m3u8
@@ -315,7 +430,8 @@ https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",ONKAR BANGLA 
 https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunklist_w1855751334.m3u8
 
-
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="News Time" tvg-logo="https://dishlive24.vercel.app/images/newstime.png" group-title="INDIAN BANGLA", NEWS TIME 
+https://in1.sunilprasad.com.np/yuppLive/news-time/master.m3u8
 
 
 
@@ -325,21 +441,179 @@ https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunk
 
 Indian Hindi Channels Free & Paid 
 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddnational.png", DD NATIONAL 
+ 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddnews.png", DD NEWS 
+ 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddsports.png", DD SPORTS 
+ 
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddbharati.png", DD BHARATI
+ 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddkishan.png", DD KISHAN 
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddurdu.png", DD URDU 
+ 
+ 
+
 #EXTINF:-1 tvg-id="Special Movie Channel" tvg-name="Movie Action" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN HINDI", HINDI CINEMA HD 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/movieaction.stream/playlist.m3u8
 
- 
- 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dangal.png", DANGAL 
+https://live-dangal.akamaized.net/liveabr/playlist.m3u8
 
 
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dangal2.png", DANGAL 2 
+https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
+
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/mbcbollywood.png", MBC BOLLYWOOD 
+https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dabanggtv.png", DABANGG
+https://sabliveyupp.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/sablive_https/dabangg/playlist.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", SHEMAROO BOLLYWOOD 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-bollywood/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/isharatv.png", ISHARA TV
+https://epiconvh.akamaized.net/live/ishaara/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/shemarootv.png", SHEMAROO MUSIC 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-filmigaane/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/nazaratv.png", NAZARA TV
+https://epiconvh.akamaized.net/live/nazara/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/epic.png", EPIC TV 
+https://epiconvh.akamaized.net/live/epic/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/b4ukadak.png", B4U KADAK 
+https://cdn-2.pishow.tv/live/227/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/b4umovies.png", B4U MOVIES 
+https://cdn-2.pishow.tv/live/419/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/b4umusic.png", B4U MUSIC 
+https://cdn-2.pishow.tv/live/415/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", GOLDMINES 
+https://cdn-2.pishow.tv/live/1459/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/goldminesbollywood.png", GOLDMINES BOLLYWOOD 
+https://cdn-2.pishow.tv/live/1460/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", GOLDMINES MOVIES 
+https://cdn-2.pishow.tv/live/1461/master.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/theq.png", THE Q INDIA 
+https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", BOLLYWOOD HD
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
+
+#EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", BOLLYWOOD CLASSIC 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
+
+
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeetv.png" group-title="INDIAN CHANNELS", ZEE TV 
  
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeecinema.png" group-title="INDIAN CHANNELS", ZEE CINEMA 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtv.png" group-title="INDIAN CHANNELS", AND TV 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtv.png" group-title="INDIAN CHANNELS", AND TV UK 
+https://amg01117-amg01117c1-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01117-amg01117c1-amgplt0002/playlist.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andpictures.png" group-title="INDIAN CHANNELS", AND PICTURES 
+ 
+
+ 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeeaction.png" group-title="INDIAN CHANNELS", ZEE ACTION 
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/anmolcinema.png" group-title="INDIAN CHANNELS", ANMOL CINEMA 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/anmolcinema2.png" group-title="INDIAN CHANNELS", ANMOL CINEMA 2
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeeanmol.png" group-title="INDIAN CHANNELS", ANMOL TV
+ 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/bigmagic.png" group-title="INDIAN CHANNELS", BIG MAGIC  
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starplus.png" group-title="INDIAN CHANNELS", STAR PLUS 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starbharat.png" group-title="INDIAN CHANNELS", STAR BHARAT 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargold.png" group-title="INDIAN CHANNELS", STAR GOLD 
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargold2.png" group-title="INDIAN CHANNELS", STAR GOLD 2
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargoldselect.png" group-title="INDIAN CHANNELS", STAR GOLD SELECT 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargoldromance.png" group-title="INDIAN CHANNELS", STAR GOLD ROMANCE 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargoldthrills.png" group-title="INDIAN CHANNELS", STAR GOLD THRILLS 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starmovies.png" group-title="INDIAN CHANNELS", STAR MOVIES 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starmoviesselect.png" group-title="INDIAN CHANNELS", STAR MOVIES SELECT 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starutsav.png" group-title="INDIAN CHANNELS", STAR UTSAV 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starutsavmovies.png" group-title="INDIAN CHANNELS", STAR UTSAV MOVIES 
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colors.png" group-title="INDIAN CHANNELS", COLORS 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cineplex.png" group-title="INDIAN CHANNELS", COLORS CINEPLEX 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cineplexbollywood.png" group-title="INDIAN CHANNELS", CINEPLEX BOLLYWOOD 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN CHANNELS", CINEPLEX SUPERHITS
+
 
 
 
 Music Channels Hindi Bengali Punjabi English 
 
+
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/9xm.png", 9XM MUSIC 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/master.m3u8
+
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/9xjalwa.png", 9XM JALWA 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9x-jalwa/master.m3u8
+
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/mastiii.png", MASTII MUSIC 
+https://sabliveyupp.akamaized.net/mastii/playlist.m3u8
+
+ 
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/yrfmusic.png", YRF MUSIC 
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
+
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/sangeetbangla.png", SANGEET BANGLA 
+https://cdn-4.pishow.tv/live/1143/master.m3u8
+
+ 
+#EXTINF:-1 group-title="MUSIC CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/showbox.png", SHOWBOX 
+https://epiconvh.akamaized.net/live/showbox/master.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="Joo Music" tvg-logo="https://dishlive24.vercel.app/images/joomusic.png" group-title="MUSIC CHANNELS",JOO MUSIC 
 https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="musicindia" tvg-logo="https://dishlive24.vercel.app/images/musicindia.png" group-title="MUSIC CHANNELS", MUSIC INDIA
+https://cdn-2.pishow.tv/live/226/master.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="b4u music" tvg-logo="https://dishlive24.vercel.app/images/b4umusic.png" group-title="MUSIC CHANNELS",B4U MUSIC 
+https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/de456a2b-b6f5-4afe-a222-5d2d6e885526/0.m3u8
+
+
 
 #EXTINF:-1 tvg-id="Music" tvg-name="ATN Music" tvg-logo="https://dishlive24.vercel.app/images/atnmusic.png" group-title="MUSIC CHANNELS",ATN MUSIC 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/atnmusic.stream/playlist.m3u8
@@ -359,9 +633,6 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 #EXTINF:-1 tvg-id="Music" tvg-name="Home TV" tvg-logo="https://dishlive24.vercel.app/images/hometv.png" group-title="MUSIC CHANNELS", HOME TV KOLKATA 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/hometv.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Music" tvg-name="Music India" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="MUSIC CHANNELS", MUSIC INDIA 
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/musicindiain.stream/playlist.m3u8
-
 #EXTINF:-1 tvg-id="Music" tvg-name="Music Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MUSIC CHANNELS", MUSIC BANGLA 
 https://live.matribhumitv.com/music-bangla/index.m3u8
 
@@ -369,6 +640,17 @@ https://live.matribhumitv.com/music-bangla/index.m3u8
 
 Kids Channels Paid & Free 
 
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/gubbare.png", GUBBARE KIDS
+https://epiconvh.akamaized.net/live/gubbare/master.m3u8
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/rongeentv.png", RONGEEN TV 
+https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/cn.png", CARTOON NETWORK 
+https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/pogo.png", POGO 
+https://amg01448-samsungin-pogo-samsungin-dzccl.amagi.tv/playlist/amg01448-samsungin-pogo-samsungin/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Kids" tvg-name="DurontoTV" tvg-logo="https://dishlive24.vercel.app/images/durontotv.png" group-title="KIDS CHANNELS", DURONTO TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/duronto.stream/playlist.m3u8
@@ -376,6 +658,37 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 #EXTINF:-1 tvg-id="Kids" tvg-name="Kids Creation" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",KIDS CREATION 
 https://flc2.technohaat.com/kidscreation_test/index.m3u8
 
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/disney.png", DISNEY CHANNEL 
+
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/disneyjr.png", DISNEY JR
+
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/sonic.png", SONIC HINDI 
+ 
+
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/nick.png", NICK 
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/chumbaktv.png" group-title="KIDS CHANNELS", CHUMBAK TV 
+https://cdn-1.pishow.tv/live/1451/master.m3u8
+
+
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/manoranjangrand.png", MANORANJAN GRAND 
+https://cdn-1.pishow.tv/live/1011/master.m3u8
+
+
+
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/theq.png", THE Q KAHANIYAN 
+https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-640586/main.m3u8 
+
+
+ 
+#EXTINF:-1 group-title="KIDS CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/discoverykids.png", DISCOVERY KIDS 
+
+ 
 
 #EXTINF:-1 tvg-id="Kids" tvg-name="Toonz Kids" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",TOONZ KIDS
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/toonzkids/master.m3u8
@@ -402,11 +715,27 @@ Sony LIV Channels Worldwide
 
 Doumentary Channels Free & Paid Discovery Packages 
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/animalplanet.png" group-title="DOCUMENTARY", ANIMAL PLANET 
+https://vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/fashiontv.png" group-title="DOCUMENTARY", FASHION TV 
+https://fashs043.cloudycdn.services/scte/sftv2/sftv2_chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dmax.png" group-title="DOCUMENTARY", DMAX 
+https://dogus-live.daioncdn.net/dmax/dmax.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tlc.png" group-title="DOCUMENTARY", TLC 
+https://dogus-live.daioncdn.net/tlc/tlc.m3u8
 
 #EXTINF:-1 tvg-id="Documentary" tvg-name="Wid Earth [ Source 2 ]" tvg-logo="https://dishlive24.vercel.app/images/wildearth.png" group-title="DOCUMENTARY", WILD EARTH [ Source 2 ]
+#https://wildearth-plex.amagi.tv/master.m3u8
 https://d2f9g9rfw2kx84.cloudfront.net/playlist/amg01290-wildearth-oando/playlist.m3u8
  
 #EXTINF:-1 tvg-id="" tvg-name="Travel XP" tvg-logo="https://dishlive24.vercel.app/images/travelxp.png" group-title="DOCUMENTARY", TRAVEL XP
+
+
+
+
 
 
 
@@ -424,7 +753,6 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 MIX Channels Bhojpuri Punjabi Regional Channels 
  
-
 
 
 
