@@ -12,7 +12,16 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 
 
-Bangladeshi News Channels JagoBD
+Bangladeshi Free Channels 
+
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="CBN TV" tvg-logo="https://dishlive24.vercel.app/images/cbntvusa.png" group-title="BANGLADESHI", CBN TV USA
+https://live.cbntvusa.net/hls/cbntv/index.m3u8
+
+
+Bangladeshi News Channels JAGO BD 
 
 #EXTINF:-1 tvg-id="" tvg-name="Independent TV" tvg-logo="https://dishlive24.vercel.app/images/independenttv.png" group-title="BANGLADESHI", INDEPENDENT TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/independent-8-org.stream/playlist.m3u8
@@ -51,22 +60,14 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 
 
-
-Bangladeshi Local Channels Free
-
-
-
-
-
-
-Bangladeshi Entertainment JagoBD 
+Bangladeshi Channels JAGO BD 
 
 #EXTINF:-1 tvg-id="" tvg-name="Gazi TV" tvg-logo="https://dishlive24.vercel.app/images/gazitv.png" group-title="BANGLADESHI", GAZI TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="" tvg-name="Sananda TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="BANGLADESHI", SANANDA TV
+#EXTINF:-1 tvg-id="" tvg-name="Sananda TV" tvg-logo="https://dishlive24.vercel.app/images/sanandatv.png" group-title="BANGLADESHI", SANANDA TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/sanandatv.stream/playlist.m3u8
 
 
@@ -130,15 +131,37 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 #EXTINF:-1 tvg-id="" tvg-name="PBN TV" tvg-logo="https://dishlive24.vercel.app/images/pbn.png" group-title="BANGLADESHI",PBN TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/pbntv.stream/playlist.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="Ibtv TV" tvg-logo="https://dishlive24.vercel.app/images/ibtvusa.png" group-title="BANGLADESHI", IBTV USA
+http://208.86.19.13:81/509.stream/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="ATN Bangla UK" tvg-logo="https://dishlive24.vercel.app/images/atnbanglauk.png" group-title="BANGLADESHI",ATN BANGLA UK
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
  
+#EXTINF:-1 tvg-id="" tvg-name="NTV UK" tvg-logo="https://dishlive24.vercel.app/images/ntvbd.png" group-title="BANGLADESHI",NTV UK
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Europe Bangla CH" tvg-name="ION TV" tvg-logo="https://dishlive24.vercel.app/images/iontv.png" group-title="BANGLADESHI",ION TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Jonmobhumi Tv" tvg-logo="https://dishlive24.vercel.app/images/jonmobhumitv.png" group-title="BANGLADESHI", JONMOBHUMI TV 
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/jonmobhumitv.stream/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="Millennium TV USA" tvg-logo="https://dishlive24.vercel.app/images/millenniumtv.png" group-title="BANGLADESHI", MILLENNIUM TV USA
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/millenniumtv-odr-up2.stream/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="NRB TV Canada" tvg-logo="https://dishlive24.vercel.app/images/nrbtv.png" group-title="BANGLADESHI",NRB TV 
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nrb-eu.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CB 24 TV" tvg-logo="https://dishlive24.vercel.app/images/cb24.png" group-title="BANGLADESHI",CB24 TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/cb24.stream/playlist.m3u8
+
 
 #EXTINF:-1 tvg-id="" tvg-name="Times 24 TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="BANGLADESHI",TIMES 24 TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/times24tv.stream/playlist.m3u8
 
 
-#EXTINF:-1 tvg-id="" tvg-name="Rajdhani TV" tvg-logo="https://dishlive24.vercel.app/images/rajdhanitv.png" group-title="BANGLADESHI", RAJDHANI TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/rajdhanitv.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="Channel S BD" tvg-logo="https://dishlive24.vercel.app/images/channels.png" group-title="BANGLADESHI", CHANNEL S BD
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/playlist.m3u8 
@@ -147,7 +170,7 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/jagoronitv.stream/playlist.m3u8
 
 
-#EXTINF:-1 tvg-id="" tvg-name="Ruposhibangla" tvg-logo="https://dishlive24.vercel.app/images/rb.png" group-title="BANGLADESHI", RUPASHI BANGLA 
+#EXTINF:-1 tvg-id="" tvg-name="Ruposhibangla" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="BANGLADESHI", RUPASHI BANGLA 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8
 
 
@@ -155,55 +178,91 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/playlist.m3u8
 
 
- 
 #EXTINF:-1 tvg-id="" tvg-name="News 21 BD" tvg-logo="https://dishlive24.vercel.app/images/news21bangla.png" group-title="BANGLADESHI", NEWS 21 BD
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/news21bd.stream/playlist.m3u8
-
 
 #EXTINF:-1 tvg-id="" tvg-name="Parboto TV" tvg-logo="https://dishlive24.vercel.app/images/parbototv.png" group-title="BANGLADESHI", PARBOTO TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/parbototv.stream/playlist.m3u8
 
-
 #EXTINF:-1 tvg-id="" tvg-name="Max Bangla TV" tvg-logo="https://dishlive24.vercel.app/images/maxbangla.png" group-title="BANGLADESHI", MAX BANGLA TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/maxbangla.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="Nobbano TV" tvg-logo="https://dishlive24.vercel.app/images/cmtv.png" group-title="BANGLADESHI", NOBANNO TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/cmtv.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="Bangla 21 TV" tvg-logo="https://dishlive24.vercel.app/images/bangla21tv.png" group-title="BANGLADESHI", BANGLA 21 TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/bangla21tv000889956-sg.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="B24C" tvg-logo="https://dishlive24.vercel.app/images/b24c.png" group-title="BANGLADESHI",B24C
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/b24c.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="Channel 5" tvg-logo="https://dishlive24.vercel.app/images/channel5.png" group-title="BANGLADESHI", CHANNEL 5
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/musicbangla.stream/playlist.m3u8
+
+
+
+
+
 
 #EXTINF:-1 tvg-id="" tvg-name="Nexus TV" tvg-logo="https://dishlive24.vercel.app/images/nexustv.png" group-title="BANGLADESHI", NEXUS TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="Rajdhani TV" tvg-logo="https://dishlive24.vercel.app/images/rajdhanitv.png" group-title="BANGLADESHI", RAJDHANI TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/rajdhanitv.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Channel 5" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="BANGLADESHI", CHANNEL 5
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/musicbangla.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Bangla 21 TV" tvg-logo="https://dishlive24.vercel.app/images/bangla21tv.png" group-title="BANGLADESHI", BANGLA 21 TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/bangla21tv000889956-sg.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Nobbano TV" tvg-logo="https://dishlive24.vercel.app/images/cmtv.png" group-title="BANGLADESHI", NOBANNO TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/cmtv.stream/playlist.m3u8
 
 
 
 
 
 
-Pakistani Channels JagoBD Server 
 
 
-#EXTINF:-1 tvg-id="Pakistani" tvg-name="Geo TV" tvg-logo="https://dishlive24.vercel.app/images/harpalgeo.png" group-title="PAKISTANI", GEO TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/geotv.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Pakistani" tvg-name="HUM TV" tvg-logo="https://dishlive24.vercel.app/images/humtv.png" group-title="PAKISTANI",HUM TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/hum.stream/playlist.m3u8
 
+
+
+
+Indian Bangla Channels Free & Paid 
+
+ 
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Zillar Barta" tvg-logo="https://dishlive24.vercel.app/images/zillarbarta.png" group-title="INDIAN BANGLA", ZILLAR BARTA
+https://live-stream.utkalbongo.com/utkalbongo/stream18/hls/zillarbartalive.m3u8
+
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/calcuttanews.png" group-title="INDIAN BANGLA", CALCUTTA NEWS 
+https://akdnetwork.co.in/live/cnnew/index.m3u8
+
+
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/ctvnakdplus.png" group-title="INDIAN BANGLA", CTVN AKD PlUS 
+https://akdnetwork.co.in/live/ctvn/index.m3u8
+
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="HIGH News" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",HIGH NEWS
+https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
+
+
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",ONKAR BANGLA 
+https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunklist_w1855751334.m3u8
+
+
+
+
+
+
+ 
+
+
+Indian Hindi Channels Free & Paid 
 
 #EXTINF:-1 tvg-id="Special Movie Channel" tvg-name="Movie Action" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN HINDI", HINDI CINEMA HD 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/movieaction.stream/playlist.m3u8
 
  
  
+
+
  
+
+
 
 Music Channels Hindi Bengali Punjabi English 
 
@@ -236,7 +295,38 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
  
 
 
+
+
+Kids Channels Paid & Free 
+
+
+#EXTINF:-1 tvg-id="Kids" tvg-name="DurontoTV" tvg-logo="https://dishlive24.vercel.app/images/durontotv.png" group-title="KIDS CHANNELS", DURONTO TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/duronto.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Kids" tvg-name="Kids Creation" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",KIDS CREATION 
+https://flc2.technohaat.com/kidscreation_test/index.m3u8
+
+
+#EXTINF:-1 tvg-id="Kids" tvg-name="Toonz Kids" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",TOONZ KIDS
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/toonzkids/master.m3u8
+
+#EXTINF:-1 tvg-id="Kids" tvg-name="Zoo Moo" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",ZOO MOO
+https://zoomoo-samsungau.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Kids" tvg-name="PBS Kids" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",PBS KDS
+https://2-fss-2.streamhoster.com/pl_140/amlst%3a200914-1298290/chunklist_b2000000.m3u8
+
+
  
+Sony LIV Channels Worldwide 
+
+
+
+
+
+
+
+
 
 
 
@@ -251,55 +341,28 @@ https://d2f9g9rfw2kx84.cloudfront.net/playlist/amg01290-wildearth-oando/playlist
 
 
 
-Kids Channels Paid & Free 
+
+Pakistani Channels JagoBD Server 
 
 
-#EXTINF:-1 tvg-id="Kids" tvg-name="DurontoTV" tvg-logo="https://dishlive24.vercel.app/images/durontotv.png" group-title="KIDS CHANNELS", DURONTO TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/duronto.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Pakistani" tvg-name="Geo TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="PAKISTANI", GEO TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/geotv.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Kids" tvg-name="Kids Creation" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="KIDS CHANNELS",KIDS CREATION 
-https://flc2.technohaat.com/kidscreation_test/index.m3u8
+#EXTINF:-1 tvg-id="Pakistani" tvg-name="HUM TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="PAKISTANI",HUM TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/hum.stream/playlist.m3u8
 
 
-#EXTINF:-1 tvg-id="Kids" tvg-name="Toonz Kids" tvg-logo="https://dishlive24.vercel.app/images/toonzkids.png" group-title="KIDS CHANNELS",TOONZ KIDS
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/toonzkids/master.m3u8
-
-#EXTINF:-1 tvg-id="Kids" tvg-name="Zoo Moo" tvg-logo="https://dishlive24.vercel.app/images/zoomoo.png" group-title="KIDS CHANNELS",ZOO MOO
-https://zoomoo-samsungau.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Kids" tvg-name="PBS Kids" tvg-logo="https://dishlive24.vercel.app/images/pbskids.png" group-title="KIDS CHANNELS",PBS KDS
-https://2-fss-2.streamhoster.com/pl_140/amlst%3a200914-1298290/chunklist_b2000000.m3u8
-
+MIX Channels Bhojpuri Punjabi Regional Channels 
  
 
 
 
-Indian Bangla Channels Free & Paid 
 
- 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Zillar Barta" tvg-logo="https://dishlive24.vercel.app/images/zillarbarta.png" group-title="INDIAN BANGLA", ZILLAR BARTA
-https://live-stream.utkalbongo.com/utkalbongo/stream18/hls/zillarbartalive.m3u8
-
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/calcuttanews.png" group-title="INDIAN BANGLA", CALCUTTA NEWS 
-https://akdnetwork.co.in/live/cnnew/index.m3u8
-
-
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/ctvnakdplus.png" group-title="INDIAN BANGLA", CTVN AKD PlUS 
-https://akdnetwork.co.in/live/ctvn/index.m3u8
-
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="HIGH News" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",HIGH NEWS
-https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
-
-
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",ONKAR BANGLA 
-https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunklist_w1855751334.m3u8
+English Channels Free And Paid 
 
 
 
 
-
-
- 
 
 
 Religious Channels Islamic & Indian Different Languages 
@@ -342,39 +405,3 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
  
 
-#EXTINF:-1 tvg-id="" tvg-name="Ibtv TV" tvg-logo="https://dishlive24.vercel.app/images/ibtvusa.png" group-title="BANGLADESHI", IBTV USA
-http://208.86.19.13:81/509.stream/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="ATN Bangla UK" tvg-logo="https://dishlive24.vercel.app/images/atnbanglauk.png" group-title="BANGLADESHI",ATN BANGLA UK
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
- 
-#EXTINF:-1 tvg-id="" tvg-name="NTV UK" tvg-logo="https://dishlive24.vercel.app/images/ntvbd.png" group-title="BANGLADESHI",NTV UK
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Europe Bangla CH" tvg-name="ION TV" tvg-logo="https://dishlive24.vercel.app/images/iontv.png" group-title="BANGLADESHI",ION TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="Jonmobhumi Tv" tvg-logo="https://dishlive24.vercel.app/images/jonmobhumitv.png" group-title="BANGLADESHI", JONMOBHUMI TV 
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/jonmobhumitv.stream/playlist.m3u8
-
-
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="AB TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada",AB TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/abtvusa.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="Deshi TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada", DESHI TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/deshitv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="Millennium 24 USA" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada", MILLENNIUM 24 USA
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/mnews24.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="Millennium TV USA" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada", MILLENNIUM TV USA
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/millenniumtv-odr-up2.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="NRB TV Canada" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada",NRB TV CANADA 
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/nrb-eu.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="CB 24 TV" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada",CB 24 TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/cb24.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="USA & Canada" tvg-name="Channel 52 USA" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="USA & Canada",Channel 52 USA
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channel25usa.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Others" tvg-name="Moon TV (IN)" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="Others",Moon TV (IN)
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/montv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Others" tvg-name="Home TV (IN)" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="Others",Home TV (IN)
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/hometv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Others" tvg-name="Channel S UK" tvg-logo="https://dishlive24.pages.dev/images/dishlive24.png" group-title="Others",Channel S UK
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/chsukoff.stream/playlist.m3u8
