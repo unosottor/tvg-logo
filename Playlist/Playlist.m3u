@@ -14,11 +14,83 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 Bangladeshi Free Channels 
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/boishakhitv.png" group-title="BANGLADESHI", BOISHAKHI TV 
+https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/banglatvbd.png" group-title="BANGLADESHI", BANGLA TV BD
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/banglatveurope.png" group-title="BANGLADESHI", BANGLA TV EUROPE 
+ 
+
+
+ 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/deeptotv.png" group-title="BANGLADESHI", DEEPTO TV 
+https://byphdgllyk.gpcdn.net/hls/DeeptoTV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/maasrangatv.png" group-title="BANGLADESHI", MAASRANGA TV 
+https://mtv.sunplex.live/MAASRANGA-TV/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/matribhumitv.png" group-title="BANGLADESHI", MATRIBHUMI TV 
+http://103.101.197.10:8989/M_Movies/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/mytv.png" group-title="BANGLADESHI", MY TV HD 
+https://mytvbangla.com/0.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/montv.png" group-title="BANGLADESHI", MON TV 
+https://live-stream.utkalbongo.com/utkalbongo/stream7/hls/montvlivestream.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ekusheytv.png" group-title="BANGLADESHI", EKUSHEY TV
+https://ekusheyserver.com/etvlivesn.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/probashitv.png" group-title="BANGLADESHI", PROBASHI TV 
+http://158.69.24.53:8080/probashi_tv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/magicbangla.png" group-title="BANGLADESHI", MAGIC BANGLA 
+http://mbanglatv.jolshabd.com:1935/live/mbanglatv/chunklist_w1428315036.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/moviebangla.png" group-title="BANGLADESHI", MOVIE BANGLA 
+http://alvetv.com/moviebanglatv/8080/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/doyeltv.png" group-title="BANGLADESHI", DOYEL TV 
+https://doyel-admin.fillup.tech/memfs/aa3aa6f7-ec12-41a2-8183-a891e157bbf8.m3u8
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/desitv.png",DESHI TV 
+https://deshitv.deshitv24.net/live/myStream/playlist.m3u8
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/channels.png", CHANNEL S 
+https://cdn149.anystream.uk:8082/g1/tvchsuk03/chunks.m3u8
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/deshebideshe.png",DESHE BIDESHE TV
+https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8|Referer=https://dbcanada.sonarbanglatv.com/
+
+ 
+
+  
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/bhichannel.png", BHI CHANNEL 
+https://server.livelegitpro.in/bhichannel/bhichannel/index.m3u8
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/metv.png", ME TV BANGLA 
+https://iptvbd.live/metv1080/1080.m3u8 
+
+
+#EXTINF:-1 group-title="BANGLADESHI" tvg-logo="https://dishlive24.vercel.app/images/timetv.png", TIME TELEVISION 
+https://cdn.streamcast.xyz/timetv/index.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="CBN TV" tvg-logo="https://dishlive24.vercel.app/images/cbntvusa.png" group-title="BANGLADESHI", CBN TV USA
 https://live.cbntvusa.net/hls/cbntv/index.m3u8
+
+
+
+
+
+
+
+
+
 
 
 Bangladeshi News Channels JAGO BD 
@@ -291,9 +363,7 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/musicindiain.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Music" tvg-name="Music Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MUSIC CHANNELS", MUSIC BANGLA 
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/musicbangla44.stream/playlist.m3u8
- 
-
+https://live.matribhumitv.com/music-bangla/index.m3u8
 
 
 
