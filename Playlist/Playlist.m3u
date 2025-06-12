@@ -16,11 +16,19 @@ http://38.96.178.201/live/TSports/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tsports2.png" group-title="SPORTS CHANNELS", T SPORTS 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD 
+http://103.120.172.74:4600
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports2hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 2 HD 
+http://103.120.172.74:4200
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD [2]
+ 
+
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsportshindi.png" group-title="SPORTS CHANNELS", STAR SPORTS HINDI 
-
+http://103.120.172.74:5500
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS 
@@ -32,15 +40,6 @@ http://125.209.88.166:45793/BRN/ArySports.stream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ptvsports.png" group-title="SPORTS CHANNELS", PTV SPORTS 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/astrocricket.png" group-title="SPORTS CHANNELS", ASTRO CRICKET 
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="SPORTS CHANNELS", BEIN SPORTS 1
-https://stream.sainaertebat.com/hls2/bein1.m3u8
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="SPORTS CHANNELS", BEIN SPORTS 2
-https://stream.sainaertebat.com/hls2/bein2.m3u8
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="SPORTS CHANNELS", SSC 1 SPORTS 
-https://stream.sainaertebat.com/hls2/ssc1.m3u8
 
 
 Bangladeshi BTV & BTV World 
@@ -468,7 +467,7 @@ https://akdnetwork.co.in/live/ctvn/index.m3u8
 https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA [JIO]
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA [2]
 https://nw18live.cdn.jio.com/bpk-tv/News18_Bangla_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="News Time" tvg-logo="https://dishlive24.vercel.app/images/newstime.png" group-title="INDIAN BANGLA", NEWS TIME 
@@ -495,10 +494,7 @@ Indian Hindi Channels Free & Paid
 
 #EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/ddurdu.png", DD URDU 
  
- 
 
-#EXTINF:-1 tvg-id="Special Movie Channel" tvg-name="Movie Action" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN CHANNELS", HINDI CINEMA HD 
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/movieaction.stream/playlist.m3u8
 
 #EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dangal.png", DANGAL 
 https://live-dangal.akamaized.net/liveabr/playlist.m3u8
@@ -563,11 +559,11 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
  
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeecinema.png" group-title="INDIAN CHANNELS", ZEE CINEMA 
- 
+http://103.120.172.74:4000
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtv.png" group-title="INDIAN CHANNELS", AND TV 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtv.png" group-title="INDIAN CHANNELS", AND TV UK 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtv.png" group-title="INDIAN CHANNELS", AND TV HD 
 https://amg01117-amg01117c1-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01117-amg01117c1-amgplt0002/playlist.m3u8
 
 
@@ -591,6 +587,7 @@ https://amg01117-amg01117c1-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlis
 http://103.120.172.74:5200
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starbharat.png" group-title="INDIAN CHANNELS", STAR BHARAT 
+http://103.120.172.74:5000
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargold.png" group-title="INDIAN CHANNELS", STAR GOLD 
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
@@ -613,6 +610,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colors.png" group-title="INDIAN CHANNELS", COLORS 
+http://103.120.172.74:1150
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cineplex.png" group-title="INDIAN CHANNELS", COLORS CINEPLEX 
 https://cc-r5hupcym5oehh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-r5hupcym5oehh/SBUM/RunnTV/BollyFlix_IN/BollyFlix_IN.m3u8
@@ -623,6 +621,25 @@ http://146.59.253.52:8080/bollywoodnonstop/index.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN CHANNELS", CINEPLEX SUPERHITS
 http://146.59.253.52:8080/SUR-SAGAR/live/sur-sagar/index.m3u8
 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sony.png" group-title="INDIAN CHANNELS",SONY HD  
+http://103.120.172.74:1070
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonysab.png" group-title="INDIAN CHANNELS",SONY SAB 
+http://103.120.172.74:4400
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonymax.png" group-title="INDIAN CHANNELS",SONY MAX
+http://103.120.172.74:1120
+
+ 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten1.png" group-title="SPORTS CHANNELS",SONY TEN 1 
+http://103.120.172.74:1110
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten2.png" group-title="SPORTS CHANNELS",SONY TEN 2 
+http://103.120.172.74:4800
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten5.png" group-title="SPORTS CHANNELS",SONY TEN 5
+http://103.120.172.74:5300
 
 
 Music Channels Hindi Bengali Punjabi English 
