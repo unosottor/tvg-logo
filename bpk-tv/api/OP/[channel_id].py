@@ -2,9 +2,9 @@ from flask import Flask, Response
 
 app = Flask(__name__)
 
-@app.route("/api/BDIX/<channel_id>.m3u8")
+@app.route("/api/OP/<channel_id>.m3u8")
 def generate_m3u8(channel_id):
-    ts_url = f"http://103.120.172.74:5200/live/{channel_id}.ts"
+    ts_url = f"http://xott.live:8080/3773747/7172737/{channel_id}.ts"
     m3u8_content = f"""#EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-TARGETDURATION:5
