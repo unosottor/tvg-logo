@@ -1,0 +1,91 @@
+#EXTM3U 
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR GOLD HD 
+https://dishlive247.vercel.app/api/BDIX/66177.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR GOLD HD [2]
+https://dishlive247.vercel.app/api/BDIX/109959.m3u8
+
+#EXTINF:-1 tvg-id="StarGoldThrills" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR GOLD THRILLS 
+https://dishlive247.vercel.app/api/BDIX/221258.m3u8 
+
+#EXTINF:-1 tvg-id="StarGold2" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR GOLD 2
+https://dishlive247.vercel.app/api/BDIX/106133.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinemaHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", ZEE CINEMA HD 
+https://dishlive247.vercel.app/api/BDIX/206307.m3u8 
+
+#EXTINF:-1 tvg-id="ZeeTVHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", ZEE TV HD
+https://dishlive247.vercel.app/api/BDIX/221250.m3u8
+
+
+#EXTINF:-1 tvg-id="ZeeBanglaHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", ZEE BANGLA HD 
+https://dishlive247.vercel.app/api/BDIX/245893.m3u8 
+
+#EXTINF:-1 tvg-id="StarJalshaHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR JALSHA HD 
+https://dishlive247.vercel.app/api/BDIX/245898.m3u8 
+
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", JALSHA MOVIES 
+https://dishlive247.vercel.app/api/BDIX/245900.m3u8
+
+
+#EXTINF:-1 tvg-id="ColorsBanglaHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", COLORS BANGLA HD
+https://dishlive247.vercel.app/api/BDIX/245895.m3u8 
+
+#EXTINF:-1 tvg-id="ColorsHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", COLORS HD 
+https://dishlive247.vercel.app/api/BDIX/66167.m3u8 
+
+#EXTINF:-1 tvg-id="StarPlusHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR PLUS HD
+https://dishlive247.vercel.app/api/BDIX/221252.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR BHARAT HD
+https://dishlive247.vercel.app/api/BDIX/66171.m3u8
+
+#EXTINF:-1 tvg-id="MTVIndia" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", MTV INDIA 
+https://dishlive247.vercel.app/api/BDIX/206054.m3u8 
+
+#EXTINF:-1 tvg-id="NatGeoHD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", NAT GEO HD
+https://dishlive247.vercel.app/api/BDIX/206285.m3u8 
+
+#EXTINF:-1 tvg-id="DiscoveryHindi" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", DISCOVERY HINDI 
+https://dishlive247.vercel.app/api/BDIX/206287.m3u8 
+
+#EXTINF:-1 tvg-id="TravelXPHindi" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", TRAVEL XP HINDI 
+https://dishlive247.vercel.app/api/BDIX/206280.m3u8
+
+#EXTINF:-1 tvg-id="History18Hindi" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", HISTORY TV18 HINDI 
+https://dishlive247.vercel.app/api/BDIX/206294.m3u8
+
+
+#EXTINF:-1 tvg-id="HungamaKids" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", HUNGAMA KIDS 
+https://dishlive247.vercel.app/api/BDIX/150480.m3u8 
+
+
+#EXTINF:-1 tvg-id="DisneyIndia" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", DISNEY INDIA 
+https://dishlive247.vercel.app/api/BDIX/167551.m3u8 
+
+#EXTINF:-1 tvg-id="Doremon24/7" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", DOREMON 24/7
+https://dishlive247.vercel.app/api/BDIX/388459.m3u8 
+
+#EXTINF:-1 tvg-id="SonicHindi" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", SONIC HINDI 
+https://dishlive247.vercel.app/api/BDIX/34011.m3u8 
+
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", GAZI TV HD 
+https://dishlive247.vercel.app/api/BDIX/245901.m3u8 
+
+
+#EXTINF:-1 tvg-id="SunBangla" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", SUN BANGLA 
+https://dishlive247.vercel.app/api/BDIX/245906.m3u8 
+
+#EXTINF:-1 tvg-id="StarSports1HD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR SPORTS 1 HD 
+https://dishlive247.vercel.app/api/BDIX/109987.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1HD" tvg-name="" tvg-logo="" group-title="OPPLEX CHANNELS", STAR SPORTS 1 HD [2]
+https://dishlive247.vercel.app/api/BDIX/167575.m3u8
+
+#EXTINF:-1 tvg-id="WillowCricket" tvg-name="Willow Cricket" tvg-logo="" group-title="OPPLEX CHANNELS", WILLOW CRICKET 
+https://dishlive247.vercel.app/api/BDIX/167583.m3u8
+
+
