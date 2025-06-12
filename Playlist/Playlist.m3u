@@ -841,6 +841,29 @@ https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91e
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HWb5Iat.png" group-title="MIX CHANNELS", JALWA TV 
 https://vodzong.mjunoon.tv:8087/streamtest/JalwaTV-135/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", HAR PAL GEO 
+https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
+
+
+
+
+#EXTINF:-1 group-title="MIX CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", MOVIESPHERE UK 
+https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 group-title="MIX CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", MOVIESPHERE US
+https://dxazj2uf8uiwf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2ra9rjcmiktyz/playlist.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -862,16 +885,18 @@ https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/abpnews.png" group-title="MIX CHANNELS", ABP NEWS INDIA 
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpnews-xiaomi/playlist.m3u8
 
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA [JIO]
 https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tv9india.png" group-title="MIX CHANNELS", TV9 INDIA 
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", SANSAD TV 
+https://hls.media.nic.in/hls/live/rstv/rstv.m3u8
 
-
-
- 
-
-
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", CNBC AWAAZ 18 [JIO]
+https://n18syndication.akamaized.net/bpk-tv/CNBC_Awaaz_NW18_MOB/output01/index.m3u8
 
 
 
