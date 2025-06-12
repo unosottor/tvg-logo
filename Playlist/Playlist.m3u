@@ -807,7 +807,7 @@ https://dogus-live.daioncdn.net/dmax/dmax.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tlc.png" group-title="DOCUMENTARY", TLC 
 https://dogus-live.daioncdn.net/tlc/tlc.m3u8
 
-#EXTINF:-1 tvg-id="Documentary" tvg-name="Wid Earth [ Source 2 ]" tvg-logo="https://dishlive24.vercel.app/images/wildearth.png" group-title="DOCUMENTARY", WILD EARTH [ Source 2 ]
+#EXTINF:-1 tvg-id="Documentary" tvg-name="Wid Earth [ Source 2 ]" tvg-logo="https://dishlive24.vercel.app/images/wildearth.png" group-title="DOCUMENTARY", WILD EARTH [2]
 #https://wildearth-plex.amagi.tv/master.m3u8
 https://d2f9g9rfw2kx84.cloudfront.net/playlist/amg01290-wildearth-oando/playlist.m3u8
  
@@ -833,8 +833,6 @@ https://cdn-4.pishow.tv/live/1293/master.m3u8
 https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/4fdd4dfb-9f8a-4cfa-b1f0-348f43c513e6/2.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/HWb5Iat.png" group-title="MIX CHANNELS", JALWA TV 
-https://vodzong.mjunoon.tv:8087/streamtest/JalwaTV-135/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", HAR PAL GEO 
 https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
@@ -881,19 +879,13 @@ https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpnews-xiaomi/playlist.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA [JIO]
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA [2]
 https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tv9india.png" group-title="MIX CHANNELS", TV9 INDIA 
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", SANSAD TV 
-https://hls.media.nic.in/hls/live/rstv/rstv.m3u8
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", CNBC AWAAZ 18 [JIO]
-https://n18syndication.akamaized.net/bpk-tv/CNBC_Awaaz_NW18_MOB/output01/index.m3u8
-
-
+ 
 
 
 English Channels Free And Paid 
