@@ -484,7 +484,7 @@ Indian Hindi Channels Free & Paid
  
  
 
-#EXTINF:-1 tvg-id="Special Movie Channel" tvg-name="Movie Action" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="", HINDI CINEMA HD 
+#EXTINF:-1 tvg-id="Special Movie Channel" tvg-name="Movie Action" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN CHANNELS", HINDI CINEMA HD 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/movieaction.stream/playlist.m3u8
 
 #EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dangal.png", DANGAL 
@@ -602,7 +602,6 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cineplex.png" group-title="INDIAN CHANNELS", COLORS CINEPLEX 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cineplexbollywood.png" group-title="INDIAN CHANNELS", CINEPLEX BOLLYWOOD 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN CHANNELS", CINEPLEX SUPERHITS
 
@@ -803,7 +802,7 @@ https://d2f9g9rfw2kx84.cloudfront.net/playlist/amg01290-wildearth-oando/playlist
  
  
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/lovenature.png" group-title="INFOTAINMENT", LOVE NATURE 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/lovenature.png" group-title="DOCUMENTARY", LOVE NATURE 
 http://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 
 
@@ -856,7 +855,7 @@ https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpnews-xiaomi/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA 
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpnews-xiaomi/playlist.m3u8
+
 
 
 
