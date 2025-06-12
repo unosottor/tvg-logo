@@ -176,7 +176,12 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 Bangladeshi Channels JAGO BD 
 
-#EXTINF:-1 tvg-id="" tvg-name="Gazi TV" tvg-logo="https://dishlive24.vercel.app/images/gazitv.png" group-title="BANGLADESHI", GAZI TV
+
+
+#EXTINF:-1 tvg-id="" tvg-name="Gazi TV" tvg-logo="https://dishlive24.vercel.app/images/ntvbd.png" group-title="BANGLADESHI", NTV BANGLADESH 
+https://d1e7rcqq4o2ma.cloudfront.net/bpk-tv/1716/output/1716.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Gazi TV" tvg-logo="https://dishlive24.vercel.app/images/gazitv.png" group-title="BANGLADESHI", GAZI TV HD
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8
 
 
@@ -187,10 +192,6 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-id="" tvg-name="Tara Cinema" tvg-logo="https://dishlive24.vercel.app/images/tarabanglacinema.png" group-title="BANGLADESHI",TARA BANGLA CINEMA 
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/tara.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="TaraTV" tvg-logo="https://dishlive24.vercel.app/images/taratv.png" group-title="BANGLADESHI", TARA TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/zodiaktv.stream/playlist.m3u8
-
 
 
 #EXTINF:-1 tvg-id="" tvg-name="ATN Bangla" tvg-logo="https://dishlive24.vercel.app/images/atnbangla.png" group-title="BANGLADESHI",ATN BANGLA 
@@ -234,8 +235,8 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 
 #EXTINF:-1 tvg-id="" tvg-name="Channel I" tvg-logo="https://dishlive24.vercel.app/images/channeli.png" group-title="BANGLADESHI", CHANNEL I HD
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8
-
+#https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8
+https://d1e7rcqq4o2ma.cloudfront.net/bpk-tv/1723/output/1723.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="Global TV Bangladesh" tvg-logo="https://dishlive24.vercel.app/images/globaltv.png" group-title="BANGLADESHI", GLOBAL TV 
@@ -467,8 +468,8 @@ https://akdnetwork.co.in/live/ctvn/index.m3u8
 https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA",ONKAR BANGLA 
-https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunklist_w1855751334.m3u8
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA [JIO]
+https://nw18live.cdn.jio.com/bpk-tv/News18_Bangla_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="News Time" tvg-logo="https://dishlive24.vercel.app/images/newstime.png" group-title="INDIAN BANGLA", NEWS TIME 
 https://in1.sunilprasad.com.np/yuppLive/news-time/master.m3u8
@@ -861,8 +862,8 @@ https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/abpnews.png" group-title="MIX CHANNELS", ABP NEWS INDIA 
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpnews-xiaomi/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA 
-
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/news18india.png" group-title="MIX CHANNELS", NEWS 18 INDIA [JIO]
+https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 
 
 
