@@ -434,7 +434,7 @@ http://103.145.48.150:90/laosat24/taratv/index.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/abpananda.png" group-title="INDIAN BANGLA", ABP ANANDA 
 https://abplivetv.akamaized.net/hls/live/2043012/ananda/master_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/24ghanta.png" group-title="INDIAN BANGLA", ZEE 24 GHANTA [Source 2]
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zee24ghanta.png" group-title="INDIAN BANGLA", ZEE 24 GHANTA [Source 2]
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zee24ghantaa-xiaomi/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tv9bangla.png" group-title="INDIAN BANGLA", TV9 BANGLA 
