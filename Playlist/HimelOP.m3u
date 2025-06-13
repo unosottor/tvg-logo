@@ -1,0 +1,91 @@
+#EXTM3U 
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="", STAR GOLD HD 
+https://opplex24.vercel.app/bpk-tv/xtv/66177.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="", STAR GOLD HD [2]
+https://opplex24.vercel.app/bpk-tv/xtv/109959.m3u8
+
+#EXTINF:-1 tvg-id="StarGoldThrills" tvg-name="" tvg-logo="" group-title="", STAR GOLD THRILLS 
+https://opplex24.vercel.app/bpk-tv/xtv/221258.m3u8 
+
+#EXTINF:-1 tvg-id="StarGold2" tvg-name="" tvg-logo="" group-title="", STAR GOLD 2
+https://opplex24.vercel.app/bpk-tv/xtv/106133.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinemaHD" tvg-name="" tvg-logo="" group-title="", ZEE CINEMA HD 
+https://opplex24.vercel.app/bpk-tv/xtv/206307.m3u8 
+
+#EXTINF:-1 tvg-id="ZeeTVHD" tvg-name="" tvg-logo="" group-title="", ZEE TV HD
+https://opplex24.vercel.app/bpk-tv/xtv/221250.m3u8
+
+
+#EXTINF:-1 tvg-id="ZeeBanglaHD" tvg-name="" tvg-logo="" group-title="", ZEE BANGLA HD 
+https://opplex24.vercel.app/bpk-tv/xtv/245893.m3u8 
+
+#EXTINF:-1 tvg-id="StarJalshaHD" tvg-name="" tvg-logo="" group-title="", STAR JALSHA HD 
+https://opplex24.vercel.app/bpk-tv/xtv/245898.m3u8 
+
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="" tvg-logo="" group-title="", JALSHA MOVIES 
+https://opplex24.vercel.app/bpk-tv/xtv/245900.m3u8
+
+
+#EXTINF:-1 tvg-id="ColorsBanglaHD" tvg-name="" tvg-logo="" group-title="", COLORS BANGLA HD
+https://opplex24.vercel.app/bpk-tv/xtv/245895.m3u8 
+
+#EXTINF:-1 tvg-id="ColorsHD" tvg-name="" tvg-logo="" group-title="", COLORS HD 
+https://opplex24.vercel.app/bpk-tv/xtv/66168.m3u8 
+
+#EXTINF:-1 tvg-id="StarPlusHD" tvg-name="" tvg-logo="" group-title="", STAR PLUS HD
+https://opplex24.vercel.app/bpk-tv/xtv/221252.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat" tvg-name="" tvg-logo="" group-title="", STAR BHARAT HD
+https://opplex24.vercel.app/bpk-tv/xtv/66171.m3u8
+
+#EXTINF:-1 tvg-id="MTVIndia" tvg-name="" tvg-logo="" group-title="", MTV INDIA 
+https://opplex24.vercel.app/bpk-tv/xtv/206854.m3u8 
+
+#EXTINF:-1 tvg-id="NatGeoHD" tvg-name="" tvg-logo="" group-title="", NAT GEO HD
+https://opplex24.vercel.app/bpk-tv/xtv/206285.m3u8 
+
+#EXTINF:-1 tvg-id="DiscoveryHindi" tvg-name="" tvg-logo="" group-title="", DISCOVERY HINDI 
+https://opplex24.vercel.app/bpk-tv/xtv/206287.m3u8 
+
+#EXTINF:-1 tvg-id="TravelXPHindi" tvg-name="" tvg-logo="" group-title="", TRAVEL XP HINDI 
+https://opplex24.vercel.app/bpk-tv/xtv/206280.m3u8
+
+#EXTINF:-1 tvg-id="History18Hindi" tvg-name="" tvg-logo="" group-title="", HISTORY TV18 HINDI 
+https://opplex24.vercel.app/bpk-tv/xtv/206294.m3u8
+
+
+#EXTINF:-1 tvg-id="HungamaKids" tvg-name="" tvg-logo="" group-title="", HUNGAMA KIDS 
+https://opplex24.vercel.app/bpk-tv/xtv/150480.m3u8 
+
+
+#EXTINF:-1 tvg-id="DisneyIndia" tvg-name="" tvg-logo="" group-title="", DISNEY INDIA 
+https://opplex24.vercel.app/bpk-tv/xtv/167551.m3u8 
+
+#EXTINF:-1 tvg-id="Doremon24/7" tvg-name="" tvg-logo="" group-title="", DOREMON 24/7
+https://opplex24.vercel.app/bpk-tv/xtv/388459.m3u8 
+
+#EXTINF:-1 tvg-id="SonicHindi" tvg-name="" tvg-logo="" group-title="", SONIC HINDI 
+https://opplex24.vercel.app/bpk-tv/xtv/34011.m3u8 
+
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="" tvg-logo="" group-title="", GAZI TV HD 
+https://opplex24.vercel.app/bpk-tv/xtv/245901.m3u8 
+
+
+#EXTINF:-1 tvg-id="SunBangla" tvg-name="" tvg-logo="" group-title="", SUN BANGLA 
+https://opplex24.vercel.app/bpk-tv/xtv/245906.m3u8 
+
+#EXTINF:-1 tvg-id="StarSports1HD" tvg-name="" tvg-logo="" group-title="", STAR SPORTS 1 HD 
+https://opplex24.vercel.app/bpk-tv/xtv/109987.m3u8
+
+#EXTINF:-1 tvg-id="StarSports1HD" tvg-name="" tvg-logo="" group-title="", STAR SPORTS 1 HD [2]
+https://opplex24.vercel.app/bpk-tv/xtv/167575.m3u8
+
+#EXTINF:-1 tvg-id="WillowCricket" tvg-name="Willow Cricket" tvg-logo="" group-title="", WILLOW CRICKET 
+https://opplex24.vercel.app/bpk-tv/xtv/167583.m3u8
+
+
