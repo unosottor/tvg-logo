@@ -2,7 +2,7 @@
   "matches": [
     {
       "id": "match1",
-      "title": "Argentina vs Brazil",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/play.php?id=100" },
         { "name": "Server 2", "url": "" },
@@ -12,7 +12,7 @@
     },
     {
       "id": "match2",
-      "title": "Real Madrid vs Barcelona",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://example.com/match2/server1.m3u8" },
         { "name": "Server 2", "url": "https://example.com/match2/server2.m3u8" },
@@ -22,7 +22,7 @@
     },
     {
       "id": "match3",
-      "title": "India vs Pakistan",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "" },
         { "name": "Server 2", "url": "" },
@@ -32,7 +32,7 @@
     },
     {
       "id": "match4",
-      "title": "Man City vs Liverpool",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://example.com/match4/server1.m3u8" },
         { "name": "Server 2" },
@@ -42,7 +42,7 @@
     },
     {
       "id": "match5",
-      "title": "Australia vs England",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://example.com/match5/server1.m3u8" },
         { "name": "Server 2", "url": "https://example.com/match5/server2.m3u8" },
