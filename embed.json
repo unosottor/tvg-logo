@@ -4,8 +4,8 @@
       "id": "match1",
       "title": "Argentina vs Brazil",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.pages.dev/play.php?id=solhsports" },
-        { "name": "Server 2", "url": "https://example.com/match1/server2.m3u8" },
+        { "name": "Server 1", "url": "https://dishlive24.pages.dev/play.php?id=100" },
+        { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4" }
       ]
