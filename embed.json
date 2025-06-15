@@ -1,0 +1,54 @@
+{
+  "matches": [
+    {
+      "id": "match1",
+      "title": "Argentina vs Brazil",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match1/server1.m3u8" },
+        { "name": "Server 2", "url": "https://example.com/match1/server2.m3u8" },
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4" }
+      ]
+    },
+    {
+      "id": "match2",
+      "title": "Real Madrid vs Barcelona",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match2/server1.m3u8" },
+        { "name": "Server 2", "url": "https://example.com/match2/server2.m3u8" },
+        { "name": "Server 3", "url": "https://example.com/match2/server3.m3u8" },
+        { "name": "Server 4" }
+      ]
+    },
+    {
+      "id": "match3",
+      "title": "India vs Pakistan",
+      "servers": [
+        { "name": "Server 1", "url": "" },
+        { "name": "Server 2", "url": "" },
+        { "name": "Server 3", "url": "https://example.com/match3/server3.m3u8" },
+        { "name": "Server 4", "url": "https://example.com/match3/server4.m3u8" }
+      ]
+    },
+    {
+      "id": "match4",
+      "title": "Man City vs Liverpool",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match4/server1.m3u8" },
+        { "name": "Server 2" },
+        { "name": "Server 3", "url": "https://example.com/match4/server3.m3u8" },
+        { "name": "Server 4", "url": "https://example.com/match4/server4.m3u8" }
+      ]
+    },
+    {
+      "id": "match5",
+      "title": "Australia vs England",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match5/server1.m3u8" },
+        { "name": "Server 2", "url": "https://example.com/match5/server2.m3u8" },
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4", "url": "" }
+      ]
+    }
+  ]
+}
