@@ -9,8 +9,8 @@
       "name": "Auckland City FC",
       "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/IX2fIwXSOLsWDsUu5LmzD.png"
     },
-    "matchTime": "2025-06-15T16:00:00.000Z",
-    "endTime": ""
+    "matchTime": "2025-06-T4:00PM",
+    "endTime": "2025-06-T8:00PM"
   },
   {
     "id": "paris_saint-germain-atletico_madrid",
@@ -22,7 +22,7 @@
       "name": "Atletico Madrid",
       "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/xWY4as7vKsiitaDE-lmIe.png"
     },
-    "matchTime": "2025-06-15T19:00:00.000Z",
-    "endTime": ""
+    "matchTime": "2025-06-T7:30PM",
+    "endTime": "2025-06-T11:00PM"
   }
 ]
