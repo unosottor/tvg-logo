@@ -1,28 +1,14 @@
  [
   {
-    "id": "bayern_munich-auckland_city_fc",
+    "id": "match001",
+    "matchTime": "2025-06-15T19:30:00",
     "team1": {
-      "name": "Bayern Munich",
-      "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/2TlMSJkWTGqMX2lPN7Cgd.png"
+      "name": "Team A",
+      "logo": "https://dishlive24.vercel.app/images/dishlive24.png"
     },
     "team2": {
-      "name": "Auckland City FC",
-      "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/IX2fIwXSOLsWDsUu5LmzD.png"
-    },
-    "matchTime": "2025-06-T1:40PM",
-    "endTime": "2025-06-T5:00PM"
-  },
-  {
-    "id": "paris_saint-germain-atletico_madrid",
-    "team1": {
-      "name": "Paris Saint-Germain",
-      "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/Gt8F5QmiB3gbYqX46lCUq.png"
-    },
-    "team2": {
-      "name": "Atletico Madrid",
-      "logo": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/xWY4as7vKsiitaDE-lmIe.png"
-    },
-    "matchTime": "2025-06-T7:30PM",
-    "endTime": "2025-06-T11:00PM"
+      "name": "Team B",
+      "logo": "https://dishlive24.vercel.app/images/dishlive24.png"
+    }
   }
 ]
