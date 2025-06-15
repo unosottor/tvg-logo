@@ -1,0 +1,219 @@
+/* Main container for player, buttons, and footer */
+.main-container {
+    max-width: 100%;
+    border: 3px solid #333; /* Border around the main container */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.pTtl.itm {
+    display: none;
+}
+.brdCmb {
+    display: none;
+}
+.headI {
+    display: none;
+}
+/* Embed Video Player Container */
+.embed-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    border: 2px solid #000; /* Border around the player */
+    border-radius: 5px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevents logo from overflowing */
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Logo Overlay */
+.logo-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Button container below the player */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.select-embed-btn {
+    background-color: #007bb5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.select-embed-btn:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
+
+/* Active button style */
+.buttons-container button.active {
+    background-color: #005a8d;
+    color: #fff;
+    border: 2px solid #003f63;
+}
+
+/* Intent Link Button */
+.intent-link-btn {
+    display: inline-block;
+    background-color: #28a745; /* Green background color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.intent-link-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer with Join Telegram Button */
+.footer {
+    padding: 10px;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.telegram-bar {
+    background-color: white;
+    color: #333;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.telegram-bar:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Scrolling Text */
+.scrolling-text {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text div {
+    position: absolute;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .select-embed-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .footer span {
+        font-size: 14px;
+    }
+
+    .telegram-bar {
+        font-size: 12px;
+    }
+
+    .intent-link-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .embed-container {
+        padding-bottom: 75%; /* Adjust video aspect ratio on mobile */
+    }
+
+    .logo-overlay {
+        width: 80px; /* Smaller logo on mobile */
+    }
+}
+
+/* Large Desktop screens (greater than 1200px) */
+@media (min-width: 1200px) {
+    .main-container {
+        max-width: 1200px; /* Limiting container width for large screens */
+    }
+
+    .select-embed-btn {
+        padding: 14px 25px;
+        font-size: 18px;
+    }
+
+    .footer span {
+        font-size: 18px;
+    }
+
+    .intent-link-btn {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
