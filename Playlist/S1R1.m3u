@@ -505,7 +505,7 @@ https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
 
 
 #EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/mbcbollywood.png", MBC BOLLYWOOD 
-https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8
+
 
 #EXTINF:-1 group-title="INDIAN CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dabanggtv.png", DABANGG
 https://sabliveyupp.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/sablive_https/dabangg/playlist.m3u8
