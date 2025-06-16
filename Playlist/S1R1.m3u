@@ -376,7 +376,7 @@ https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
 https://server.playontv.in/SGCNCINEMABANGLA/index.m3u8 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbanglacinema.png" group-title="INDIAN BANGLA", COLORS BANGLA CINEMA 
- 
+http://tv.bdiptv.store:80/live/restream/restreamz/238.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinema.png" group-title="INDIAN BANGLA", ZEE BANGLA CINEMA 
  
@@ -765,49 +765,49 @@ https://2-fss-2.streamhoster.com/pl_140/amlst%3a200914-1298290/chunklist_b200000
  
 Sony LIV Channels Worldwide 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sony.png" group-title="SONY CHANNELS",SONY HD  
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sony.png" group-title="INDIAN CHANNELS",SONY HD  
 https://otttv.co.in/d2h/livestream/sony-entertainment-television-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonykal.png"group-title="SONY CHANNELS", SONY KAL HINDI 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonykal.png"group-title="INDIAN CHANNELS", SONY KAL HINDI 
 https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8  
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonysab.png" group-title="SONY CHANNELS",SONY SAB HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonysab.png" group-title="INDIAN CHANNELS",SONY SAB HD
 https://otttv.co.in/d2h/livestream/sony-sab/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonypal.png" group-title="SONY CHANNELS",SONY PAL
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonypal.png" group-title="INDIAN CHANNELS",SONY PAL
 https://otttv.co.in/d2h/livestream/sony-pal/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/setmax.png" group-title="SONY CHANNELS",SONY MAX HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/setmax.png" group-title="INDIAN CHANNELS",SONY MAX HD
 https://otttv.co.in/d2h/livestream/sony-max-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/setmax.png" group-title="SONY CHANNELS",SONY MAX SD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/setmax.png" group-title="INDIAN CHANNELS",SONY MAX SD
 https://otttv.co.in/d2h/livestream/sony-max/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonywah.png" group-title="SONY CHANNELS",SONY WAH 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonywah.png" group-title="INDIAN CHANNELS",SONY WAH 
 https://otttv.co.in/d2h/livestream/sony-wah/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/max2.png" group-title="SONY CHANNELS",SONY MAX 2
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/max2.png" group-title="INDIAN CHANNELS",SONY MAX 2
 https://otttv.co.in/d2h/livestream/sony-max-2/master.m3u8
  
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyyay.png" group-title="SONY CHANNELS",SONY YAY
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyyay.png" group-title="INDIAN CHANNELS",SONY YAY
 https://otttv.co.in/d2h/livestream/sony-yay/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonypix.png" group-title="SONY CHANNELS",SONY PIX HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonypix.png" group-title="INDIAN CHANNELS",SONY PIX HD
 https://otttv.co.in/d2h/livestream/sony-pix-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonybbcearth.png" group-title="SONY CHANNELS",SONY BBC EARTH
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonybbcearth.png" group-title="INDIAN CHANNELS",SONY BBC EARTH
 https://otttv.co.in/d2h/livestream/sony-bbc-earth-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten1.png" group-title="SONY CHANNELS",SONY TEN 1
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten1.png" group-title="INDIAN CHANNELS",SONY TEN 1
 https://otttv.co.in/d2h/livestream/sony-ten-1-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten2.png" group-title="SONY CHANNELS",SONY TEN 2
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten2.png" group-title="INDIAN CHANNELS",SONY TEN 2
 https://otttv.co.in/d2h/livestream/sony-ten-2-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten3.png" group-title="SONY CHANNELS",SONY TEN 3 HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten3.png" group-title="INDIAN CHANNELS",SONY TEN 3 HD
 https://otttv.co.in/d2h/livestream/sony-ten-3-hd/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten5.png" group-title="SONY CHANNELS", SONY SIX HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ten5.png" group-title="INDIAN CHANNELS", SONY SIX HD
 https://otttv.co.in/d2h/livestream/sony-ten-5-hd/master.m3u8
 
 
