@@ -354,8 +354,8 @@ http://38.96.178.201/live/STARJALSHA/index.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starjalsha.png" group-title="INDIAN BANGLA", STAR JALSHA 
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglanew.png" group-title="INDIAN BANGLA", ZEE BANGLA HD
- 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglaz.png" group-title="INDIAN BANGLA", ZEE BANGLA HD
+https://live.drmlive-02.workers.dev/zee/0-9-zeebangla.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebangla.png" group-title="INDIAN BANGLA", ZEE BANGLA 
  
@@ -387,8 +387,8 @@ https://server.playontv.in/SGCNCINEMABANGLA/index.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbanglacinema.png" group-title="INDIAN BANGLA", COLORS BANGLA CINEMA 
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinema.png" group-title="INDIAN BANGLA", ZEE BANGLA CINEMA 
- 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinemaz.png" group-title="INDIAN BANGLA", ZEE BANGLA CINEMA 
+https://live.drmlive-02.workers.dev/zee/0-9-zeebanglacinema.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", KALIYAGANJ TV 
 https://live-stream.utkalbongo.com/utkalbongo/stream1/hls/kaliyaganjtvlive.m3u8
@@ -879,14 +879,14 @@ https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
 https://epiconvh.akamaized.net/live/filamchi/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sangeetbhojpuri.png" group-title="MIX CHANNELS", BHOJPURI MUSIC 
-https://cdn-4.pishow.tv/live/1293/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/b4ubhojpuri.png" group-title="MIX CHANNELS", B4U BHOJPURI 
-https://cdn-4.pishow.tv/live/233/master.m3u8
  
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", HAR PAL GEO 
-https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/b4ubhojpuri.png" group-title="MIX CHANNELS", B4U BHOJPURI 
+
+ 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", MOVIE ACTION 
+https://shls-live-ak.akamaized.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8
 
 
 
