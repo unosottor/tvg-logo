@@ -370,7 +370,7 @@ https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3
 https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyaath.png" group-title="INDIAN BANGLA", SONY AATH [2]
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sonyaath.png" group-title="INDIAN BANGLA", GOPAL BHAR 24/7 
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
 
 
@@ -405,11 +405,9 @@ https://cdn-4.pishow.tv/live/1473/master.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zillarbarta.png" group-title="INDIAN BANGLA", ZILLAR BARTA 
 https://live-stream.utkalbongo.com/utkalbongo/stream18/hls/zillarbartalive.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zbcinema.png" group-title="INDIAN BANGLA", ZB CINEMA BANGLA 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zbcinema.png" group-title="INDIAN BANGLA", ZB CINEMA 
 https://server.zillarbarta.com/ZBCINEMA/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zbmusic.png" group-title="INDIAN BANGLA", ZB MUSIC 
-https://server.zillarbarta.com/zbmusic/index.m3u8
 
 
 
@@ -478,7 +476,7 @@ https://akdnetwork.co.in/live/ctvn/index.m3u8
 https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA [2]
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA 
 https://nw18live.cdn.jio.com/bpk-tv/News18_Bangla_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="News Time" tvg-logo="https://dishlive24.vercel.app/images/newstime.png" group-title="INDIAN BANGLA", NEWS TIME 
@@ -573,10 +571,16 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeecinemanew.png" group-title="INDIAN CHANNELS", ZEE CINEMA HD 
 http://103.120.172.74:4000
 
+
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtvnew.png" group-title="INDIAN CHANNELS", AND TV 
+
+
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andtvnew.png" group-title="INDIAN CHANNELS", AND TV HD 
 https://amg01117-amg01117c1-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01117-amg01117c1-amgplt0002/playlist.m3u8
+
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/andpictures.png" group-title="INDIAN CHANNELS", AND PICTURES 
@@ -595,14 +599,25 @@ https://amg01117-amg01117c1-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlis
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/bigmagic.png" group-title="INDIAN CHANNELS", BIG MAGIC  
 
 
+
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starplus.png" group-title="INDIAN CHANNELS", STAR PLUS HD
 http://103.120.172.74:5200
+
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starbharat.png" group-title="INDIAN CHANNELS", STAR BHARAT HD 
 http://103.120.172.74:5000
 
+
+
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargold.png" group-title="INDIAN CHANNELS", STAR GOLD HD
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=6640
+
+
+
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/stargold2.png" group-title="INDIAN CHANNELS", STAR GOLD 2
 
@@ -767,11 +782,6 @@ https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141345377
 #EXTINF:-1 tvg-id="Kids" tvg-name="Toonz Kids" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="KIDS CHANNELS",TOONZ KIDS
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/toonzkids/master.m3u8
 
-#EXTINF:-1 tvg-id="Kids" tvg-name="Zoo Moo" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="KIDS CHANNELS",ZOO MOO
-https://zoomoo-samsungau.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Kids" tvg-name="PBS Kids" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="KIDS CHANNELS",PBS KDS
-https://2-fss-2.streamhoster.com/pl_140/amlst%3a200914-1298290/chunklist_b2000000.m3u8
 
 
  
@@ -866,12 +876,8 @@ https://epiconvh.akamaized.net/live/filamchi/master.m3u8
 https://cdn-4.pishow.tv/live/1293/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/b4ubhojpuri.png" group-title="MIX CHANNELS", B4U BHOJPURI 
-https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/4fdd4dfb-9f8a-4cfa-b1f0-348f43c513e6/2.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", OSCAR MOVIES BHOJPURI 
 https://cdn-4.pishow.tv/live/233/master.m3u8
-
+ 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", HAR PAL GEO 
 https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
@@ -885,9 +891,6 @@ https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="MIX CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", MOVIESPHERE US
 https://dxazj2uf8uiwf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2ra9rjcmiktyz/playlist.m3u8
 
-
-#EXTINF:-1 group-title="MIX CHANNELS" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png", AXN ASIA [TEST] 
-http://125hvt.ddns.net:21585/axn/index.m3u8
 
 
 
