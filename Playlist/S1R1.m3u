@@ -36,6 +36,15 @@ http://103.120.172.74:4200
 http://103.120.172.74:5500
 
 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/select1.png" group-title="SPORTS CHANNELS", SELECT 1 HD
+http://103.120.172.74:1030 
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/select2.png" group-title="SPORTS CHANNELS", SELECT 2 HD 
+http://103.120.172.74:4700
+
+
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS 
 http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8
 
