@@ -351,7 +351,7 @@ http://38.96.178.201/live/STARJALSHA/index.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starjalsha.png" group-title="INDIAN BANGLA", STAR JALSHA 
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglaz.png" group-title="INDIAN BANGLA", ZEE BANGLA HD
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglanew.png" group-title="INDIAN BANGLA", ZEE BANGLA HD
 https://live.drmlive-02.workers.dev/zee/0-9-zeebangla.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebangla.png" group-title="INDIAN BANGLA", ZEE BANGLA 
