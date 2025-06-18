@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="dishlive24" tvg-name="dishlive24" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNEL", DISH LIVE 24 
+#EXTINF:-1 tvg-id="dishlive24" tvg-name="dishlive24" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="", DISH LIVE 24 
 https://dishlive24.vercel.app/notice.mp4
 
 
