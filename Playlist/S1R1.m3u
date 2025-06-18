@@ -1,7 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="dishlive24" tvg-name="dishlive24" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNEL", DISH LIVE 24 
-https://dishlive24.vercel.app/notice.mkv
+https://dishlive24.vercel.app/notice.ts
 
 #EXTINF:-1 tvg-id="dishlive24" tvg-name="dishlive24" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNEL", MUSIC 24/7
 https://sabliveyupp.akamaized.net/mastii/playlist.m3u8
