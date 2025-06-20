@@ -78,12 +78,13 @@ https://d1e7rcqq4o2ma.cloudfront.net/bpk-tv/1701/output/index.m3u8
 #EXTINF:-1 group-title="Bangladesh" tvg-logo="https://i.postimg.cc/4NVxpW6t/Maasranga.jpg",Maasranga TV 
 https://mtv.sunplex.live/MAASRANGA-TV/index.m3u8
 
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://i.postimg.cc/4NVxpW6t/Maasranga.jpg",Magic Bangla TV
+#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://dishlive24.vercel.app/images/magicbangla.png",Magic Bangla TV
 http://mbanglatv.jolshabd.com:1935/live/mbanglatv/chunklist_w1542703515.m3u8
 #EXTINF:-1 group-title="Bangladesh" tvg-logo="https://i.ibb.co.com/prX6HQTh/Movie-Bangla.jpg",Movie Bangla
 http://alvetv.com/moviebanglatv/8080/index.m3u8
 #EXTINF:-1 group-title="Bangladesh" tvg-logo="https://i.ibb.co.com/MymvXsgj/NTV.jpg",NTV
 https://d1e7rcqq4o2ma.cloudfront.net/bpk-tv/1716/output/index.m3u8
+
 #EXTINF:-1 group-title="Bangladesh" tvg-logo="https://i.ibb.co.com/MymvXsgj/NTV.jpg",NTV
 http://38.96.178.201/live/NTV/index.m3u8
 
@@ -172,7 +173,7 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 group-title="Music" tvg-logo="",9XM
 https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/c8939874-787e-41ae-8d35-f5ea6e15720d/0.m3u8
 #EXTINF:-1 group-title="Music" tvg-logo="",MTV India
-http://tv.bdiptv.store:80/live/restream/restreamz/243.m3u8
+http://38.96.178.201/live/MTV_India/index.m3u8
 #EXTINF:-1 group-title="Music" tvg-logo="",Music India
 https://cdn-2.pishow.tv/live/226/master.m3u8
 
@@ -190,30 +191,15 @@ https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8
 https://shls-live-ak.akamaized.net/out/v1/46079e838e65490c8299f902a7731168/index_2.m3u8
 #EXTINF:-1 group-title="Movies" tvg-logo="",RDC Movies
 https://janya-rdcmovies.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/230a723f-867d-4fa3-b2d2-a622ba994cd2/main.m3u8 
-#EXTINF:-1 group-title="Movies" tvg-logo="",Zee Anmol Cinema 2
+#EXTINF:-1 group-title="Movies" tvg-logo="https://dishlive24.vercel.app/images/anmolcinema2.png",Zee Anmol Cinema 2
 https://live.drmlive-02.workers.dev/zee/0-9-bigganga.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Star Gold Thrills
-http://tv.bdiptv.store:80/live/restream/restreamz/30705.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Star Movies
-http://tv.bdiptv.store:80/live/restream/restreamz/95.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Zee Cinema HD
-http://tv.bdiptv.store:80/live/restream/restreamz/28.m3u8
+ 
+#EXTINF:-1 group-title="Movies" tvg-logo="https://dishlive24.vercel.app/images/zeecinemanew.png",Zee Cinema HD
+https://live.drmlive-02.workers.dev/zee/0-9-zeecinemahd.m3u8
 #EXTINF:-1 group-title="Movies" tvg-logo="",Colors Bangla Cinema
 http://tv.bdiptv.store:80/live/restream/restreamz/238.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Zee Bangla Cinema
+#EXTINF:-1 group-title="Movies" tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinemaz.png",Zee Bangla Cinema
 https://live.drmlive-02.workers.dev/zee/0-9-zeebanglacinema.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Colors Cineplex Bollywood
-http://tv.bdiptv.store:80/live/restream/restreamz/237.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Colors Cineplex HD
-http://tv.bdiptv.store:80/live/restream/restreamz/239.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Zee Cinema
-http://tv.bdiptv.store:80/live/restream/restreamz/15339.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Sony MAX
-http://tv.bdiptv.store:80/live/restream/restreamz/23.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Sony Wah
-http://tv.bdiptv.store:80/live/restream/restreamz/15282.m3u8
-#EXTINF:-1 group-title="Movies" tvg-logo="",Colors Infinity HD
-http://tv.bdiptv.store:80/live/restream/restreamz/15315.m3u8
 
 #EXTINF:-1 tvg-id="sony-yay" tvg-name="Sony Yay" tvg-language="Hindi" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids" group-logo="https://www.sonypicturesnetworks.com/images/logos/Sony_LIV.png", Sony Yay
 https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8
