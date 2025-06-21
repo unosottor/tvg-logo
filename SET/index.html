@@ -1,84 +1,96 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JW Player - Live Stream</title>
-
-  <!-- JW Player Library -->
-  <script src="https://content.jwplatform.com/libraries/IDzF9Zmk.js"></script>
-  <script type="text/javascript">
-    jwplayer.key = 'Khpp2dHxlBJHC8MCmLnBuV2jK/DwDnJMniwF6EO9HC/riJ712ZmbHg==';
-  </script>
-
+  <meta charset="UTF-8">
+  <title>HLS Player with Quality Selector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
   <style>
-    body {
-      background-color: #121212;
+    html, body {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      background: #000;
+      height: 100%;
+      overflow: hidden;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
     }
-    #player {
-      width: 90%;
-      max-width: 800px;
+    #dplayer {
+      width: 100%;
+      height: calc(100% - 40px);
+    }
+    #qualitySelect {
+      width: 100%;
+      padding: 10px;
+      background: #111;
+      color: #fff;
+      border: none;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div id="player">Loading player...</div>
+
+  <select id="qualitySelect">
+    <option value="auto">Auto</option>
+  </select>
+  <div id="dplayer"></div>
 
   <script>
-    let playerInstance;
-    let videoData;
+    const videoId = new URLSearchParams(window.location.search).get("id") || "ten1"; // default fallback
+    const qualitySelect = document.getElementById('qualitySelect');
+    let dp;
 
-    // Fetch video data from JSON file
     fetch('/test.json')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(data => {
-        videoData = data;
-        loadStream(videoData[0].id); // Load first stream by default
+        const video = data.find(v => v.id === videoId);
+        if (!video) {
+          alert("Invalid video ID!");
+          return;
+        }
+
+        initPlayer(video.url);
       })
-      .catch(error => console.error('Error fetching JSON:', error));
+      .catch(err => {
+        console.error("Error fetching JSON:", err);
+        alert("Failed to load video list.");
+      });
 
-    function loadStream(videoId) {
-      const selectedVideo = videoData.find(video => video.id === videoId);
-      if (!selectedVideo) return;
+    function initPlayer(videoUrl) {
+      dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        autoplay: true,
+        volume: 0.8,
+        video: {
+          url: videoUrl,
+          type: 'hls'
+        }
+      });
 
-      if (!playerInstance) {
-        playerInstance = jwplayer("player").setup({
-          file: selectedVideo.link,
-          type: "hls",
-          width: '100%',
-          height: '450px',
-          aspectratio: '16:9',
-          autostart: true,
-          muted: true,
-          title: selectedVideo.title,
-          description: selectedVideo.description,
-          logo: {
-            file: "https://i.postimg.cc/2yNvT7Qk/slazzer-edit-image-1.png",
-            link: "https://telegram.me/vaathala1"
-          },
-          captions: {
-            color: "#FFF",
-            fontSize: 14,
-            backgroundOpacity: 0,
-            edgeStyle: "raised"
-          },
-          sharing: {
-            sites: ['facebook', 'twitter']
-          }
-        });
-      } else {
-        playerInstance.load({ file: selectedVideo.link });
-        playerInstance.play(true);
-      }
+      dp.on('loadedmetadata', () => {
+        const hls = dp.plugins.hls;
+        if (hls && hls.levels.length > 1) {
+          hls.levels.forEach((level, index) => {
+            const option = document.createElement('option');
+            option.value = index;
+            option.text = `${level.height}p`;
+            qualitySelect.appendChild(option);
+          });
+
+          qualitySelect.addEventListener('change', (e) => {
+            const value = e.target.value;
+            if (value === 'auto') {
+              hls.currentLevel = -1;
+            } else {
+              hls.currentLevel = parseInt(value);
+            }
+          });
+        }
+      });
     }
   </script>
+
 </body>
 </html>
