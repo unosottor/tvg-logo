@@ -1,10 +1,12 @@
-[
+ [
   {
-    "id": "ten3",
-    "name": "TEN 3 HD",
-    "type": "hls",
-    "link": "https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master_3500.m3u8",
-    "title": "TEN 3 Live",
-    "description": "Watch TEN 3 HD Live Sports"
+    "id": "ten1",
+    "title": "Sony TEN 1 HD",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011747/TEN1HD/master_3500.m3u8"
+  },
+  {
+    "id": "ten2",
+    "title": "Sony TEN 2 HD",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011748/TEN2HD/master_3500.m3u8"
   }
 ]
