@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LIVE TV PLAYER</title>
+  <title>Live Player</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element/+esm"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/player.style/sutro/+esm"></script>
@@ -40,7 +40,8 @@
   </style>
 </head>
 <body>
-  <div class="video-container" id="playerContainer">
+
+  <div class="video-container" id="playerBox">
     <media-theme-sutro id="mediaController">
       <hls-video
         slot="media"
@@ -59,50 +60,52 @@
       return url.searchParams.get(param);
     };
 
-    const loadChannelFromJson = async (channelId) => {
+    async function loadFromJson(channelId) {
       try {
         const response = await fetch("/channels.json");
-        const channels = await response.json();
-        const matched = channels.find(ch => ch.id === channelId);
-        if (!matched) throw new Error("Channel not found");
+        const json = await response.json();
 
-        const videoPlayer = document.getElementById("videoPlayer");
-        videoPlayer.src = matched.url;
+        if (!json[channelId]) {
+          alert("Channel ID not found in JSON.");
+          return;
+        }
+
+        const videoUrl = json[channelId].file;
+        document.getElementById("videoPlayer").src = videoUrl;
       } catch (err) {
-        console.error("Error loading channel:", err.message);
-        alert("Channel not found or JSON failed to load.");
+        console.error("JSON Load Error:", err);
+        alert("Failed to load channel JSON.");
       }
-    };
+    }
 
-    // Auto-load channel from ?id=
-    const id = getParam("id") || "ten1"; // fallback to ten1
-    loadChannelFromJson(id);
+    const id = getParam("id") || "100";
+    loadFromJson(id);
 
-    // Orientation lock
+    // Fullscreen + landscape
     customElements.whenDefined('media-theme-sutro').then(() => {
-      const mediaController = document.getElementById('mediaController');
-      mediaController.addEventListener('dblclick', () => {
-        const isFullscreen = document.fullscreenElement != null;
+      const controller = document.getElementById('mediaController');
+      controller.addEventListener('dblclick', () => {
+        const isFullscreen = document.fullscreenElement;
         if (isFullscreen) {
           document.exitFullscreen();
         } else {
-          mediaController.requestFullscreen().then(() => {
+          controller.requestFullscreen().then(() => {
             if (screen.orientation && screen.orientation.lock) {
               screen.orientation.lock("landscape").catch(err => {
-                console.warn("Orientation lock failed:", err);
+                console.warn("Orientation lock failed", err);
               });
             }
           });
         }
       });
 
-      // Prevent pause on click
-      const videoPlayer = document.getElementById('videoPlayer');
-      videoPlayer.addEventListener('click', (event) => {
-        if (videoPlayer.paused) {
-          videoPlayer.play();
+      // Disable pause on click
+      const video = document.getElementById('videoPlayer');
+      video.addEventListener('click', (e) => {
+        if (video.paused) {
+          video.play();
         } else {
-          event.preventDefault(); // block pause
+          e.preventDefault();
         }
       });
     });
