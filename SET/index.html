@@ -65,6 +65,22 @@
         }
       }, { once: true })
     );
+
+    // Handle orientation lock when going fullscreen
+    dp.on('fullscreen', function () {
+      if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('landscape').catch(err => {
+          console.warn('Orientation lock failed:', err);
+        });
+      }
+    });
+
+    // Optional: Unlock orientation when exiting fullscreen
+    dp.on('fullscreen_cancel', function () {
+      if (screen.orientation && screen.orientation.unlock) {
+        screen.orientation.unlock(); // Not supported on all browsers
+      }
+    });
   </script>
 </body>
 </html>
