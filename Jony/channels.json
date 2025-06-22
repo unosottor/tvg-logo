@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ten1",
+    "name": "Sony TEN 1 HD",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011747/TEN1HD/master_3500.m3u8"
+  },
+  {
+    "id": "ten2",
+    "name": "Sony TEN 2 HD",
+    "url": "https://tataplay.slivcdn.com/hls/live/2020434/TEN2HD/master_3500.m3u8"
+  },
+  {
+    "id": "ten3",
+    "name": "Sony TEN 3 HD",
+    "url": "https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master_3500.m3u8"
+  }
+]
