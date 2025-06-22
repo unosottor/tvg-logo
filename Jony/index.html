@@ -2,84 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sony TEN 1 HD</title>
+  <title>LIVE TV PLAYER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Required Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
-  
+  <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element/+esm"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/player.style/sutro/+esm"></script>
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: #000;
+      background-color: #000;
       height: 100%;
-      width: 100%;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    #dplayer {
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    media-theme-sutro {
       width: 100%;
       height: 100%;
+      display: block;
+    }
+
+    hls-video {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div id="dplayer"></div>
+  <div class="video-container" id="playerContainer">
+    <media-theme-sutro id="mediaController">
+      <hls-video
+        slot="media"
+        id="videoPlayer"
+        autoplay
+        muted
+        playsinline
+        crossorigin
+      ></hls-video>
+    </media-theme-sutro>
+  </div>
 
   <script>
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer'),
-      autoplay: true,
-      volume: 0.8,
-      video: {
-        url: 'https://tataplay.slivcdn.com/hls/live/2011747/TEN1HD/master_3500.m3u8',
-        type: 'hls'
-      }
-    });
+    const getParam = (param) => {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(param);
+    };
 
-    // Try autoplay with sound
-    const tryAutoPlay = async () => {
-      const video = dp.video;
+    const loadChannelFromJson = async (channelId) => {
       try {
-        video.muted = false;
-        video.volume = 0.8;
-        await video.play();
-      } catch {
-        try {
-          video.muted = true;
-          await video.play();
-          video.muted = false;
-        } catch {}
+        const response = await fetch("/channels.json");
+        const channels = await response.json();
+        const matched = channels.find(ch => ch.id === channelId);
+        if (!matched) throw new Error("Channel not found");
+
+        const videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = matched.url;
+      } catch (err) {
+        console.error("Error loading channel:", err.message);
+        alert("Channel not found or JSON failed to load.");
       }
     };
 
-    tryAutoPlay();
+    // Auto-load channel from ?id=
+    const id = getParam("id") || "ten1"; // fallback to ten1
+    loadChannelFromJson(id);
 
-    // Enable sound on user interaction
-    ['click', 'touchstart', 'keydown'].forEach(evt =>
-      document.addEventListener(evt, () => {
-        if (dp.video.muted) {
-          dp.video.muted = false;
-          dp.video.volume = 0.8;
+    // Orientation lock
+    customElements.whenDefined('media-theme-sutro').then(() => {
+      const mediaController = document.getElementById('mediaController');
+      mediaController.addEventListener('dblclick', () => {
+        const isFullscreen = document.fullscreenElement != null;
+        if (isFullscreen) {
+          document.exitFullscreen();
+        } else {
+          mediaController.requestFullscreen().then(() => {
+            if (screen.orientation && screen.orientation.lock) {
+              screen.orientation.lock("landscape").catch(err => {
+                console.warn("Orientation lock failed:", err);
+              });
+            }
+          });
         }
-      }, { once: true })
-    );
+      });
 
-    // Handle orientation lock when going fullscreen
-    dp.on('fullscreen', function () {
-      if (screen.orientation && screen.orientation.lock) {
-        screen.orientation.lock('landscape').catch(err => {
-          console.warn('Orientation lock failed:', err);
-        });
-      }
-    });
-
-    // Optional: Unlock orientation when exiting fullscreen
-    dp.on('fullscreen_cancel', function () {
-      if (screen.orientation && screen.orientation.unlock) {
-        screen.orientation.unlock(); // Not supported on all browsers
-      }
+      // Prevent pause on click
+      const videoPlayer = document.getElementById('videoPlayer');
+      videoPlayer.addEventListener('click', (event) => {
+        if (videoPlayer.paused) {
+          videoPlayer.play();
+        } else {
+          event.preventDefault(); // block pause
+        }
+      });
     });
   </script>
 </body>
