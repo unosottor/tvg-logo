@@ -1,96 +1,70 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HLS Player with Quality Selector</title>
+  <meta charset="UTF-8" />
+  <title>Sony TEN 1 HD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Required Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
+  
   <style>
     html, body {
       margin: 0;
       padding: 0;
       background: #000;
       height: 100%;
+      width: 100%;
       overflow: hidden;
-      color: white;
-      font-family: sans-serif;
     }
     #dplayer {
       width: 100%;
-      height: calc(100% - 40px);
-    }
-    #qualitySelect {
-      width: 100%;
-      padding: 10px;
-      background: #111;
-      color: #fff;
-      border: none;
-      font-size: 14px;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-
-  <select id="qualitySelect">
-    <option value="auto">Auto</option>
-  </select>
   <div id="dplayer"></div>
 
   <script>
-    const videoId = new URLSearchParams(window.location.search).get("id") || "ten1"; // default fallback
-    const qualitySelect = document.getElementById('qualitySelect');
-    let dp;
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer'),
+      autoplay: true,
+      volume: 0.8,
+      video: {
+        url: 'https://tataplay.slivcdn.com/hls/live/2011747/TEN1HD/master_3500.m3u8',
+        type: 'hls'
+      }
+    });
 
-    fetch('/test.json')
-      .then(res => res.json())
-      .then(data => {
-        const video = data.find(v => v.id === videoId);
-        if (!video) {
-          alert("Invalid video ID!");
-          return;
+    // Try autoplay with sound
+    const tryAutoPlay = async () => {
+      const video = dp.video;
+      try {
+        video.muted = false;
+        video.volume = 0.8;
+        await video.play();
+      } catch {
+        try {
+          video.muted = true;
+          await video.play();
+          video.muted = false;
+        } catch {}
+      }
+    };
+
+    tryAutoPlay();
+
+    // Enable sound on user interaction
+    ['click', 'touchstart', 'keydown'].forEach(evt =>
+      document.addEventListener(evt, () => {
+        if (dp.video.muted) {
+          dp.video.muted = false;
+          dp.video.volume = 0.8;
         }
-
-        initPlayer(video.url);
-      })
-      .catch(err => {
-        console.error("Error fetching JSON:", err);
-        alert("Failed to load video list.");
-      });
-
-    function initPlayer(videoUrl) {
-      dp = new DPlayer({
-        container: document.getElementById('dplayer'),
-        autoplay: true,
-        volume: 0.8,
-        video: {
-          url: videoUrl,
-          type: 'hls'
-        }
-      });
-
-      dp.on('loadedmetadata', () => {
-        const hls = dp.plugins.hls;
-        if (hls && hls.levels.length > 1) {
-          hls.levels.forEach((level, index) => {
-            const option = document.createElement('option');
-            option.value = index;
-            option.text = `${level.height}p`;
-            qualitySelect.appendChild(option);
-          });
-
-          qualitySelect.addEventListener('change', (e) => {
-            const value = e.target.value;
-            if (value === 'auto') {
-              hls.currentLevel = -1;
-            } else {
-              hls.currentLevel = parseInt(value);
-            }
-          });
-        }
-      });
-    }
+      }, { once: true })
+    );
   </script>
-
 </body>
 </html>
