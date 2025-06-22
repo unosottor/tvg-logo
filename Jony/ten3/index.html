@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DISH LIVE 24</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    #dplayer {
+      width: 100%;
+      height: 100%;
+    }
+    #blur {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(15px);
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="dplayer"></div>
+  <div id="blur"></div>
+
+  <script>
+    // Disable right-click
+    document.addEventListener("contextmenu", e => e.preventDefault());
+
+    // Block view-source and devtools shortcuts
+    document.onkeydown = function(e) {
+      if (
+        e.keyCode === 123 || // F12
+        (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toLowerCase() === 'u')
+      ) {
+        return false;
+      }
+    };
+
+    // Blur if DevTools is open
+    setInterval(() => {
+      if ((window.outerWidth - window.innerWidth) > 160 || (window.outerHeight - window.innerHeight) > 160) {
+        document.getElementById("blur").style.display = "block";
+      } else {
+        document.getElementById("blur").style.display = "none";
+      }
+    }, 500);
+
+    // Protected DPlayer logic
+    (function(){
+      const encodedUrl = "aHR0cHM6Ly90YXRhcGxheS5zbGl2Y2RuLmNvbS9obHMvbGl2ZS8yMDIwNTkxL1RFTjNIRC9tYXN0ZXJfMzUwMC5tM3U4"; // TEN3HD URL (Base64)
+
+      const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        autoplay: true,
+        volume: 0.8,
+        video: {
+          url: atob(encodedUrl),
+          type: 'hls'
+        }
+      });
+
+      // Attempt autoplay
+      const tryAutoPlay = async () => {
+        const video = dp.video;
+        try {
+          video.muted = false;
+          video.volume = 0.8;
+          await video.play();
+        } catch {
+          try {
+            video.muted = true;
+            await video.play();
+            video.muted = false;
+          } catch {}
+        }
+      };
+
+      tryAutoPlay();
+
+      // Unmute on interaction
+      ['click','touchstart','keydown'].forEach(evt =>
+        document.addEventListener(evt, () => {
+          if (dp.video.muted) {
+            dp.video.muted = false;
+            dp.video.volume = 0.8;
+          }
+        }, { once: true })
+      );
+
+      // Fullscreen orientation lock
+      dp.on('fullscreen', function () {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('landscape').catch(() => {});
+        }
+      });
+
+      dp.on('fullscreen_cancel', function () {
+        if (screen.orientation && screen.orientation.unlock) {
+          screen.orientation.unlock();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
