@@ -1,0 +1,54 @@
+{
+  "matches": [
+    {
+      "id": "match1",
+      "title": "",
+      "servers": [
+        { "name": "Server 1", "url": "https://dishlive24.pages.dev/play.php?id=100" },
+        { "name": "Server 2", "url": "" },
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4" }
+      ]
+    },
+    {
+      "id": "bangladesh-vs-srilanka",
+      "title": "",
+      "servers": [
+        { "name": "Server 1", "url": "https://dishlive24.pages.dev/saka.php?id=tencricket" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play.php?id=tencricket"},
+        { "name": "Server 3", "url": "https://dishlive24.pages.dev/saka.php?id=tnt1" },
+        { "name": "Server 4", "url":  "https://dishlive24.pages.dev/play.php?id=100" } 
+      ]
+    },
+    {
+      "id": "india-vs-england",
+      "title": "",
+      "servers": [
+        { "name": "Server 1", "url": "https://dishlive24.pages.dev/saka.php?id=willowsports" },
+        { "name": "Server 2", "url": "" },
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4", "url": "https://example.com/match3/server4.m3u8" }
+      ]
+    },
+    {
+      "id": "match4",
+      "title": "",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match4/server1.m3u8" },
+        { "name": "Server 2" },
+        { "name": "Server 3", "url": "https://example.com/match4/server3.m3u8" },
+        { "name": "Server 4", "url": "https://example.com/match4/server4.m3u8" }
+      ]
+    },
+    {
+      "id": "match5",
+      "title": "",
+      "servers": [
+        { "name": "Server 1", "url": "https://example.com/match5/server1.m3u8" },
+        { "name": "Server 2", "url": "https://example.com/match5/server2.m3u8" },
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4", "url": "" }
+      ]
+    }
+  ]
+}
