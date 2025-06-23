@@ -1,8 +1,5 @@
 #EXTM3U 
 
-#EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="", STAR GOLD HD 
-https://xtv24.vercel.app/bpk-tv/xtv/66117.m3u8|user-agent=@dishlive24
-
 #EXTINF:-1 tvg-id="StarGold" tvg-name="" tvg-logo="" group-title="", STAR GOLD HD [2]
 https://xtv24.vercel.app/bpk-tv/xtv/109959.m3u8|user-agent=@dishlive24
 
@@ -70,10 +67,6 @@ https://xtv24.vercel.app/bpk-tv/xtv/388459.m3u8|user-agent=@dishlive24
 
 #EXTINF:-1 tvg-id="SonicHindi" tvg-name="" tvg-logo="" group-title="", SONIC HINDI 
 https://xtv24.vercel.app/bpk-tv/xtv/34011.m3u8|user-agent=@dishlive24 
-
-
-#EXTINF:-1 tvg-id="GaziTV" tvg-name="" tvg-logo="" group-title="", GAZI TV HD 
-https://xtv24.vercel.app/bpk-tv/xtv/245901.m3u8|user-agent=@dishlive24 
 
 
 #EXTINF:-1 tvg-id="SunBangla" tvg-name="" tvg-logo="" group-title="", SUN BANGLA 
