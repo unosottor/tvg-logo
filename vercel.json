@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "src": "/mono.m3u8",
+      "headers": {
+        "Content-Type": "application/vnd.apple.mpegurl"
+      },
+      "dest": "/mono.m3u8"
+    }
+  ]
+}
