@@ -1,68 +1,68 @@
 {
-  "JXW_Live": {
-    "url": "https://live3.shoq.com.pk/live/eds/JXW_Live/DASH/JXW_Live.mpd",
-    "k1": "70df007e0315f4e942e591ebe6fc3d2a",
-    "k2": "2e989fd0e22ae197017e4e195f8986a6"
+  "TEN_CRICKET": {
+    "url": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "CAW_HD": {
-    "url": "https://live3.shoq.com.pk/live/eds/CAW_HD/DASH/CAW_HD.mpd",
-    "k1": "be33366dc10e2fb3e7e958ffee4d8ff4",
-    "k2": "1b4517a89a1cb062dd157149b8179934"
+  "SSP_2": {
+    "url": "https://moblive.yuppcdn.net/drm1/smil:starsports2drm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "NEK_Max": {
-    "url": "https://live3.shoq.com.pk/live/eds/NEK_Max/DASH/NEK_Max.mpd",
-    "k1": "11f22a000ea20998a78ef660193bc6b7",
-    "k2": "11a120060e2ec45fc14684a87df037c2"
+  "SELECT_1": {
+    "url": "https://moblive.yuppcdn.net/drm1/smil:starsportsselect1drm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "GRL_Sports": {
-    "url": "https://live3.shoq.com.pk/live/eds/GRL_Sports/DASH/GRL_Sports.mpd",
-    "k1": "9215d83f4261de41287a6bf98dcd357a",
-    "k2": "b420bdfaa1333681371150f15b4cb9a4"
+  "WILLOW_SPORTS": {
+    "url": "https://a201aivottlinear-a.akamaihd.net/OTTB/lhr-nitro/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
+    "k1": "1779c27b9d077a3ba0c9cc1bb9a94b9f",
+    "k2": "cc5cf3b7928fb9e0a1ee6a8b566f0a8e"
   },
-  "HOM_Plus": {
-    "url": "https://live3.shoq.com.pk/live/eds/HOM_Plus/DASH/HOM_Plus.mpd",
-    "k1": "fcbdf9e2cf91821a10fde571cb2839b0",
-    "k2": "6ae7488b474268385bb67725a460cb8c"
+  "TNT_1_GB": {
+    "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd",
+    "k1": "ae26845bd33038a9c0774a0981007294",
+    "k2": "63ac662dde310cfb4cc6f9b43b34196d"
   },
-  "MOH_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/MOH_Cinema/DASH/MOH_Cinema.mpd",
-    "k1": "9614dca329a661ffb83605e24a2166ea",
-    "k2": "8f94631d6e86e0e9395ebea8deb32704"
+  "TNT_2_GB": {
+    "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+    "k1": "6d1708b185c6c4d7b37600520c7cc93c",
+    "k2": "1aace05f58d8edef9697fd52cb09f441"
   },
-  "DHM_News": {
-    "url": "https://live3.shoq.com.pk/live/eds/DHM_News/DASH/DHM_News.mpd",
-    "k1": "1cd78c5b73997a6a9ead7067556a9781",
-    "k2": "722c2466873a3c7bc5808d61f5450df9"
+  "TNT_3_GB": {
+    "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd",
+    "k1": "4e993aa8c1f295f8b94e8e9e6f6d0bfe",
+    "k2": "86a1ed6e96caab8eb1009fe530d2cf4f"
   },
-  "GPA_TV": {
-    "url": "https://live3.shoq.com.pk/live/eds/GPA_TV/DASH/GPA_TV.mpd",
-    "k1": "d85f55ee563a986d1487b7bd929768e2",
-    "k2": "aeb45cdd03565ccdf9751850d3b6a0e5"
+  "TNT_4_GB": {
+    "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd",
+    "k1": "e31a5a81caff5d07ea2411a571fc2e59",
+    "k2": "96c5ef69479732ae734f962748c19729"
   },
-  "BQI_News": {
-    "url": "https://live3.shoq.com.pk/live/eds/BQI_News/DASH/BQI_News.mpd",
-    "k1": "4d33df1b7d7551e47d277635861aebc6",
-    "k2": "95c858a6ed7cb0f9ed030afc1d0d4c98"
+  "SPORTV2BR": {
+    "url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd",
+    "k1": "9009b7189e3e68cc09d17811f2beb55a",
+    "k2": "dd3f96a94c909da48ff40c92aabf8cf3"
   },
-  "CEF_Sports": {
-    "url": "https://live3.shoq.com.pk/live/eds/CEF_Sports/DASH/CEF_Sports.mpd",
-    "k1": "41d5abb10a65609777e7d5208aaf070f",
-    "k2": "6e5420bb4bb2725ae2ddd05f196f5bd8"
+  "SPORTV1BR": {
+    "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd",
+    "k1": "4bbcff3289d457b4dd5dbdd21221de9a",
+    "k2": "c4906b9a9f8dda3c0725bddb8c497733"
   },
-  "DRU_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/DRU_Cinema/DASH/DRU_Cinema.mpd",
-    "k1": "ae5a9808173fb50fbe2b8bf70fb3e909",
-    "k2": "0cf02a3a1464f8e3887c9c04cc421ccd"
+  "SPORTV": {
+    "url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/rkhugudynd/out/v1/f7763e695c3b469594ed89fa163ebf0c/cenc-sd.mpd",
+    "k1": "eaea45512d137def15b209a089cafd14",
+    "k2": "8d42db746ed0c4df61729b0d68d42bd7"
   },
-  "RYZ_Sports": {
-    "url": "https://live3.shoq.com.pk/live/eds/RYZ_Sports/DASH/RYZ_Sports.mpd",
-    "k1": "f30947f4694f5a60df1b715b920bf93d",
-    "k2": "bda85ddaf1e135957b3e31a38fcb1982"
+  "GEO_SUPER": {
+    "url": "https://live3.shoq.com.pk/live/eds/Geo_Super/DASH/Geo_Super.mpd",
+    "k1": "7641daa5bacfbb61936c40a221c9e78e",
+    "k2": "5732dd242f28338e909dc06cb1a1e5a2"
   },
-  "SLK_Sports": {
-    "url": "https://live3.shoq.com.pk/live/eds/SLK_Sports/DASH/SLK_Sports.mpd",
-    "k1": "5bc47c87aa8f660d1a9472548c06fcfc",
-    "k2": "6a92f878e92e4ee172fcb40a3daf46e8"
+  "SG_CHANNEL_5": {
+    "url": "https://tglmp02.akamaized.net/out/v1/8c503a6966554d439035588f10505eee/manifest.mpd",
+    "k1": "1b8ee3db17d34547983a2c3ddc3d28fc",
+    "k2": "fb5deb5f688fd67ec20c71191c7f4590"
   },
   "QSL_Movies": {
     "url": "https://live3.shoq.com.pk/live/eds/QSL_Movies/DASH/QSL_Movies.mpd",
