@@ -1,7 +1,7 @@
 [
   {
     "id": "bangladesh-vs-srilanka",
-    "matchTime": "2025-06-23T09:50:00",
+    "matchTime": "2025-06-30T09:50:00",
     "team1": {
       "name": "Bangladesh",
       "logo": "https://dishlive24.vercel.app/images/BD.png"
@@ -13,7 +13,7 @@
   },
   {
     "id": "india-vs-england",
-    "matchTime": "2025-06-23T15:00:00",
+    "matchTime": "2025-06-30T15:00:00",
     "team1": {
       "name": "India",
       "logo": "https://dishlive24.vercel.app/images/IND.png"
