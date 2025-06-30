@@ -24,7 +24,7 @@
       "id": "inter-vs-fluminense",
       "title": "",
       "servers": [
-        { "name": "Server 1", "url": "" },
+        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249738" },
         { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "" }
@@ -34,7 +34,7 @@
       "id": "mancity-vs-alhilal",
       "title": "",
       "servers": [
-        { "name": "Server 1", "url": "" },
+        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249739" },
         { "name": "Server 2"  "url":""  },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "" }
