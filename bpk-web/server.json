@@ -12,7 +12,7 @@
     },
     {
       "id": "ten-cricket",
-      "title": "Ten Cricket Live",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=TEN_CRICKET" },
         { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=TEN_CRICKET" },
