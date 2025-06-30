@@ -1,0 +1,26 @@
+[
+  {
+    "id": "match1",
+    "team1": {
+      "name": "Real Madrid",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    "team2": {
+      "name": "Juventus",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/3/3e/Juventus_Turin.svg"
+    },
+    "matchTime": "2025-07-01T15:00:00-04:00"
+  },
+  {
+    "id": "match2",
+    "team1": {
+      "name": "Borussia Dortmund",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/6/67/Borussia_Dortmund_logo.svg"
+    },
+    "team2": {
+      "name": "Monterrey",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/3/35/C.F._Monterrey_logo.svg"
+    },
+    "matchTime": "2025-07-01T21:00:00-04:00"
+  }
+]
