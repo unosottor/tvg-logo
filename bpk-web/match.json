@@ -3,11 +3,11 @@
     "id": "match1",
     "team1": {
       "name": "Inter Milan",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Inter_Milan.svg"
+      "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/10819.png"
     },
     "team2": {
       "name": "Fluminense",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/6/6a/Fluminense_FC_crest.svg"
+      "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/11225.png"
     },
     "matchTime": "2025-07-01T01:00:00+06:00"
   },
@@ -15,11 +15,11 @@
     "id": "match2",
     "team1": {
       "name": "Manchester City",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+      "logo": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
     },
     "team2": {
       "name": "Al-Hilal",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/4/4f/Al-Hilal_FC_logo.png"
+      "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/11183.png"
     },
     "matchTime": "2025-07-01T07:00:00+06:00"
   }
