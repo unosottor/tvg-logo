@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": "ten-cricket",
+      "id": "ten",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=TEN_CRICKET" },
@@ -25,7 +25,7 @@
       "title": "Inter Milan vs Fluminense",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249738" },
-        { "name": "Server 2", "url": "" },
+        { "name": "Server 2", "url": "https://goalzlive.xyz/events/stream1/" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "" }
       ]
