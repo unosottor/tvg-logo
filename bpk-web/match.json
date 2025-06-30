@@ -9,7 +9,7 @@
       "name": "Sri Lanka",
       "logo": "https://flagcdn.com/w80/lk.png"
     },
-    "matchTime": "2025-07-01T14:00:00+06:00"
+    "matchTime": "2025-07-02T14:00:00+06:00"
   },
   {
     "id": "ind-vs-eng",
@@ -21,42 +21,7 @@
       "name": "England",
       "logo": "https://flagcdn.com/w80/gb-eng.png"
     },
-    "matchTime": "2025-07-01T18:00:00+06:00"
-  },
-  {
-    "id": "pak-vs-afg",
-    "team1": {
-      "name": "Pakistan",
-      "logo": "https://flagcdn.com/w80/pk.png"
-    },
-    "team2": {
-      "name": "Afghanistan",
-      "logo": "https://flagcdn.com/w80/af.png"
-    },
-    "matchTime": "2025-07-02T13:00:00+06:00"
-  },
-  {
-    "id": "aus-vs-nz",
-    "team1": {
-      "name": "Australia",
-      "logo": "https://flagcdn.com/w80/au.png"
-    },
-    "team2": {
-      "name": "New Zealand",
-      "logo": "https://flagcdn.com/w80/nz.png"
-    },
-    "matchTime": "2025-07-02T19:00:00+06:00"
-  },
-  {
-    "id": "sa-vs-wi",
-    "team1": {
-      "name": "South Africa",
-      "logo": "https://flagcdn.com/w80/za.png"
-    },
-    "team2": {
-      "name": "West Indies",
-      "logo": "https://flagcdn.com/w80/jm.png"
-    },
-    "matchTime": "2025-07-03T15:30:00+06:00"
+    "matchTime": "2025-07-02T15:00:00+06:00"
   }
+
 ]
