@@ -2,7 +2,7 @@
   "matches": [
     {
       "id": "match1",
-      "title": "Match 1",
+      "title": "DEFAULT",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/play?id=100" },
         { "name": "Server 2", "url": "" },
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": "ten",
+      "id": "",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=TEN_CRICKET" },
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "real-vs-juventus",
+      "id": "realmadrid-vs-juventus",
       "title": "Real Madrid vs Juventus",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4250001" },
@@ -52,7 +52,7 @@
     },
     {
       "id": "match5",
-      "title": "Tata IPL Match",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://example.com/match5/server1.m3u8" },
         { "name": "Server 2", "url": "https://example.com/match5/server2.m3u8" },
@@ -61,8 +61,8 @@
       ]
     },
     {
-      "id": "neymar-vs-ronaldo",
-      "title": "Neymar XI vs Ronaldo XI",
+      "id": "match6",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4250002" },
         { "name": "Server 2", "url": "" },
@@ -71,11 +71,11 @@
       ]
     },
     {
-      "id": "india-vs-pakistan",
-      "title": "India vs Pakistan - Asia Cup",
+      "id": "match8",
+      "title": "",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.pages.dev/play?id=INDIA_PAK" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=INDIA_PAK" },
+        { "name": "Server 1", "url": "https://dishlive24.pages.dev/play?id=100" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=100" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "" }
       ]
