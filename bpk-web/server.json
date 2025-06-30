@@ -15,16 +15,16 @@
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=TEN_CRICKET" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=tencricket"},
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=TEN_CRICKET"},
         { "name": "Server 3", "url": "https://dishlive24.pages.dev/mpd?id=TNT_1_GB" },
         { "name": "Server 4", "url":  "" } 
       ]
     },
     {
-      "id": "",
+      "id": "inter-vs-fluminense",
       "title": "",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=" },
+        { "name": "Server 1", "url": "https://dishlive247.blogspot.com/p/cc.html?id=4249738" },
         { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "https://example.com/match3/server4.m3u8" }
