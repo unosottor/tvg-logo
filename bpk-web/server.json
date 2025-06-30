@@ -21,8 +21,8 @@
       ]
     },
     {
-      "id": "inter-vs-fluminense",
-      "title": "Inter Milan vs Fluminense",
+      "id": "matjjj",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249738" },
         { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=SPORTV" },
@@ -35,19 +35,19 @@
       "title": "Man City vs Al Hilal",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249739" },
-        { "name": "Server 2", "url": "" },
-        { "name": "Server 3", "url": "" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=MBC_MASR_2" },
+        { "name": "Server 3", "url": "https://dishlive24.vercel.app/Player?url=https://vivosoccer.xyz/vivo/5.php" },
         { "name": "Server 4", "url": "" }
       ]
     },
     {
-      "id": "realmadrid-vs-juventus",
+      "id": "2realmadrid-vs-juventus",
       "title": "Real Madrid vs Juventus",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4250001" },
+        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249740" },
         { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
-        { "name": "Server 4", "url": "" }
+        { "name": "Server 4", "url": "https://dishlive24.pages.dev/play?id=MBC_MASR_2" }
       ]
     },
     {
