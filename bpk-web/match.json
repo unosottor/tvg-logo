@@ -1,17 +1,5 @@
  [
   {
-    "id": "inter-vs-fluminense",
-    "team1": {
-      "name": "Inter Milan",
-      "logo": "https://dishlive24.vercel.app/images/football.png"
-    },
-    "team2": {
-      "name": "Fluminense",
-      "logo": "https://dishlive24.vercel.app/images/football.png"
-    },
-    "matchTime": "2025-07-01T01:00:00+06:00"
-  },
-  {
     "id": "mancity-vs-alhilal",
     "team1": {
       "name": "Man City",
