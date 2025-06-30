@@ -14,7 +14,7 @@
   {
     "id": "mancity-vs-alhilal",
     "team1": {
-      "name": "Manchester City",
+      "name": "Man City",
       "logo": "https://dishlive24.vercel.app/images/football.png"
     },
     "team2": {
@@ -38,7 +38,7 @@
   {
     "id": "borussia-vs-monterrey",
     "team1": {
-      "name": "Borussia Dortmund",
+      "name": "Borussia",
       "logo": "https://dishlive24.vercel.app/images/football.png"
     },
     "team2": {
