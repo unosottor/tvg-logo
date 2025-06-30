@@ -8,11 +8,11 @@
   "100": {
     "file": "https://raw.githubusercontent.com/dishlive24/dishlive24.github.io/refs/heads/main/notice/index.m3u8"
   },
-  "10": {
-    "file": ""
+  "MBC_MASR_2": {
+    "file": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8"
   },
-  "": {
-    "file": ""
+  "MBC_5": {
+    "file": "https://shls-mbc5-prod-dub.shahid.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8"
   },
   "105": {
     "file": ""
