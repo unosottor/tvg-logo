@@ -1,16 +1,4 @@
- [
-  {
-    "id": "mancity-vs-alhilal",
-    "team1": {
-      "name": "Man City",
-      "logo": "https://dishlive24.vercel.app/images/football.png"
-    },
-    "team2": {
-      "name": "Al-Hilal",
-      "logo": "https://dishlive24.vercel.app/images/football.png"
-    },
-    "matchTime": "2025-07-01T07:00:00+06:00"
-  },
+ [ 
   {
     "id": "realmadrid-vs-juventus",
     "team1": {
