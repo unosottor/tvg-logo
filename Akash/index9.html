@@ -16,10 +16,11 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #121212;
-      color: white;
+      background: #f2f2f2;
+      color: #000;
     }
 
+    /* ⬛️ Top Header (Dark) */
     .top-header {
       background: #000;
       padding: 40px 20px 30px;
@@ -58,6 +59,7 @@
       color: #aaa;
     }
 
+    /* 🟤 Categories (Dark) */
     .categories {
       display: flex;
       flex-wrap: wrap;
@@ -83,7 +85,9 @@
       color: #000;
     }
 
+    /* ⚪️ Channel Grid (Light theme section) */
     .channels-grid {
+      background: #f9f9f9;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       gap: 15px;
@@ -91,21 +95,19 @@
     }
 
     .channel-card {
-      background: #1f1f1f;
+      background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
       padding-bottom: 10px;
       position: relative;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeSlideIn 0.6s ease forwards;
+      animation: fadeSlideIn 0.5s ease forwards;
     }
 
     .channel-card:hover {
       transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
     .channel-card::before {
@@ -115,26 +117,26 @@
       left: 0;
       height: 4px;
       width: 100%;
-      background: #ffffff20;
+      background: #eee;
     }
 
     .channel-card img {
       width: 100%;
       height: 120px;
       object-fit: contain;
-      background: #000;
+      background: #fff;
     }
 
     .channel-card h3 {
       margin: 5px 0 2px;
       font-size: 15px;
       font-weight: 600;
-      color: #fff;
+      color: #222;
     }
 
     .channel-category {
       font-size: 12px;
-      color: #bbb;
+      color: #666;
       margin-top: -4px;
     }
 
@@ -152,7 +154,7 @@
 </head>
 <body>
 
-  <!-- 🔷 Header -->
+  <!-- 🔷 Top Header -->
   <div class="top-header">
     <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="DISH LIVE 24 Logo" />
     <h1>DISH LIVE 24</h1>
@@ -170,9 +172,9 @@
     <a href="#" data-category="Sports">Sports</a>
   </div>
 
-  <!-- 🔸 Channel Grid -->
+  <!-- 🔸 Channel Cards Section (Light) -->
   <div class="channels-grid" id="channelGrid">
-    <div class="channel-card" data-name="Sangeet Bangla" data-category="Music" style="animation-delay: 0.1s;">
+    <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
       <a href="play.php?id=1">
         <img src="https://i.postimg.cc/pdddb1bs/20250529-120025.png" alt="Sangeet Bangla" />
       </a>
@@ -180,7 +182,7 @@
       <div class="channel-category">Music</div>
     </div>
 
-    <div class="channel-card" data-name="Zoom" data-category="Music" style="animation-delay: 0.2s;">
+    <div class="channel-card" data-name="Zoom" data-category="Music">
       <a href="play.php?id=2">
         <img src="https://i.postimg.cc/7hz6tG8D/20250529_121941.png" alt="Zoom" />
       </a>
@@ -188,7 +190,7 @@
       <div class="channel-category">Music</div>
     </div>
 
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla" style="animation-delay: 0.3s;">
+    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
       </a>
@@ -224,14 +226,6 @@
         categoryLinks.forEach(a => a.classList.remove('active'));
         link.classList.add('active');
         filterChannels();
-      });
-    });
-
-    // Trigger staggered animation on load
-    window.addEventListener("DOMContentLoaded", () => {
-      const cards = document.querySelectorAll(".channel-card");
-      cards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
       });
     });
   </script>
