@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Player LIVE TV | Powered By DISH LIVE 24</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   
   <!-- JW Player Scripts -->
   <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
@@ -17,29 +16,47 @@
       font-family: 'Fjalla One', sans-serif;
       background-color: #eefff4;
     }
+
+    /* Title styling */
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    /* Navigation styling */
     nav {
       background-color: #a6b2aa;
       padding: 10px 20px;
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 20px;
     }
+
     nav a {
       color: #000;
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
     }
+
+    /* Player styling */
     #player {
-      width: 100%;
+      width: 90%;
       aspect-ratio: 16/9;
       background: #000;
       margin: 20px auto;
+      border-radius: 15px;
+      overflow: hidden;
     }
+
     .jwplayer {
       width: 100% !important;
       height: 100% !important;
     }
+
     .program-info {
       width: 90%;
       margin: 20px auto;
@@ -48,12 +65,14 @@
       border-radius: 10px;
       box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #fff;
     }
+
     .logo {
       width: 80px;
       height: 80px;
       border-radius: 50%;
       margin-right: 10px;
     }
+
     .wrapperxd {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -64,6 +83,7 @@
       width: 90%;
       margin: 20px auto;
     }
+
     .box {
       background-color: #444;
       color: #fff;
@@ -72,6 +92,7 @@
       text-align: center;
       font-size: 18px;
     }
+
     .releted {
       width: 90%;
       margin: 0 auto;
@@ -80,6 +101,7 @@
       font-weight: bold;
       color: #333;
     }
+
     #container {
       width: 90%;
       margin: auto;
@@ -88,6 +110,7 @@
       gap: 10px;
       padding: 10px;
     }
+
     .card {
       width: 120px;
       background: white;
@@ -95,11 +118,13 @@
       padding: 10px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     }
+
     .card img {
       width: 100%;
       height: 100px;
       object-fit: contain;
     }
+
     .card h2 {
       font-size: 14px;
       text-align: center;
@@ -108,6 +133,21 @@
 </head>
 <body>
 
+  <!-- Title Section -->
+  <div class="title">DISH LIVE 24</div>
+
+  <!-- Video Player Section -->
+  <div id="player"></div> <!-- Video Player -->
+
+  <!-- Program Info Section -->
+  <div class="program-info">
+    <img class="logo" src="https://iili.io/Jn2BLen.gif" alt="Channel Logo">
+    <div style="display:inline-block;">
+      <div style="font-weight: bold; color: darkcyan;" id="streamingStatus">STREAMING NOW</div>
+    </div>
+  </div>
+
+  <!-- Navigation Section (Moved below player) -->
   <nav>
     <a href="#">HOME</a>
     <a href="#">GENRES</a>
@@ -115,26 +155,7 @@
     <a href="#">CONTACT</a>
   </nav>
 
-  <div id="player"></div> <!-- Video Player -->
-
-  <div class="program-info">
-    <img class="logo" src="https://iili.io/Jn2BLen.gif" alt="Channel Logo">
-    <div style="display:inline-block;">
-      <div style="font-weight: bold; color: darkcyan;" id="streamingStatus">STREAMING NOW</div>
-      <div style="font-size: 1.2rem;" id="programInfo">Loading Program Info...</div>
-    </div>
-  </div>
-
-  <div class="wrapperxd">
-    <div class="box">A</div>
-    <div class="box">B</div>
-    <div class="box">C</div>
-    <div class="box">D</div>
-    <div class="box">E</div>
-    <div class="box">F</div>
-    <div class="box">G</div>
-  </div>
-
+  <!-- Related Channels Section -->
   <div class="releted">Related Channels</div>
   <div id="container">
     <!-- Related Channels will be displayed here dynamically -->
