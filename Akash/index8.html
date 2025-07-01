@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,13 +13,13 @@
       user-select: none;
     }
     html {
-      scroll-behavior: smooth; /* পুরো পেজে স্মুথ স্ক্রল */
+      scroll-behavior: smooth;
     }
     body {
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #000;
-      overflow-y: auto; /* ডান দিকের স্ক্রলবার নিশ্চিত করার জন্য */
+      overflow-y: auto;
     }
 
     /* HEADER SECTION */
@@ -91,7 +91,6 @@
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       gap: 15px;
       padding: 15px;
-      /* এখানে max-height ও overflow-y দেয়া হয়নি, পুরো পেজ স্ক্রল হবে */
     }
     .channel-card {
       background: #fff;
@@ -133,19 +132,22 @@
       right: 20px;
       z-index: 99;
       background: #fff;
-      color: #000;
       border: 1.5px solid #000;
-      padding: 8px 10px;
+      padding: 8px;
       border-radius: 12px;
       cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       transition: 0.3s;
-      user-select: none;
     }
     #topBtn:hover {
       background: #f1f1f1;
+    }
+    #topBtn img {
+      display: block;
+      user-select: none;
+      pointer-events: none;
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
@@ -234,16 +236,22 @@
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
     </div>
-   </div>
+    </div>
 
-  <!-- ⬆️ Scroll to Top Button -->
-  <button onclick="topFunction()" id="topBtn" title="Go to top">⬆️</button>
 
-  <!-- JS: Filter + Scroll -->
+
+
+  
+  <!-- Scroll to Top Button with Image -->
+  <button onclick="topFunction()" id="topBtn" title="Go to top">
+    <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Arrow Up" />
+  </button>
+
   <script>
     const searchInput = document.getElementById('searchInput');
     const categoryLinks = document.querySelectorAll('.categories a');
     const cards = document.querySelectorAll('.channel-card');
+    const topBtn = document.getElementById("topBtn");
 
     function filterChannels() {
       const term = searchInput.value.toLowerCase();
@@ -268,19 +276,18 @@
       });
     });
 
-    // Scroll to top logic
-    const topBtn = document.getElementById("topBtn");
+    // Show scroll-to-top button after scrolling 10px
     window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         topBtn.style.display = "block";
       } else {
         topBtn.style.display = "none";
       }
     };
+
     function topFunction() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>
-  </html>
-  
+</html>
