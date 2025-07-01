@@ -5,6 +5,12 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  
+  <!-- JW Player Scripts -->
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@hola.org/jwplayer-hlsjs@latest/dist/jwplayer.hlsjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@0.14.17"></script>
+
   <style>
     body {
       margin: 0;
@@ -24,14 +30,15 @@
       margin: 0 10px;
       font-weight: bold;
     }
-    .videoplayer {
-      width: 90%;
+    #player {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
       margin: 20px auto;
-      padding-top: 50%;
-      position: relative;
-      background-color: #beccc3;
-      border-radius: 10px;
-      overflow: hidden;
+    }
+    .jwplayer {
+      width: 100% !important;
+      height: 100% !important;
     }
     .program-info {
       width: 90%;
@@ -108,10 +115,7 @@
     <a href="#">CONTACT</a>
   </nav>
 
-  <div class="videoplayer">
-    <!-- Video Player will be dynamically added here -->
-    <iframe id="videoPlayer" width="100%" height="300" src="" frameborder="0" allowfullscreen></iframe>
-  </div>
+  <div id="player"></div> <!-- Video Player -->
 
   <div class="program-info">
     <img class="logo" src="https://iili.io/Jn2BLen.gif" alt="Channel Logo">
@@ -137,14 +141,55 @@
   </div>
 
   <script>
-    // Fetching video URL from URL parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const videoId = urlParams.get('id');
-    const videoUrl = `https://example.com/player?m3u=${videoId}`;  // Example M3U link format
+    async function loadPlayer(source) {
+      const player = jwplayer("player");
+      player.setup({
+        file: source,
+        type: "hls",
+        width: "100%",
+        aspectratio: "16:9",
+        autostart: true,
+        mute: false,
+        preload: "auto",
+        image: "https://anym3u8player.com/live.gif",
+        primary: "html5",
+        hlsjsdefault: true,
+        hlsjsConfig: {
+          maxBufferLength: 30,
+          liveSyncDuration: 5
+        }
+      });
+      jwplayer_hls_provider.attach();
+    }
 
-    // Dynamically setting the iframe src for video player
-    document.getElementById('videoPlayer').src = videoUrl;
+    async function init() {
+      const params = new URLSearchParams(window.location.search);
+      const url = params.get("url");
+      const id = params.get("id");
 
+      if (url) {
+        loadPlayer(decodeURIComponent(url));
+      } else if (id) {
+        try {
+          const res = await fetch("https://bdix.dishlive24.workers.dev/shoq.json");
+          const json = await res.json();
+          if (json[id] && json[id].file) {
+            loadPlayer(json[id].file);
+          } else {
+            document.body.innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>Invalid Channel ID</h2>";
+          }
+        } catch (e) {
+          document.body.innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>Failed to load channel</h2>";
+        }
+      } else {
+        document.body.innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>No URL or ID provided</h2>";
+      }
+    }
+
+    init();
+  </script>
+
+  <script>
     // Mock related channels data (can be replaced with real data from API or database)
     const relatedChannels = [
       { name: "Channel 1", img: "https://via.placeholder.com/100", category: "Sports" },
