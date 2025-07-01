@@ -2,94 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TULNIT Style Clone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TULNIT Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body { background-color: #fff; font-family: 'Segoe UI', sans-serif; }
-    .channel-card img {
-      border-radius: 8px;
-    }
-    .scroll-container {
-      overflow-x: auto;
+    .scroll-x {
       display: flex;
+      overflow-x: auto;
       gap: 12px;
       scroll-snap-type: x mandatory;
-      padding: 10px 0;
+      padding-bottom: 10px;
     }
-    .scroll-container::-webkit-scrollbar {
+
+    .scroll-x::-webkit-scrollbar {
       display: none;
     }
-    .scroll-item {
-      scroll-snap-align: start;
+
+    .card {
       flex: 0 0 auto;
-      width: 120px;
+      width: 110px;
+      scroll-snap-align: start;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 10px;
+    }
+
+    .truncate-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   </style>
 </head>
-<body class="text-black">
+<body class="bg-white text-black">
 
   <!-- Header -->
   <header class="bg-black text-white p-4 flex items-center justify-between">
     <div class="flex items-center gap-2">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Play_button_icon.svg/512px-Play_button_icon.svg.png" class="h-6 w-6" />
-      <h1 class="text-xl font-bold">TULNIT</h1>
+      <h1 class="text-lg font-semibold">TULNIT | Unlimited Entertainment</h1>
     </div>
-    <div class="flex gap-2">
+    <div class="flex items-center gap-4">
       <button>🔍</button>
-      <button>☰</button>
+      <button class="text-xl">☰</button>
     </div>
   </header>
 
-  <!-- Section 1 -->
+  <!-- Section -->
   <section class="px-4 mt-4">
     <div class="flex justify-between items-center mb-2">
-      <h2 class="text-lg font-semibold">Live Channels</h2>
-      <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded">SEE ALL</button>
+      <button class="bg-blue-600 text-white text-sm px-3 py-1 rounded">SEE ALL</button>
+      <div class="flex gap-2">
+        <button class="border px-2 rounded">◀</button>
+        <button class="border px-2 rounded">▶</button>
+      </div>
     </div>
-    <div class="scroll-container">
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/FDAD4A/000000?text=RDC" alt="RDC" class="w-full h-auto">
-        <p class="text-xs mt-1">RDC Movies</p>
+    <div class="scroll-x">
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/FDAD4A/000000?text=RDC" alt="RDC">
+        <p class="text-xs mt-1 truncate-text">RDC Movies</p>
       </div>
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/FD9840/000000?text=ZEE" alt="ZEE" class="w-full h-auto">
-        <p class="text-xs mt-1">Zee Bolly World</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/FD9840/000000?text=ZEE" alt="Zee">
+        <p class="text-xs mt-1 truncate-text">Zee Bolly World</p>
       </div>
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/5CA0D3/000000?text=Shemaroo" alt="Shemaroo" class="w-full h-auto">
-        <p class="text-xs mt-1">Shemaroo Filmi</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/5CA0D3/000000?text=Shemaroo" alt="Shemaroo">
+        <p class="text-xs mt-1 truncate-text">Shemaroo Filmi Gaane</p>
       </div>
-      <!-- Add more items -->
-    </div>
-  </section>
-
-  <!-- Section 2 -->
-  <section class="px-4 mt-4">
-    <div class="flex justify-between items-center mb-2">
-      <h2 class="text-lg font-semibold">Tamil & Buddhist</h2>
-      <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded">SEE ALL</button>
-    </div>
-    <div class="scroll-container">
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/FFB347/000000?text=Tamil" alt="Tamil" class="w-full h-auto">
-        <p class="text-xs mt-1">Thamilaaram</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/FDCB58/000000?text=Tamil" alt="Tamil">
+        <p class="text-xs mt-1 truncate-text">Thamilaaram TV</p>
       </div>
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/FF7F50/000000?text=Buddhist" alt="Buddhist" class="w-full h-auto">
-        <p class="text-xs mt-1">The Buddhist</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/FFA500/000000?text=Buddhist" alt="Buddhist">
+        <p class="text-xs mt-1 truncate-text">The Buddhist</p>
       </div>
-      <div class="scroll-item channel-card text-center">
-        <img src="https://via.placeholder.com/120x160/87CEFA/000000?text=DP+Grade" alt="DP" class="w-full h-auto">
-        <p class="text-xs mt-1">Videsa DP Gr...</p>
+      <div class="card">
+        <img src="https://via.placeholder.com/160x200/20B2AA/000000?text=DP" alt="DP">
+        <p class="text-xs mt-1 truncate-text">Videsa DP Grade 9</p>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="text-center text-xs text-gray-500 py-6">
-    &copy; 2025 TULNIT Clone. All rights reserved.
-  </footer>
 
 </body>
 </html>
