@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -22,16 +22,7 @@
       overflow-y: auto;
     }
 
-    /* SCROLLBAR DESIGN */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-    }
-
-    /* HEADER */
+    /* HEADER SECTION */
     .top-header {
       background: #ffffff;
       padding: 25px 20px 10px;
@@ -67,14 +58,14 @@
       color: #999;
     }
 
-    /* CATEGORY BUTTONS */
+    /* CATEGORY */
     .categories {
       background: #ffffff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
-      padding: 8px 10px;
+      padding: 8px 10px 8px;
       border-top: 1px solid #eee;
     }
     .categories a {
@@ -85,6 +76,7 @@
       color: #333;
       font-size: 13px;
       transition: 0.2s;
+      user-select: none;
     }
     .categories a.active,
     .categories a:hover {
@@ -109,6 +101,7 @@
       padding-bottom: 10px;
       transition: 0.2s;
       cursor: pointer;
+      user-select: none;
     }
     .channel-card:hover {
       transform: scale(1.03);
@@ -133,7 +126,7 @@
 
     /* SCROLL TO TOP BUTTON */
     #topBtn {
-      display: block;
+      display: none;
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -144,22 +137,17 @@
       border-radius: 12px;
       cursor: pointer;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      visibility: hidden;
+      transition: 0.3s;
     }
-    #topBtn.show {
-      opacity: 1;
-      transform: translateY(0);
-      visibility: visible;
+    #topBtn:hover {
+      background: #f1f1f1;
     }
     #topBtn img {
-      width: 24px;
-      height: 24px;
+      display: block;
       user-select: none;
       pointer-events: none;
-      display: block;
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
@@ -172,7 +160,7 @@
     <input type="text" id="searchInput" placeholder="🔍 Search Channels Here..." />
   </div>
 
-  <!-- CATEGORIES -->
+  <!-- CATEGORY BUTTONS -->
   <div class="categories">
     <a href="#" data-category="all" class="active">All</a>
     <a href="#" data-category="Bangladeshi">Bangladeshi</a>
@@ -185,7 +173,6 @@
 
   <!-- CHANNEL GRID -->
   <div class="channels-grid" id="channelGrid">
-    <!-- Example Card -->
     <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
       <a href="play.php?id=1">
         <img src="https://i.postimg.cc/pdddb1bs/20250529-120025.png" alt="Sangeet Bangla" />
@@ -207,7 +194,6 @@
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
     </div>
-    <!-- Add more cards as needed -->
     <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
@@ -229,43 +215,38 @@
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
     </div>
-   <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
+    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
       </a>
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
-   </div> 
-   <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
+    </div>
+    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
       </a>
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
-   </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </div>
+    </div>
+    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
+      <a href="play.php?id=3">
+        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
+      </a>
+      <h3>Sony AATH</h3>
+      <div class="channel-category">Indian Bangla</div>
+    </div>
+    </div>
 
 
 
 
-
-
- 
-  <!-- SCROLL TO TOP BUTTON -->
+  
+  <!-- Scroll to Top Button with Image -->
   <button onclick="topFunction()" id="topBtn" title="Go to top">
     <img src="https://cdn-icons-png.flaticon.com/512/10023/10023338.png" alt="Arrow Up" />
   </button>
 
-  <!-- SCRIPT -->
   <script>
     const searchInput = document.getElementById('searchInput');
     const categoryLinks = document.querySelectorAll('.categories a');
@@ -295,24 +276,20 @@
       });
     });
 
-    // Scroll button logic
-    window.addEventListener("scroll", () => {
+    // Show scroll-to-top button after scrolling 10px
+    window.onscroll = function () {
       if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        topBtn.classList.add("show");
+        topBtn.style.display = "block";
       } else {
-        topBtn.classList.remove("show");
+        topBtn.style.display = "none";
       }
-    });
+    };
 
-    // Smooth scroll fallback
     function topFunction() {
-      const c = document.documentElement.scrollTop || document.body.scrollTop;
-      if (c > 0) {
-        window.requestAnimationFrame(topFunction);
-        window.scrollTo(0, c - c / 8);
-      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-
 </body>
-</html>
+</html> 
+
+ 
