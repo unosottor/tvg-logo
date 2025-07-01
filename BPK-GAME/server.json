@@ -41,11 +41,11 @@
       ]
     },
     {
-      "id": "2realmadrid-vs-juventus",
+      "id": "realmadrid-vs-juventus",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249740" },
-        { "name": "Server 2", "url": "" },
+        { "name": "Server 2", "url": "https://dishlive24.vercel.app/Player?url=https://embedstreams.top/embed/alpha/real-madrid-vs-juventus/2" },
         { "name": "Server 3", "url": "https://dishlive24.vercel.app/Player?url=https://vivosoccer.xyz/vivo/5.php" },
         { "name": "Server 4", "url": "https://dishlive24.pages.dev/play?id=MBC_5" }
       ]
