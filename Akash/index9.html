@@ -1,70 +1,66 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DISH LIVE 24</title>
   <link rel="icon" type="image/png" href="https://dishlive24.vercel.app/images/dishlive24.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
     }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      margin: 0;
+      background: #f2f2f2;
     }
-    header {
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    .top-header {
+      background: linear-gradient(to bottom, #0072ff, #00c6ff);
+      padding: 40px 20px 30px;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
-    .site-logo {
-      display: flex;
-      align-items: center;
+
+    .top-header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-    .site-logo img {
-      height: 40px;
-      border-radius: 6px;
-      margin-right: 10px;
+
+    .top-header h1 {
+      color: white;
+      font-size: 28px;
+      margin: 15px 0 10px;
     }
-    .site-title {
-      font-weight: 700;
-      font-size: 20px;
-      color: #333;
-    }
-    #searchInput {
-      flex: 1;
-      max-width: 350px;
-      margin: 10px auto;
-      padding: 10px 15px;
+
+    .top-header input {
+      padding: 12px 20px;
+      width: 90%;
+      max-width: 400px;
+      border: none;
+      border-radius: 40px;
       font-size: 16px;
-      border-radius: 30px;
-      border: 2px solid #ddd;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
       outline: none;
-      transition: 0.3s ease;
     }
-    #searchInput:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-    }
+
     .categories {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      padding: 10px;
+      padding: 15px;
       background: #fff;
+      margin-top: -10px;
     }
+
     .categories a {
       padding: 6px 15px;
       border-radius: 20px;
@@ -72,30 +68,35 @@
       text-decoration: none;
       color: #333;
       font-size: 14px;
+      transition: 0.3s;
     }
-    .categories a.active, .categories a:hover {
+
+    .categories a.active,
+    .categories a:hover {
       background: #007bff;
       color: white;
     }
+
     .channels-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       gap: 15px;
       padding: 20px;
     }
+
     .channel-card {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: 0.2s ease;
       text-align: center;
       padding-bottom: 10px;
       position: relative;
+      transition: 0.2s ease;
     }
+
     .channel-card::before {
       content: "";
-      display: block;
       position: absolute;
       top: 0;
       left: 0;
@@ -103,16 +104,19 @@
       width: 100%;
       background: linear-gradient(to right, #00c6ff, #0072ff);
     }
+
     .channel-card img {
       width: 100%;
       height: 120px;
       object-fit: contain;
     }
+
     .channel-card h3 {
       margin: 5px 0 2px;
       font-size: 15px;
       font-weight: 600;
     }
+
     .channel-category {
       font-size: 12px;
       color: #007bff;
@@ -121,18 +125,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="site-logo">
-      <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="DISH LIVE 24" />
-      <span class="site-title">DISH LIVE 24</span>
-    </div>
-    <div>☰</div>
-  </header>
 
-  <div style="text-align: center; padding: 10px 20px;">
-    <input type="text" id="searchInput" placeholder="Search channels..." />
+  <!-- 🔷 Top Section like Waves OTT -->
+  <div class="top-header">
+    <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="DISH LIVE 24 Logo" />
+    <h1>DISH LIVE 24</h1>
+    <input type="text" id="searchInput" placeholder="🔍 Search Channels Here..." />
   </div>
 
+  <!-- 🔹 Categories -->
   <div class="categories">
     <a href="#" data-category="all" class="active">All</a>
     <a href="#" data-category="Bangladeshi">Bangladeshi</a>
@@ -143,6 +144,7 @@
     <a href="#" data-category="Sports">Sports</a>
   </div>
 
+  <!-- 🔸 Channels -->
   <div class="channels-grid" id="channelGrid">
     <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
       <a href="play.php?id=1">
@@ -151,6 +153,7 @@
       <h3>Sangeet Bangla</h3>
       <div class="channel-category">Music</div>
     </div>
+
     <div class="channel-card" data-name="Zoom" data-category="Music">
       <a href="play.php?id=2">
         <img src="https://i.postimg.cc/7hz6tG8D/20250529_121941.png" alt="Zoom" />
@@ -158,6 +161,7 @@
       <h3>Zoom</h3>
       <div class="channel-category">Music</div>
     </div>
+
     <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
@@ -167,6 +171,7 @@
     </div>
   </div>
 
+  <!-- 🔻 JavaScript for Search & Filter -->
   <script>
     const searchInput = document.getElementById('searchInput');
     const categoryLinks = document.querySelectorAll('.categories a');
