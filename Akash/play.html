@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watch Channel - DISH LIVE 24</title>
+  <title> Watch Channel - DISH LIVE 24</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- JW Player Scripts -->
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@hola.org/jwplayer-hlsjs@latest/dist/jwplayer.hlsjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@0.14.17"></script>
+
   <style>
     body {
       margin: 0;
@@ -30,21 +36,18 @@
       margin: 0;
     }
 
-    .player-wrapper {
-      position: relative;
-      padding-top: 56.25%; /* 16:9 */
-      margin: 20px auto;
+    .player-container {
       max-width: 90%;
+      margin: 20px auto;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: #000;
+      aspect-ratio: 16/9;
     }
-    .player-wrapper iframe {
-      position: absolute;
-      top: 0; left: 0;
+    #player {
       width: 100%;
       height: 100%;
-      border: none;
     }
 
     .related-section {
@@ -74,7 +77,6 @@
       width: 100%;
       height: 100px;
       object-fit: contain;
-      background: #fff;
     }
     .channel-card h3 {
       font-size: 14px;
@@ -89,8 +91,8 @@
     <h1>DISH LIVE 24</h1>
   </div>
 
-  <div class="player-wrapper">
-    <iframe id="playerFrame" src="" allowfullscreen></iframe>
+  <div class="player-container">
+    <div id="player"></div>
   </div>
 
   <div class="related-section">
@@ -101,38 +103,65 @@
   </div>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const playerFrame = document.getElementById('playerFrame');
-    const relatedGrid = document.getElementById('relatedGrid');
+    const id = new URLSearchParams(location.search).get("id");
+    const urlParam = new URLSearchParams(location.search).get("url");
 
-    // Set iframe src
-    playerFrame.src = `https://dishlive24.pages.dev/player?id=${id}`;
+    async function loadPlayer(source) {
+      const player = jwplayer("player");
+      player.setup({
+        file: source,
+        type: "hls",
+        width: "100%",
+        aspectratio: "16:9",
+        autostart: true,
+        mute: false,
+        preload: "auto",
+        image: "https://anym3u8player.com/live.gif",
+        primary: "html5",
+        hlsjsdefault: true,
+        hlsjsConfig: {
+          maxBufferLength: 30,
+          liveSyncDuration: 5
+        }
+      });
+      jwplayer_hls_provider.attach();
+    }
 
-    // Fetch home.html and extract related channels
-    fetch("index.html") // or "https://dishlive24.pages.dev/" if hosted
+    (async () => {
+      if (urlParam) {
+        loadPlayer(decodeURIComponent(urlParam));
+      } else if (id) {
+        try {
+          const res = await fetch("https://bdix.dishlive24.workers.dev/akash.json");
+          const json = await res.json();
+          if (json[id] && json[id].file) {
+            loadPlayer(json[id].file);
+          } else {
+            document.getElementById('player').innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>Invalid Channel ID</h2>";
+          }
+        } catch (e) {
+          document.getElementById('player').innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>Failed to load channel</h2>";
+        }
+      } else {
+        document.getElementById('player').innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>No URL or ID provided</h2>";
+      }
+    })();
+  </script>
+
+  <script>
+    const relatedGrid = document.getElementById("relatedGrid");
+
+    fetch("index.html")
       .then(res => res.text())
       .then(html => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
+        const doc = new DOMParser().parseFromString(html, "text/html");
         const cards = [...doc.querySelectorAll('.channel-card')];
 
-        // Find current card
-        const currentCard = cards.find(c => {
-          const link = c.querySelector('a')?.getAttribute('href') || "";
-          return link.includes(`id=${id}`);
-        });
-
-        if (!currentCard) {
-          relatedGrid.innerHTML = '<p>No related channels found.</p>';
-          return;
-        }
-
-        const currentCategory = currentCard.getAttribute('data-category');
-
+        const current = cards.find(c => c.querySelector('a')?.href.includes(`id=${id}`));
+        const currentCategory = current?.getAttribute('data-category') || '';
         const related = cards.filter(c => 
           c.getAttribute('data-category') === currentCategory &&
-          c !== currentCard
+          !c.querySelector('a')?.href.includes(`id=${id}`)
         ).slice(0, 3);
 
         if (related.length === 0) {
@@ -142,9 +171,9 @@
 
         relatedGrid.innerHTML = '';
         related.forEach(c => {
-          const name = c.querySelector('h3')?.textContent || '';
-          const img = c.querySelector('img')?.src || '';
-          const link = c.querySelector('a')?.getAttribute('href') || '#';
+          const name = c.querySelector('h3')?.textContent;
+          const img = c.querySelector('img')?.src;
+          const link = c.querySelector('a')?.getAttribute('href');
 
           const card = document.createElement('div');
           card.className = 'channel-card';
@@ -152,14 +181,12 @@
             <a href="play.html${link.includes('?') ? link.slice(link.indexOf('?')) : ''}">
               <img src="${img}" alt="${name}">
               <h3>${name}</h3>
-            </a>
-          `;
+            </a>`;
           relatedGrid.appendChild(card);
         });
-
-      }).catch(err => {
+      })
+      .catch(() => {
         relatedGrid.innerHTML = '<p>Failed to load related channels.</p>';
-        console.error(err);
       });
   </script>
 
