@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": "matjjj",
+      "id": "",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249738" },
@@ -31,11 +31,11 @@
       ]
     },
     {
-      "id": "mancity-vs-alhilal",
-      "title": "Man City vs Al Hilal",
+      "id": "",
+      "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249739" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=MBC_MASR_2" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=" },
         { "name": "Server 3", "url": "https://dishlive24.vercel.app/Player?url=https://vivosoccer.xyz/vivo/5.php" },
         { "name": "Server 4", "url": "" }
       ]
