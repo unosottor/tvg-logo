@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISH LIVE 24</title>
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/8kWYsw9n/20241228_183443.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+    }
+    header {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .site-logo {
+      display: flex;
+      align-items: center;
+    }
+    .site-logo img {
+      height: 40px;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    .site-title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #333;
+    }
+    #searchInput {
+      flex: 1;
+      max-width: 350px;
+      margin: 10px auto;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: 2px solid #ddd;
+      outline: none;
+      transition: 0.3s ease;
+    }
+    #searchInput:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      background: #fff;
+    }
+    .categories a {
+      padding: 6px 15px;
+      border-radius: 20px;
+      background: #eee;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    .categories a.active, .categories a:hover {
+      background: #007bff;
+      color: white;
+    }
+    .channels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .channel-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.2s ease;
+      text-align: center;
+      padding-bottom: 10px;
+      position: relative;
+    }
+    .channel-card::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+    }
+    .channel-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+    }
+    .channel-card h3 {
+      margin: 5px 0 2px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .channel-category {
+      font-size: 12px;
+      color: #007bff;
+      margin-top: -4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-logo">
+      <img src="https://dishlive24.pages.dev/images/dishlive24.png" alt="DISH LIVE 24" />
+      <span class="site-title">DISH LIVE 24</span>
+    </div>
+    <div>☰</div>
+  </header>
+
+  <div style="text-align: center; padding: 10px 20px;">
+    <input type="text" id="searchInput" placeholder="Search channels..." />
+  </div>
+
+  <div class="categories">
+    <a href="#" data-category="all" class="active">All</a>
+    <a href="#" data-category="Bangladeshi">Bangladeshi</a>
+    <a href="#" data-category="Entertainment">Entertainment</a>
+    <a href="#" data-category="Indian Bangla">Indian Bangla</a>
+    <a href="#" data-category="Kids">Kids</a>
+    <a href="#" data-category="Music">Music</a>
+    <a href="#" data-category="Sports">Sports</a>
+  </div>
+
+  <div class="channels-grid" id="channelGrid">
+    <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
+      <a href="play.php?id=1">
+        <img src="https://i.postimg.cc/pdddb1bs/20250529-120025.png" alt="Sangeet Bangla" />
+      </a>
+      <h3>Sangeet Bangla</h3>
+      <div class="channel-category">Music</div>
+    </div>
+    <div class="channel-card" data-name="Zoom" data-category="Music">
+      <a href="play.php?id=2">
+        <img src="https://i.postimg.cc/7hz6tG8D/20250529_121941.png" alt="Zoom" />
+      </a>
+      <h3>Zoom</h3>
+      <div class="channel-category">Music</div>
+    </div>
+    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
+      <a href="play.php?id=3">
+        <img src="https://via.placeholder.com/150" alt="Sony AATH" />
+      </a>
+      <h3>Sony AATH</h3>
+      <div class="channel-category">Indian Bangla</div>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const categoryLinks = document.querySelectorAll('.categories a');
+    const cards = document.querySelectorAll('.channel-card');
+
+    function filterChannels() {
+      const term = searchInput.value.toLowerCase();
+      const activeCat = document.querySelector('.categories a.active').dataset.category;
+
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const category = card.dataset.category;
+        const matchSearch = name.includes(term);
+        const matchCat = activeCat === 'all' || category === activeCat;
+        card.style.display = matchSearch && matchCat ? 'block' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', filterChannels);
+
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        categoryLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        filterChannels();
+      });
+    });
+  </script>
+</body>
+</html>
