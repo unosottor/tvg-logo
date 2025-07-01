@@ -2,82 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Web Clean</title>
+  <meta property="og:title" content="TP Web Clean">
+  <meta property="og:description" content="Watch TP Channels Live - No Ads, No Scripts">
+  <meta property="og:image" content="https://i.postimg.cc/02jW7xSY/TATA-PLAY-Denver.jpg">
+  <meta property="og:url" content="https://example.com">
+  <link rel="shortcut icon" href="https://i.postimg.cc/02jW7xSY/TATA-PLAY-Denver.jpg" type="image/x-icon">
   <style>
     body {
+      background-color: #131720;
+      color: white;
       font-family: Arial, sans-serif;
-      background: #eefff4;
-      margin: 0;
-      padding: 20px;
+      margin: 20px;
     }
-    .releted {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    #container {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .card {
-      width: 30%;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s;
+    .btn {
+      padding: 8px 16px;
+      margin: 5px;
+      background-color: #1a1a1a;
+      color: white;
+      border: 1px solid #333;
+      border-radius: 5px;
       text-decoration: none;
-      color: black;
     }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 100%;
-      height: 100px;
-      object-fit: contain;
-      border-bottom: 1px solid #ccc;
-      padding: 10px;
-    }
-    .card h2 {
-      font-size: 16px;
+    nav select {
+      padding: 6px;
       margin: 10px 0;
     }
-    @media(max-width: 768px) {
-      .card {
-        width: 100%;
-      }
+    #channel-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .tvv-item {
+      width: calc(33.333% - 20px);
+      margin: 10px;
+      box-sizing: border-box;
+      background-color: #1a1a1a;
+      padding: 20px 10px 10px;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .tvv-thumb img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    .tvv-name {
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #draggable {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
+  <img src="https://denverlink.pages.dev/TP/tata-sky-logo.png" height="80" width="100" alt="TP Logo"><br><br>
+  <a href="#" class="btn">Catch-UP</a>
+  <a href="#" class="btn">Contact</a>
+  <a href="#" class="btn">Copyright</a>
 
-  <div class="releted">Related Channels</div>
-  <div id="container"></div>
+  <nav>
+    <select id="channel-dropdown" onchange="changeChannelGroup()">
+      <option value="All">All</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Movies">Movies</option>
+      <option value="Sports">Sports</option>
+      <option value="Music">Music</option>
+      <option value="News">News</option>
+      <option value="Kids">Kids</option>
+      <option value="Knowledge">Knowledge</option>
+      <option value="Lifestyle">Lifestyle</option>
+      <option value="Others">Others</option>
+    </select>
+  </nav>
+
+  <input class="fin" placeholder="Search Channel here..." type="text">
+
+  <div id="draggable">🏀</div>
+  <div id="channel-container"></div>
 
   <script>
-    // Change to your hosted JSON URL if external
-    fetch("channels.json")
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById("container");
-        const sameCategory = data["sports"].slice(0, 3); // Show 3 channels from "sports"
+    const channels = [
+      { id: "sony", name: "Sony Sports", logo: "https://upload.wikimedia.org/wikipedia/en/e/e1/Sony_Sports_Network_logo.svg", category: "Sports" },
+      { id: "star", name: "Star Plus", logo: "https://upload.wikimedia.org/wikipedia/en/1/1e/Star_Plus_Logo.png", category: "Entertainment" },
+      { id: "ten", name: "Ten Sports", logo: "https://upload.wikimedia.org/wikipedia/en/d/d0/Ten_Sports_logo.png", category: "Sports" },
+    ];
 
-        sameCategory.forEach(channel => {
-          const link = document.createElement("a");
-          link.href = `play.html?id=${channel.id}`;
-          link.className = "card";
-          link.innerHTML = `
-            <img src="${channel.logo}" alt="${channel.name}">
-            <h2>${channel.name}</h2>
-          `;
-          container.appendChild(link);
-        });
+    const container = document.getElementById("channel-container");
+
+    function renderChannels(filter = "All") {
+      container.innerHTML = "";
+      const filtered = filter === "All" ? channels : channels.filter(c => c.category === filter);
+      filtered.forEach(c => {
+        const div = document.createElement("div");
+        div.className = "tvv-item";
+        div.innerHTML = `
+          <a href="play.html?id=${c.id}">
+            <div class="tvv-thumb">
+              <img src="${c.logo}" alt="${c.name}">
+            </div>
+            <div class="tvv-name">${c.name}</div>
+          </a>
+        `;
+        container.appendChild(div);
       });
-  </script>
+    }
 
+    function changeChannelGroup() {
+      const value = document.getElementById("channel-dropdown").value;
+      renderChannels(value);
+    }
+
+    renderChannels();
+  </script>
 </body>
 </html>
