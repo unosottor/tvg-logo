@@ -1,235 +1,237 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>DISH LIVE 24</title>
+  <title>Player LIVE TV | Powered By DISH LIVE 24</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- JW Player -->
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@hola.org/jwplayer-hlsjs@latest/dist/jwplayer.hlsjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@0.14.17"></script>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      user-select: none;
-    }
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #000;
+      -webkit-user-select: none; /* মোবাইলের জন্য */
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; /* পুরো পেজে কপি বন্ধ */
     }
-
-    /* HEADER SECTION */
-    .top-header {
-      background: #ffffff;
-      padding: 25px 20px 10px;
-      text-align: center;
-    }
-    .top-header img {
-      width: 80px;
-      height: 80px;
-      background: #fff;
-      border-radius: 16px;
-      padding: 5px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .top-header h1 {
-      color: #222;
-      font-size: 24px;
-      margin: 10px 0 8px;
-    }
-    .top-header input {
-      padding: 10px 18px;
-      width: 90%;
-      max-width: 400px;
-      border: 2px solid #ddd;
-      border-radius: 30px;
-      font-size: 15px;
-      background: #fff;
-      color: #000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      outline: none;
-      margin-bottom: 0;
-    }
-    .top-header input::placeholder {
-      color: #999;
-    }
-
-    /* CATEGORY */
-    .categories {
-      background: #ffffff;
+    .header {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      padding: 8px 10px 8px;
-      border-top: 1px solid #eee;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      user-select: auto; /* হেডারে কপি দিতে পারবে */
     }
-    .categories a {
-      padding: 5px 13px;
-      border-radius: 20px;
-      background: #eee;
-      text-decoration: none;
-      color: #333;
-      font-size: 13px;
-      transition: 0.2s;
+    .header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      user-select: none;
     }
-    .categories a.active,
-    .categories a:hover {
-      background: #007bff;
-      color: #fff;
+    .header h1 {
+      font-size: 22px;
+      margin: 0;
+      user-select: none;
     }
-
-    /* CHANNEL CARDS */
-    .channels-grid {
-      background: #f9f9f9;
+    .player-container {
+      max-width: 90%;
+      margin: 20px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: #000;
+      aspect-ratio: 16/9;
+      -webkit-user-select: auto; /* প্লেয়ার কন্ট্রোলের জন্য */
+      user-select: auto;
+    }
+    #player {
+      width: 100%;
+      height: 100%;
+    }
+    .related-section {
+      margin: 20px;
+    }
+    .related-section h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      user-select: none;
+    }
+    .related-channels {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       gap: 15px;
-      padding: 15px;
     }
     .channel-card {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      overflow: hidden;
       text-align: center;
-      padding-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       transition: 0.2s;
+      overflow: hidden;
+      cursor: pointer;
+      user-select: none; /* কার্ড নাম কপি বন্ধ */
     }
     .channel-card:hover {
       transform: scale(1.03);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .channel-card a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      user-select: none;
     }
     .channel-card img {
       width: 100%;
-      height: 110px;
+      height: 100px;
       object-fit: contain;
-      background: #fff;
+      pointer-events: none;
+      user-select: none;
     }
     .channel-card h3 {
-      margin: 5px 0 2px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #222;
+      font-size: 14px;
+      margin: 5px 0 3px;
+      user-select: none;
+      pointer-events: none;
     }
-    .channel-category {
-      font-size: 12px;
-      color: #666;
-    }
-
-    /* SCROLL TO TOP BUTTON */
-    #topBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-      background: #fff;
-      color: #000;
-      border: 1.5px solid #000;
-      padding: 8px 10px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-    #topBtn:hover {
-      background: #f1f1f1;
-    }
-
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <div class="top-header">
+  <div class="header">
     <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="Logo" />
     <h1>DISH LIVE 24</h1>
-    <input type="text" id="searchInput" placeholder="🔍 Search Channels Here..." />
   </div>
 
-  <!-- CATEGORY BUTTONS -->
-  <div class="categories">
-    <a href="#" data-category="all" class="active">All</a>
-    <a href="#" data-category="Bangladeshi">Bangladeshi</a>
-    <a href="#" data-category="Entertainment">Entertainment</a>
-    <a href="#" data-category="Indian Bangla">Indian Bangla</a>
-    <a href="#" data-category="Kids">Kids</a>
-    <a href="#" data-category="Music">Music</a>
-    <a href="#" data-category="Sports">Sports</a>
+  <div class="player-container">
+    <div id="player">Loading player...</div>
   </div>
 
-  <!-- CHANNEL GRID -->
-  <div class="channels-grid" id="channelGrid">
-    <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
-      <a href="play.php?id=1">
-        <img src="https://i.postimg.cc/pdddb1bs/20250529-120025.png" alt="Sangeet Bangla" />
-      </a>
-      <h3>Sangeet Bangla</h3>
-      <div class="channel-category">Music</div>
-    </div>
-    <div class="channel-card" data-name="Zoom" data-category="Music">
-      <a href="play.php?id=2">
-        <img src="https://i.postimg.cc/7hz6tG8D/20250529_121941.png" alt="Zoom" />
-      </a>
-      <h3>Zoom</h3>
-      <div class="channel-category">Music</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
+  <div class="related-section">
+    <h2>Related Channels</h2>
+    <div class="related-channels" id="relatedGrid">
+      <p>Loading...</p>
     </div>
   </div>
 
-  <!-- ⬆️ Scroll to Top Button -->
-  <button onclick="topFunction()" id="topBtn" title="Go to top">⬆️</button>
-
-  <!-- JS: Filter + Scroll -->
   <script>
-    const searchInput = document.getElementById('searchInput');
-    const categoryLinks = document.querySelectorAll('.categories a');
-    const cards = document.querySelectorAll('.channel-card');
-
-    function filterChannels() {
-      const term = searchInput.value.toLowerCase();
-      const activeCat = document.querySelector('.categories a.active').dataset.category;
-      cards.forEach(card => {
-        const name = card.dataset.name.toLowerCase();
-        const category = card.dataset.category;
-        const matchSearch = name.includes(term);
-        const matchCat = activeCat === 'all' || category === activeCat;
-        card.style.display = matchSearch && matchCat ? 'block' : 'none';
+    // JW Player সেটআপ ফাংশন
+    function loadPlayer(source) {
+      const player = jwplayer("player");
+      player.setup({
+        file: source,
+        type: "hls",
+        width: "100%",
+        aspectratio: "16:9",
+        autostart: true,
+        mute: false,
+        preload: "auto",
+        image: "https://anym3u8player.com/live.gif",
+        primary: "html5",
+        hlsjsdefault: true,
+        hlsjsConfig: {
+          maxBufferLength: 30,
+          liveSyncDuration: 5
+        }
       });
+      jwplayer_hls_provider.attach();
     }
 
-    searchInput.addEventListener('input', filterChannels);
+    
+    async function fetchAndStoreChannels() {
+      const res = await fetch("https://bdix.dishlive24.workers.dev/shoq.json");
+      const data = await res.json();
+      localStorage.setItem("channelData", JSON.stringify(data));
+      localStorage.setItem("lastFetch", Date.now());
+    }
 
-    categoryLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        categoryLinks.forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-        filterChannels();
-      });
-    });
+    
+    async function ensureDataLoaded() {
+      const lastFetch = localStorage.getItem("lastFetch");
+      const oneDay = 24 * 60 * 60 * 1000;
 
-    // Scroll to top logic
-    const topBtn = document.getElementById("topBtn");
-    window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topBtn.style.display = "block";
-      } else {
-        topBtn.style.display = "none";
+      if (!lastFetch || (Date.now() - lastFetch > oneDay)) {
+        await fetchAndStoreChannels();
       }
-    };
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    // id দিয়ে LocalStorage থেকে প্লে করার ফাংশন
+    async function playById(id) {
+      await ensureDataLoaded();
+      const allData = JSON.parse(localStorage.getItem("channelData"));
+      if (allData && allData[id] && allData[id].file) {
+        loadPlayer(allData[id].file);
+      } else {
+        document.getElementById('player').innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>Invalid Channel ID</h2>";
+      }
+    }
+
+    (async () => {
+      const id = new URLSearchParams(location.search).get("id");
+      const url = new URLSearchParams(location.search).get("url");
+
+      if (url) {
+        loadPlayer(decodeURIComponent(url));
+      } else if (id) {
+        await playById(id);
+      } else {
+        document.getElementById('player').innerHTML = "<h2 style='color:white;text-align:center;padding:20px;'>No URL or ID provided</h2>";
+      }
+    })();
+
   </script>
+
+  <script>
+    // Related Channels লোড (index.html থেকে)
+    const relatedGrid = document.getElementById("relatedGrid");
+    const currentId = new URLSearchParams(location.search).get("id");
+
+    fetch("index.html")
+      .then(res => res.text())
+      .then(html => {
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const cards = [...doc.querySelectorAll('.channel-card')];
+
+        const current = cards.find(c => c.querySelector('a')?.href.includes(`id=${currentId}`));
+        const currentCategory = current?.getAttribute('data-category') || '';
+        const related = cards.filter(c => 
+          c.getAttribute('data-category') === currentCategory &&
+          !c.querySelector('a')?.href.includes(`id=${currentId}`)
+        ).slice(0, 3);
+
+        if (related.length === 0) {
+          relatedGrid.innerHTML = '<p>No related channels found.</p>';
+          return;
+        }
+
+        relatedGrid.innerHTML = '';
+        related.forEach(c => {
+          const name = c.querySelector('h3')?.textContent;
+          const img = c.querySelector('img')?.src;
+          const link = c.querySelector('a')?.getAttribute('href');
+
+          const card = document.createElement('div');
+          card.className = 'channel-card';
+          card.innerHTML = `
+            <a href="play.html${link.includes('?') ? link.slice(link.indexOf('?')) : ''}">
+              <img src="${img}" alt="${name}">
+              <h3>${name}</h3>
+            </a>`;
+          relatedGrid.appendChild(card);
+        });
+      })
+      .catch(() => {
+        relatedGrid.innerHTML = '<p>Failed to load related channels.</p>';
+      });
+  </script>
+
 </body>
 </html>
