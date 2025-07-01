@@ -20,7 +20,7 @@
 
     .card {
       flex: 0 0 auto;
-      width: 120px;
+      width: 100px;
       scroll-snap-align: start;
       text-align: center;
     }
@@ -34,6 +34,13 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
+    .top-title {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body class="bg-white text-black">
@@ -42,54 +49,62 @@
   <header class="bg-black text-white p-4 flex items-center justify-between">
     <div class="flex items-center gap-2">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Play_button_icon.svg/512px-Play_button_icon.svg.png" class="h-6 w-6" />
-      <h1 class="text-lg font-semibold">TULNIT | Unlimited Entertainment</h1>
     </div>
+    <h1 class="text-lg font-bold text-white">TULNIT</h1>
     <div class="flex items-center gap-4">
       <button>🔍</button>
       <button class="text-xl">☰</button>
     </div>
   </header>
 
+  <!-- Search Widget -->
+  <div class="px-4 py-2">
+    <input type="text" placeholder="Search..." class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring">
+  </div>
+
+  <!-- Bold Top Title -->
+  <div class="top-title">Featured Channels</div>
+
   <!-- Section -->
-  <section class="px-4 mt-4">
+  <section class="px-4 mt-3">
     <div class="flex justify-between items-center mb-2">
-      <button class="bg-blue-600 text-white text-sm px-3 py-1 rounded">SEE ALL</button>
+      <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded">SEE ALL</button>
       <div class="flex gap-2">
-        <button class="border px-2 rounded">◀</button>
-        <button class="border px-2 rounded">▶</button>
+        <button class="border px-2 rounded text-sm">◀</button>
+        <button class="border px-2 rounded text-sm">▶</button>
       </div>
     </div>
 
     <div class="scroll-x">
-      <!-- Card with Tulnit Image -->
+      <!-- Tulnit Image Card -->
       <div class="card">
-        <img src="https://tulnit.com/wp-content/uploads/2024/03/ChatGPT-Image-Apr-14-2025-04_54_49-PM-200x300.png" alt="Custom" class="w-full">
-        <p class="text-xs mt-1 truncate-text">Featured Channel</p>
+        <img src="https://tulnit.com/wp-content/uploads/2024/03/ChatGPT-Image-Apr-14-2025-04_54_49-PM-200x300.png" alt="Tulnit">
+        <p class="text-xs mt-1 truncate-text">Featured</p>
       </div>
 
-      <!-- Other Sample Cards -->
+      <!-- Sample Cards -->
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/FDAD4A/000000?text=RDC" alt="RDC">
+        <img src="https://via.placeholder.com/120x160/FDAD4A/000000?text=RDC" alt="RDC">
         <p class="text-xs mt-1 truncate-text">RDC Movies</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/FD9840/000000?text=ZEE" alt="Zee">
-        <p class="text-xs mt-1 truncate-text">Zee Bolly World</p>
+        <img src="https://via.placeholder.com/120x160/FD9840/000000?text=ZEE" alt="Zee">
+        <p class="text-xs mt-1 truncate-text">Zee Bolly</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/5CA0D3/000000?text=Shemaroo" alt="Shemaroo">
-        <p class="text-xs mt-1 truncate-text">Shemaroo Filmi</p>
+        <img src="https://via.placeholder.com/120x160/5CA0D3/000000?text=Shemaroo" alt="Shemaroo">
+        <p class="text-xs mt-1 truncate-text">Shemaroo</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/FDCB58/000000?text=Tamil" alt="Tamil">
-        <p class="text-xs mt-1 truncate-text">Thamilaaram</p>
+        <img src="https://via.placeholder.com/120x160/FDCB58/000000?text=Tamil" alt="Tamil">
+        <p class="text-xs mt-1 truncate-text">Tamil TV</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/FFA500/000000?text=Buddhist" alt="Buddhist">
-        <p class="text-xs mt-1 truncate-text">The Buddhist</p>
+        <img src="https://via.placeholder.com/120x160/FFA500/000000?text=Buddhist" alt="Buddhist">
+        <p class="text-xs mt-1 truncate-text">Buddhist</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/160x200/20B2AA/000000?text=DP" alt="DP">
+        <img src="https://via.placeholder.com/120x160/20B2AA/000000?text=DP" alt="DP">
         <p class="text-xs mt-1 truncate-text">Videsa DP</p>
       </div>
     </div>
