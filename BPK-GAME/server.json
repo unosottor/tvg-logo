@@ -31,11 +31,11 @@
       ]
     },
     {
-      "id": "",
+      "id": "borussia-vs-monterrey",
       "title": "",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249739" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/play?id=" },
+        { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249741" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/player?id=" },
         { "name": "Server 3", "url": "https://dishlive24.vercel.app/Player?url=https://vivosoccer.xyz/vivo/5.php" },
         { "name": "Server 4", "url": "" }
       ]
@@ -47,7 +47,7 @@
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249740" },
         { "name": "Server 2", "url": "https://dishlive24.vercel.app/Player?url=https://embedstreams.top/embed/alpha/real-madrid-vs-juventus/2" },
         { "name": "Server 3", "url": "https://dishlive24.vercel.app/Player?url=https://vivosoccer.xyz/vivo/5.php" },
-        { "name": "Server 4", "url": "https://dishlive24.pages.dev/play?id=MBC_5" }
+        { "name": "Server 4", "url": "https://dishlive24.pages.dev/player?id=MBC_5" }
       ]
     },
     {
