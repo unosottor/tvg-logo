@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Channel - DISH LIVE 24</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #000;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+    }
+    .header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .player-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+      margin: 20px auto;
+      max-width: 90%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .player-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .related-section {
+      margin: 20px;
+    }
+    .related-section h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .related-channels {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+    }
+    .channel-card {
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding-bottom: 8px;
+      transition: 0.2s;
+    }
+    .channel-card:hover {
+      transform: scale(1.03);
+    }
+    .channel-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      background: #fff;
+    }
+    .channel-card h3 {
+      font-size: 14px;
+      margin: 5px 0 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="Logo" />
+    <h1>DISH LIVE 24</h1>
+  </div>
+
+  <div class="player-wrapper">
+    <iframe id="playerFrame" src="" allowfullscreen></iframe>
+  </div>
+
+  <div class="related-section">
+    <h2>Related Channels</h2>
+    <div class="related-channels" id="relatedGrid">
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const playerFrame = document.getElementById('playerFrame');
+    const relatedGrid = document.getElementById('relatedGrid');
+
+    // Set iframe src
+    playerFrame.src = `https://dishlive24.pages.dev/player?id=${id}`;
+
+    // Fetch home.html and extract related channels
+    fetch("index.html") // or "https://dishlive24.pages.dev/" if hosted
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+        const cards = [...doc.querySelectorAll('.channel-card')];
+
+        // Find current card
+        const currentCard = cards.find(c => {
+          const link = c.querySelector('a')?.getAttribute('href') || "";
+          return link.includes(`id=${id}`);
+        });
+
+        if (!currentCard) {
+          relatedGrid.innerHTML = '<p>No related channels found.</p>';
+          return;
+        }
+
+        const currentCategory = currentCard.getAttribute('data-category');
+
+        const related = cards.filter(c => 
+          c.getAttribute('data-category') === currentCategory &&
+          c !== currentCard
+        ).slice(0, 3);
+
+        if (related.length === 0) {
+          relatedGrid.innerHTML = '<p>No related channels found.</p>';
+          return;
+        }
+
+        relatedGrid.innerHTML = '';
+        related.forEach(c => {
+          const name = c.querySelector('h3')?.textContent || '';
+          const img = c.querySelector('img')?.src || '';
+          const link = c.querySelector('a')?.getAttribute('href') || '#';
+
+          const card = document.createElement('div');
+          card.className = 'channel-card';
+          card.innerHTML = `
+            <a href="play.html${link.includes('?') ? link.slice(link.indexOf('?')) : ''}">
+              <img src="${img}" alt="${name}">
+              <h3>${name}</h3>
+            </a>
+          `;
+          relatedGrid.appendChild(card);
+        });
+
+      }).catch(err => {
+        relatedGrid.innerHTML = '<p>Failed to load related channels.</p>';
+        console.error(err);
+      });
+  </script>
+
+</body>
+</html>
