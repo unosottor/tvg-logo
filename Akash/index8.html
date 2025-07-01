@@ -22,7 +22,16 @@
       overflow-y: auto;
     }
 
-    /* HEADER SECTION */
+    /* SCROLLBAR DESIGN */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+    }
+
+    /* HEADER */
     .top-header {
       background: #ffffff;
       padding: 25px 20px 10px;
@@ -58,14 +67,14 @@
       color: #999;
     }
 
-    /* CATEGORY */
+    /* CATEGORY BUTTONS */
     .categories {
       background: #ffffff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
-      padding: 8px 10px 8px;
+      padding: 8px 10px;
       border-top: 1px solid #eee;
     }
     .categories a {
@@ -76,7 +85,6 @@
       color: #333;
       font-size: 13px;
       transition: 0.2s;
-      user-select: none;
     }
     .categories a.active,
     .categories a:hover {
@@ -101,7 +109,6 @@
       padding-bottom: 10px;
       transition: 0.2s;
       cursor: pointer;
-      user-select: none;
     }
     .channel-card:hover {
       transform: scale(1.03);
@@ -126,7 +133,7 @@
 
     /* SCROLL TO TOP BUTTON */
     #topBtn {
-      display: none;
+      display: block;
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -137,17 +144,22 @@
       border-radius: 12px;
       cursor: pointer;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      visibility: hidden;
     }
-    #topBtn:hover {
-      background: #f1f1f1;
+    #topBtn.show {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
     }
     #topBtn img {
-      display: block;
-      user-select: none;
-      pointer-events: none;
       width: 24px;
       height: 24px;
+      user-select: none;
+      pointer-events: none;
+      display: block;
     }
   </style>
 </head>
@@ -160,7 +172,7 @@
     <input type="text" id="searchInput" placeholder="🔍 Search Channels Here..." />
   </div>
 
-  <!-- CATEGORY BUTTONS -->
+  <!-- CATEGORIES -->
   <div class="categories">
     <a href="#" data-category="all" class="active">All</a>
     <a href="#" data-category="Bangladeshi">Bangladeshi</a>
@@ -173,6 +185,7 @@
 
   <!-- CHANNEL GRID -->
   <div class="channels-grid" id="channelGrid">
+    <!-- Example Card -->
     <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
       <a href="play.php?id=1">
         <img src="https://i.postimg.cc/pdddb1bs/20250529-120025.png" alt="Sangeet Bangla" />
@@ -194,59 +207,15 @@
       <h3>Sony AATH</h3>
       <div class="channel-category">Indian Bangla</div>
     </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
-      <a href="play.php?id=3">
-        <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
-      </a>
-      <h3>Sony AATH</h3>
-      <div class="channel-category">Indian Bangla</div>
-    </div>
-    </div>
+    <!-- Add more cards as needed -->
+  </div>
 
-
-
-
-  
-  <!-- Scroll to Top Button with Image -->
+  <!-- SCROLL TO TOP BUTTON -->
   <button onclick="topFunction()" id="topBtn" title="Go to top">
-    <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Arrow Up" />
+    <img src="https://cdn-icons-png.flaticon.com/512/10023/10023338.png" alt="Arrow Up" />
   </button>
 
+  <!-- SCRIPT -->
   <script>
     const searchInput = document.getElementById('searchInput');
     const categoryLinks = document.querySelectorAll('.categories a');
@@ -276,18 +245,24 @@
       });
     });
 
-    // Show scroll-to-top button after scrolling 10px
-    window.onscroll = function () {
+    // Scroll button logic
+    window.addEventListener("scroll", () => {
       if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        topBtn.style.display = "block";
+        topBtn.classList.add("show");
       } else {
-        topBtn.style.display = "none";
+        topBtn.classList.remove("show");
       }
-    };
+    });
 
+    // Smooth scroll fallback
     function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(topFunction);
+        window.scrollTo(0, c - c / 8);
+      }
     }
   </script>
+
 </body>
 </html>
