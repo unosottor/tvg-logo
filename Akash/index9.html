@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DISH LIVE 24</title>
-  <link rel="icon" type="image/png" href="https://dishlive24.vercel.app/images/dishlive24.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -13,20 +12,19 @@
       box-sizing: border-box;
       user-select: none;
     }
-
     body {
       font-family: 'Inter', sans-serif;
       background: #f2f2f2;
       color: #000;
     }
 
-    /* ⬛️ Top Header (Dark) */
+    /* 🔷 HEADER SECTION */
     .top-header {
       background: #000;
       padding: 40px 20px 30px;
       text-align: center;
+      position: relative;
     }
-
     .top-header img {
       width: 90px;
       height: 90px;
@@ -35,13 +33,11 @@
       padding: 5px;
       box-shadow: 0 4px 12px rgba(255,255,255,0.1);
     }
-
     .top-header h1 {
       color: white;
       font-size: 26px;
       margin: 15px 0 10px;
     }
-
     .top-header input {
       padding: 12px 20px;
       width: 90%;
@@ -54,38 +50,59 @@
       box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
       outline: none;
     }
-
     .top-header input::placeholder {
       color: #aaa;
     }
 
-    /* 🟤 Categories (Dark) */
+    /* 🌊 Wave SVG */
+    .wave {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .wave svg {
+      position: relative;
+      display: block;
+      width: calc(150% + 1.3px);
+      height: 60px;
+    }
+    .wave path {
+      fill: #ffffff;
+      animation: waveAnim 6s linear infinite;
+    }
+    @keyframes waveAnim {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* 🔘 CATEGORY (LIGHT THEME) */
     .categories {
+      background: #ffffff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      padding: 15px;
-      background: #1a1a1a;
+      padding: 15px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
-
     .categories a {
       padding: 6px 15px;
       border-radius: 20px;
-      background: #333;
+      background: #eee;
       text-decoration: none;
-      color: white;
+      color: #333;
       font-size: 14px;
       transition: 0.3s;
     }
-
     .categories a.active,
     .categories a:hover {
-      background: #fff;
-      color: #000;
+      background: #007bff;
+      color: #fff;
     }
 
-    /* ⚪️ Channel Grid (Light theme section) */
+    /* 🔸 CHANNEL CARDS */
     .channels-grid {
       background: #f9f9f9;
       display: grid;
@@ -93,7 +110,6 @@
       gap: 15px;
       padding: 20px;
     }
-
     .channel-card {
       background: #fff;
       border-radius: 10px;
@@ -101,39 +117,24 @@
       overflow: hidden;
       text-align: center;
       padding-bottom: 10px;
-      position: relative;
       animation: fadeSlideIn 0.5s ease forwards;
     }
-
     .channel-card:hover {
       transform: scale(1.03);
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
-
-    .channel-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 4px;
-      width: 100%;
-      background: #eee;
-    }
-
     .channel-card img {
       width: 100%;
       height: 120px;
       object-fit: contain;
       background: #fff;
     }
-
     .channel-card h3 {
       margin: 5px 0 2px;
       font-size: 15px;
       font-weight: 600;
       color: #222;
     }
-
     .channel-category {
       font-size: 12px;
       color: #666;
@@ -154,14 +155,21 @@
 </head>
 <body>
 
-  <!-- 🔷 Top Header -->
+  <!-- 🔷 HEADER -->
   <div class="top-header">
-    <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="DISH LIVE 24 Logo" />
+    <img src="https://dishlive24.vercel.app/images/dishlive24.png" alt="Logo" />
     <h1>DISH LIVE 24</h1>
     <input type="text" id="searchInput" placeholder="🔍 Search Channels Here..." />
   </div>
 
-  <!-- 🔹 Categories -->
+  <!-- 🌊 WAVE DIVIDER -->
+  <div class="wave">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0.00,49.98 C150.00,150.00 349.50,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+  </div>
+
+  <!-- 🔘 CATEGORY -->
   <div class="categories">
     <a href="#" data-category="all" class="active">All</a>
     <a href="#" data-category="Bangladeshi">Bangladeshi</a>
@@ -172,7 +180,7 @@
     <a href="#" data-category="Sports">Sports</a>
   </div>
 
-  <!-- 🔸 Channel Cards Section (Light) -->
+  <!-- 🎥 CHANNEL CARDS -->
   <div class="channels-grid" id="channelGrid">
     <div class="channel-card" data-name="Sangeet Bangla" data-category="Music">
       <a href="play.php?id=1">
@@ -181,7 +189,6 @@
       <h3>Sangeet Bangla</h3>
       <div class="channel-category">Music</div>
     </div>
-
     <div class="channel-card" data-name="Zoom" data-category="Music">
       <a href="play.php?id=2">
         <img src="https://i.postimg.cc/7hz6tG8D/20250529_121941.png" alt="Zoom" />
@@ -189,7 +196,6 @@
       <h3>Zoom</h3>
       <div class="channel-category">Music</div>
     </div>
-
     <div class="channel-card" data-name="Sony AATH" data-category="Indian Bangla">
       <a href="play.php?id=3">
         <img src="https://dishlive24.vercel.app/images/sonyaath.png" alt="Sony AATH" />
@@ -199,7 +205,7 @@
     </div>
   </div>
 
-  <!-- 🔻 JavaScript -->
+  <!-- 🔻 FILTER SCRIPT -->
   <script>
     const searchInput = document.getElementById('searchInput');
     const categoryLinks = document.querySelectorAll('.categories a');
