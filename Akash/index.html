@@ -1,79 +1,94 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>TULNIT Style Clone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: #fff;
+    body { background-color: #fff; font-family: 'Segoe UI', sans-serif; }
+    .channel-card img {
+      border-radius: 8px;
     }
-    .movie-card:hover {
-      transform: scale(1.03);
-      transition: all 0.3s ease-in-out;
+    .scroll-container {
+      overflow-x: auto;
+      display: flex;
+      gap: 12px;
+      scroll-snap-type: x mandatory;
+      padding: 10px 0;
+    }
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+    .scroll-item {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+      width: 120px;
     }
   </style>
 </head>
-<body>
+<body class="text-black">
 
   <!-- Header -->
-  <header class="bg-zinc-900 p-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-400">TulStream</h1>
-      <input type="text" placeholder="Search movies..." class="px-4 py-2 rounded bg-zinc-800 text-white w-1/2">
+  <header class="bg-black text-white p-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Play_button_icon.svg/512px-Play_button_icon.svg.png" class="h-6 w-6" />
+      <h1 class="text-xl font-bold">TULNIT</h1>
+    </div>
+    <div class="flex gap-2">
+      <button>🔍</button>
+      <button>☰</button>
     </div>
   </header>
 
-  <!-- Categories -->
-  <section class="container mx-auto px-4 mt-6">
-    <div class="flex flex-wrap gap-2">
-      <button class="px-4 py-1 bg-blue-700 text-white rounded">All</button>
-      <button class="px-4 py-1 bg-zinc-700 text-white rounded">Action</button>
-      <button class="px-4 py-1 bg-zinc-700 text-white rounded">Drama</button>
-      <button class="px-4 py-1 bg-zinc-700 text-white rounded">Sci-Fi</button>
-      <button class="px-4 py-1 bg-zinc-700 text-white rounded">Comedy</button>
+  <!-- Section 1 -->
+  <section class="px-4 mt-4">
+    <div class="flex justify-between items-center mb-2">
+      <h2 class="text-lg font-semibold">Live Channels</h2>
+      <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded">SEE ALL</button>
+    </div>
+    <div class="scroll-container">
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/FDAD4A/000000?text=RDC" alt="RDC" class="w-full h-auto">
+        <p class="text-xs mt-1">RDC Movies</p>
+      </div>
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/FD9840/000000?text=ZEE" alt="ZEE" class="w-full h-auto">
+        <p class="text-xs mt-1">Zee Bolly World</p>
+      </div>
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/5CA0D3/000000?text=Shemaroo" alt="Shemaroo" class="w-full h-auto">
+        <p class="text-xs mt-1">Shemaroo Filmi</p>
+      </div>
+      <!-- Add more items -->
     </div>
   </section>
 
-  <!-- Movies Grid -->
-  <section class="container mx-auto px-4 py-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-    
-    <!-- Movie Card -->
-    <div class="bg-zinc-800 rounded overflow-hidden shadow movie-card">
-      <img src="https://image.tmdb.org/t/p/w300/8uVKfC4v5YJtZONbnpCYbC3U5ba.jpg" alt="Movie" class="w-full h-48 object-cover">
-      <div class="p-2">
-        <h2 class="text-sm font-semibold">The Batman</h2>
-        <p class="text-xs text-gray-400">2022 • Action</p>
+  <!-- Section 2 -->
+  <section class="px-4 mt-4">
+    <div class="flex justify-between items-center mb-2">
+      <h2 class="text-lg font-semibold">Tamil & Buddhist</h2>
+      <button class="bg-blue-600 text-white text-xs px-3 py-1 rounded">SEE ALL</button>
+    </div>
+    <div class="scroll-container">
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/FFB347/000000?text=Tamil" alt="Tamil" class="w-full h-auto">
+        <p class="text-xs mt-1">Thamilaaram</p>
+      </div>
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/FF7F50/000000?text=Buddhist" alt="Buddhist" class="w-full h-auto">
+        <p class="text-xs mt-1">The Buddhist</p>
+      </div>
+      <div class="scroll-item channel-card text-center">
+        <img src="https://via.placeholder.com/120x160/87CEFA/000000?text=DP+Grade" alt="DP" class="w-full h-auto">
+        <p class="text-xs mt-1">Videsa DP Gr...</p>
       </div>
     </div>
-
-    <div class="bg-zinc-800 rounded overflow-hidden shadow movie-card">
-      <img src="https://image.tmdb.org/t/p/w300/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="Movie" class="w-full h-48 object-cover">
-      <div class="p-2">
-        <h2 class="text-sm font-semibold">John Wick 4</h2>
-        <p class="text-xs text-gray-400">2023 • Action</p>
-      </div>
-    </div>
-
-    <div class="bg-zinc-800 rounded overflow-hidden shadow movie-card">
-      <img src="https://image.tmdb.org/t/p/w300/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Movie" class="w-full h-48 object-cover">
-      <div class="p-2">
-        <h2 class="text-sm font-semibold">Oppenheimer</h2>
-        <p class="text-xs text-gray-400">2023 • Drama</p>
-      </div>
-    </div>
-
-    <!-- Add more cards as needed -->
-
   </section>
 
   <!-- Footer -->
-  <footer class="bg-zinc-900 text-center py-4 text-gray-400 text-sm">
-    &copy; 2025 TulStream. Designed with ❤️ inspired by Dooplay.
+  <footer class="text-center text-xs text-gray-500 py-6">
+    &copy; 2025 TULNIT Clone. All rights reserved.
   </footer>
 
 </body>
