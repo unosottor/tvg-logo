@@ -1,106 +1,50 @@
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LIVE PLAYER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>JW Player HLS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JW Player Scripts -->
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/polyfills.webvtt.js"></script>
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwpsrv.js"></script>
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwplayer.core.controls.js"></script>
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/provider.cast.js"></script>
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/provider.hlsjs.js"></script>
+  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwplayer.js"></script>
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
+      background: #000;
+    }
+    #player {
       width: 100%;
-      touch-action: manipulation;
-      -ms-touch-action: manipulation;
-      background: black;
-    }
-
-    #playerContainer {
-      position: relative;
-      width: 100vw;
-      height: 56.25vw; /* 16:9 aspect ratio */
-      max-height: 100vh;
-      background: black;
-    }
-
-    hls-video, media-theme-sutro {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    ::cue {
-      display: none;
-    }
-
-    media-theme-sutro::part(control-button),
-    media-theme-sutro::part(control-label),
-    media-theme-sutro::part(control-tooltip) {
-      display: none !important;
+      height: 100vh;
     }
   </style>
-
-  <!-- Player Libraries -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element/+esm"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/player.style/sutro/+esm"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
 </head>
-
 <body>
 
-  <div id="playerContainer">
-    <media-theme-sutro id="mediaController">
-      <hls-video
-        slot="media"
-        id="videoPlayer"
-        autoplay
-        muted
-        playsinline
-        crossorigin
-      ></hls-video>
-    </media-theme-sutro>
-  </div>
+  <div id="player"></div>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const streamURL = params.get("url");
+    // JW Player License Key
+    jwplayer.key = "701fef7de243c4e8e91e6e6b3a2fea1e";
 
-    if (!streamURL) {
-      alert("No video URL provided!");
-    } else {
-      document.getElementById("videoPlayer").src = streamURL;
-    }
+    // Replace with your M3U8 link
+    const m3u8Url = "https://example.com/stream.m3u8"; // এখানে তোমার m3u8 লিংক বসাও
 
-    customElements.whenDefined('media-theme-sutro').then(() => {
-      const mediaController = document.getElementById('mediaController');
-      const videoPlayer = document.getElementById('videoPlayer');
-
-      mediaController.addEventListener('dblclick', async () => {
-        try {
-          if (!document.fullscreenElement) {
-            await mediaController.requestFullscreen();
-            if (screen.orientation && screen.orientation.lock) {
-              await screen.orientation.lock('landscape').catch(() => {});
-            }
-          } else {
-            await document.exitFullscreen();
-          }
-        } catch (err) {
-          console.error("Fullscreen error:", err);
-        }
-      });
-
-      videoPlayer.addEventListener('click', (event) => {
-        if (videoPlayer.paused) {
-          videoPlayer.play();
-        } else {
-          event.preventDefault();
-        }
-      });
+    jwplayer("player").setup({
+      file: m3u8Url,
+      type: "hls",
+      width: "100%",
+      height: "100%",
+      autostart: true,
+      controls: true,
+      mute: false,
+      stretching: "uniform",
+      preload: "auto"
     });
   </script>
 
