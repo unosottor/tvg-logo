@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.13.3/dist/shaka-player.ui.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@4.13.3/dist/controls.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+    .shaka-video-container {
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div data-shaka-player-container class="shaka-video-container" shaka-controls>
+    <video autoplay data-shaka-player id="video"></video>
+  </div>
+  <script>
+    const videoElement = document.getElementById('video');
+
+    const channelstreamInfo = {
+      streamUrl: '',
+      authBearer: '',
+      streamPoster: ''
+    };
+
+    function fetchM3u8Url() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const m3uUrl = urlParams.get("url");
+
+      if (!m3uUrl || !m3uUrl.endsWith(".m3u8")) {
+        console.error("Invalid or missing M3U8 URL");
+        alert("Invalid or missing M3U8 stream URL!");
+        return Promise.reject("No valid stream URL");
+      }
+
+      channelstreamInfo.streamUrl = decodeURIComponent(m3uUrl);
+      return Promise.resolve();
+    }
+
+    async function initializePlayer() {
+      const videoContainer = document.querySelector('.shaka-video-container');
+      const videoElement = document.getElementById('video');
+
+      videoElement.poster = channelstreamInfo.streamPoster;
+      videoElement.muted = true;
+      videoElement.autoplay = true;
+      videoElement.controls = false;
+
+      const player = new shaka.Player();
+
+      const ui = new shaka.ui.Overlay(player, videoContainer, videoElement);
+      ui.configure({
+        controlPanelElements: [
+          'time_and_duration', 'mute', 'volume', 'rewind', 'fast_forward',
+          'play_pause', 'spacer', 'playback_rate', 'quality', 'fullscreen'
+        ],
+        addBigPlayButton: true,
+        seekBarColors: {
+          base: 'rgba(255, 255, 255, 0.3)',
+          buffered: 'rgba(255, 255, 255, 0.54)',
+          played: 'rgb(255, 0, 51)'
+        }
+      });
+
+      await player.attach(videoElement);
+
+      const networkingEngine = player.getNetworkingEngine();
+      networkingEngine.clearAllRequestFilters();
+      networkingEngine.registerRequestFilter((type, request) => {
+        if (channelstreamInfo.authBearer) {
+          request.headers['Authorization'] = `Bearer ${channelstreamInfo.authBearer}`;
+        }
+      });
+
+      try {
+        await player.load(channelstreamInfo.streamUrl);
+        console.log('Stream loaded successfully.');
+      } catch (error) {
+        console.error('Error loading stream:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      fetchM3u8Url()
+        .then(() => initializePlayer())
+        .catch(error => console.error('Player init failed:', error));
+    });
+  </script>
+</body>
+</html>
