@@ -45,8 +45,8 @@
       "title": "india-vs-england",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/player?url=https://sinelive-sineproxy.hf.space/proxy/m3u?url=http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8" },
-        { "name": "Server 2", "url": "" },
-        { "name": "Server 3", "url": "" },
+        { "name": "Server 2", "url": "https://dishlive24.pages.dev/CRICHD/?id=ten1hd" },
+        { "name": "Server 3", "url": "https://dishlive24.pages.dev/CRICHD/?id=tenspk" },
         { "name": "Server 4", "url": "" }
       ]
     },
