@@ -1,52 +1,77 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JW Player HLS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- JW Player Scripts -->
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/polyfills.webvtt.js"></script>
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwpsrv.js"></script>
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwplayer.core.controls.js"></script>
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/provider.cast.js"></script>
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/provider.hlsjs.js"></script>
-  <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwplayer.js"></script>
-
+  <meta charset="UTF-8" />
+  <title>Live Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       background: #000;
-    }
-    #player {
+      height: 100%;
       width: 100%;
-      height: 100vh;
+      overflow: hidden;
+    }
+    #dplayer {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-
-  <div id="player"></div>
+  <div id="dplayer"></div>
 
   <script>
-    // JW Player License Key
-    jwplayer.key = "701fef7de243c4e8e91e6e6b3a2fea1e";
+    // Extract m3u8 link from ?url=
+    const getM3U8FromURL = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('url');
+    };
 
-    // Replace with your M3U8 link
-    const m3u8Url = "https://example.com/stream.m3u8"; // এখানে তোমার m3u8 লিংক বসাও
+    const streamUrl = getM3U8FromURL();
 
-    jwplayer("player").setup({
-      file: m3u8Url,
-      type: "hls",
-      width: "100%",
-      height: "100%",
-      autostart: true,
-      controls: true,
-      mute: false,
-      stretching: "uniform",
-      preload: "auto"
-    });
+    if (!streamUrl || !streamUrl.endsWith(".m3u8")) {
+      document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:20%'>Invalid or missing M3U8 URL</h2>";
+    } else {
+      const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        autoplay: true,
+        volume: 0.8,
+        video: {
+          url: streamUrl,
+          type: 'hls'
+        }
+      });
+
+      const tryAutoPlay = async () => {
+        const video = dp.video;
+        try {
+          video.muted = false;
+          video.volume = 0.8;
+          await video.play();
+        } catch {
+          try {
+            video.muted = true;
+            await video.play();
+            video.muted = false;
+          } catch {}
+        }
+      };
+
+      tryAutoPlay();
+
+      ['click', 'touchstart', 'keydown'].forEach(evt =>
+        document.addEventListener(evt, () => {
+          if (dp.video.muted) {
+            dp.video.muted = false;
+            dp.video.volume = 0.8;
+          }
+        }, { once: true })
+      );
+    }
   </script>
-
 </body>
 </html>
