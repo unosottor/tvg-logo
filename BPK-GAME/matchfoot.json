@@ -1,6 +1,6 @@
  [ 
   {
-    "id": "realmadrid-vs-juventus",
+    "id": "",
     "team1": {
       "name": "Real Madrid",
       "logo": "https://dishlive24.vercel.app/images/football.png"
@@ -12,7 +12,7 @@
     "matchTime": "2025-07-02T01:00:00+06:00"
   },
   {
-    "id": "borussia-vs-monterrey",
+    "id": "",
     "team1": {
       "name": "Borussia",
       "logo": "https://dishlive24.vercel.app/images/football.png"
