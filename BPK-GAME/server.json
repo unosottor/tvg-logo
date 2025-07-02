@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": "borussia-vs-monterrey",
+      "id": "",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249741" },
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "realmadrid-vs-juventus",
+      "id": "",
       "title": "",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/Football?id=4249740" },
