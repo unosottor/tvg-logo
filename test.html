@@ -1,101 +1,108 @@
+ 
  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.13.3/dist/shaka-player.ui.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@4.13.3/dist/controls.min.css">
+  <title>LIVE PLAYER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: #000;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      touch-action: manipulation;
+      -ms-touch-action: manipulation;
+      background: black;
     }
-    .shaka-video-container {
+
+    #playerContainer {
+      position: relative;
       width: 100vw;
-      height: 100vh;
-      background: #000;
+      height: 56.25vw; /* 16:9 aspect ratio */
+      max-height: 100vh;
+      background: black;
     }
-    video {
+
+    hls-video, media-theme-sutro {
       width: 100%;
       height: 100%;
+      display: block;
+    }
+
+    ::cue {
+      display: none;
+    }
+
+    media-theme-sutro::part(control-button),
+    media-theme-sutro::part(control-label),
+    media-theme-sutro::part(control-tooltip) {
+      display: none !important;
     }
   </style>
+
+  <!-- Player Libraries -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element/+esm"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/player.style/sutro/+esm"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
 </head>
+
 <body>
-  <div data-shaka-player-container class="shaka-video-container" shaka-controls>
-    <video autoplay data-shaka-player id="video"></video>
+
+  <div id="playerContainer">
+    <media-theme-sutro id="mediaController">
+      <hls-video
+        slot="media"
+        id="videoPlayer"
+        autoplay
+        muted
+        playsinline
+        crossorigin
+      ></hls-video>
+    </media-theme-sutro>
   </div>
+
   <script>
-    const videoElement = document.getElementById('video');
+    const params = new URLSearchParams(window.location.search);
+    const streamURL = params.get("url");
 
-    const channelstreamInfo = {
-      streamUrl: '',
-      authBearer: '',
-      streamPoster: ''
-    };
-
-    function fetchM3u8Url() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const m3uUrl = urlParams.get("url");
-
-      if (!m3uUrl || !m3uUrl.endsWith(".m3u8")) {
-        console.error("Invalid or missing M3U8 URL");
-        alert("Invalid or missing M3U8 stream URL!");
-        return Promise.reject("No valid stream URL");
-      }
-
-      channelstreamInfo.streamUrl = decodeURIComponent(m3uUrl);
-      return Promise.resolve();
+    if (!streamURL) {
+      alert("No video URL provided!");
+    } else {
+      document.getElementById("videoPlayer").src = streamURL;
     }
 
-    async function initializePlayer() {
-      const videoContainer = document.querySelector('.shaka-video-container');
-      const videoElement = document.getElementById('video');
+    customElements.whenDefined('media-theme-sutro').then(() => {
+      const mediaController = document.getElementById('mediaController');
+      const videoPlayer = document.getElementById('videoPlayer');
 
-      videoElement.poster = channelstreamInfo.streamPoster;
-      videoElement.muted = true;
-      videoElement.autoplay = true;
-      videoElement.controls = false;
-
-      const player = new shaka.Player();
-
-      const ui = new shaka.ui.Overlay(player, videoContainer, videoElement);
-      ui.configure({
-        controlPanelElements: [
-          'time_and_duration', 'mute', 'volume', 'play_pause', 'spacer', 'playback_rate', 'quality', 'fullscreen'
-        ],
-        addBigPlayButton: true,
-        seekBarColors: {
-          base: 'rgba(255, 255, 255, 0.3)',
-          buffered: 'rgba(255, 255, 255, 0.54)',
-          played: 'rgb(255, 0, 51)'
+      mediaController.addEventListener('dblclick', async () => {
+        try {
+          if (!document.fullscreenElement) {
+            await mediaController.requestFullscreen();
+            if (screen.orientation && screen.orientation.lock) {
+              await screen.orientation.lock('landscape').catch(() => {});
+            }
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          console.error("Fullscreen error:", err);
         }
       });
 
-      await player.attach(videoElement);
-
-      const networkingEngine = player.getNetworkingEngine();
-      networkingEngine.clearAllRequestFilters();
-      networkingEngine.registerRequestFilter((type, request) => {
-        if (channelstreamInfo.authBearer) {
-          request.headers['Authorization'] = `Bearer ${channelstreamInfo.authBearer}`;
+      videoPlayer.addEventListener('click', (event) => {
+        if (videoPlayer.paused) {
+          videoPlayer.play();
+        } else {
+          event.preventDefault();
         }
       });
-
-      try {
-        await player.load(channelstreamInfo.streamUrl);
-        console.log('Stream loaded successfully.');
-      } catch (error) {
-        console.error('Error loading stream:', error);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      fetchM3u8Url()
-        .then(() => initializePlayer())
-        .catch(error => console.error('Player init failed:', error));
     });
   </script>
+
 </body>
 </html>
