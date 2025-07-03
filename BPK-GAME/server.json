@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": "bangladesh-vs-srilanka",
+      "id": "",
       "title": "bangladesh-vs-srilanka",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.pages.dev/mpd?id=TEN_CRICKET" },
@@ -41,11 +41,11 @@
       ]
     },
     {
-      "id": "india-vs-england",
+      "id": "",
       "title": "india-vs-england",
       "servers": [
         { "name": "Server 1", "url": "" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/CRICHD/?id=ten1hd" },
+        { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
         { "name": "Server 4", "url": "" }
       ]
