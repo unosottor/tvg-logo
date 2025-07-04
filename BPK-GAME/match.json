@@ -1,0 +1,32 @@
+ [ 
+  {
+    "id": "4249742",
+    "team1": {
+      "name": "Fluminense",
+      "logo": "https://cdn.sportnanoapi.com/football/team/a6bce9adfac7903426bed2b253991a18.png"
+    },
+    "team2": {
+      "name": "Al Hilal",
+      "logo": "https://cdn.sportnanoapi.com/football/team/07a555616afab7be32e00150eacf4197.png"
+    },
+    "matchTime": "2025-07-05T01:00:00+06:00"
+  },
+  {
+    "id": "4249744",
+    "team1": {
+      "name": "Palmeiras",
+      "logo": "https://cdn.sportnanoapi.com/football/team/e6a85b64d28f448601e90857eb799140.png"
+    },
+    "team2": {
+      "name": "Chelsea",
+      "logo": "https://cdn.sportnanoapi.com/football/team/b365ad0e85e2b1bcbf63f7a0f2f70a79.png"
+    },
+    "matchTime": "2025-07-05T07:00:00+06:00"
+  }
+
+  
+]
+
+
+
+
