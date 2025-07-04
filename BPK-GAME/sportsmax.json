@@ -59,25 +59,25 @@
     "k1": "7641daa5bacfbb61936c40a221c9e78e",
     "k2": "5732dd242f28338e909dc06cb1a1e5a2"
   },
-  "SG_CHANNEL_5": {
-    "url": "https://tglmp02.akamaized.net/out/v1/8c503a6966554d439035588f10505eee/manifest.mpd",
-    "k1": "1b8ee3db17d34547983a2c3ddc3d28fc",
-    "k2": "fb5deb5f688fd67ec20c71191c7f4590"
+  "MASR_2": {
+    "url": "https://uselector.cdn.intigral-ott.net/MBMS2/MBMS2.isml/manifest.mpd",
+    "k1": "4da4fec209622c5da04762e8d2d2f1d7",
+    "k2": "4495168cf1a99038546b9d042dbe7c97"
   },
-  "QSL_Movies": {
-    "url": "https://live3.shoq.com.pk/live/eds/QSL_Movies/DASH/QSL_Movies.mpd",
-    "k1": "7753f17cea5b2f7b7ee7684df7915dad",
-    "k2": "ec683fe4cb9d85c5aa892f81aa7925a9"
+  "": {
+    "url": "",
+    "k1": " ",
+    "k2": " "
   },
-  "VZO_HD": {
-    "url": "https://live3.shoq.com.pk/live/eds/VZO_HD/DASH/VZO_HD.mpd",
-    "k1": "abbc310178bc1172a79efb23c9fb0533",
-    "k2": "64d02cd7069936b0cbb90d6ca27e4bd7"
+  "": {
+    "url": " ",
+    "k1": " ",
+    "k2": " "
   },
-  "TRS_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/TRS_Cinema/DASH/TRS_Cinema.mpd",
-    "k1": "7b91f52a2c9ac256e3a50031e6c30c4d",
-    "k2": "bee1735fd5a67b35fa0411821eaedf08"
+  "": {
+    "url": " ",
+    "k1": "",
+    "k2": " "
   },
   "SZR_Cinema": {
     "url": "https://live3.shoq.com.pk/live/eds/SZR_Cinema/DASH/SZR_Cinema.mpd",
