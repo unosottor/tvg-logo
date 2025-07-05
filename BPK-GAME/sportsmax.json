@@ -64,85 +64,85 @@
     "k1": "4da4fec209622c5da04762e8d2d2f1d7",
     "k2": "4495168cf1a99038546b9d042dbe7c97"
   },
-  "": {
-    "url": "",
-    "k1": " ",
-    "k2": " "
+  "ACTION": {
+    "url": "https://shls-mbcaction-prod-dub-ak.akamaized.net/out/v1/8732f5132b274000bd59aee64255241c/index.mpd",
+    "k1": "61500ce9a45342b897ba868f4fc59910",
+    "k2": "93a1c516e6b4fc91fa88c59922f6d3d7"
   },
-  "": {
-    "url": " ",
-    "k1": " ",
-    "k2": " "
+  "SANGEET_BANGLA": {
+    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Sangeetbangla2/default/manifest.mpd",
+    "k1": "55ef53e7216640ea862b98c3864000f7",
+    "k2": "11c2726ab75d4e6aaf54e0e09b5ae593"
   },
-  "": {
-    "url": " ",
-    "k1": "",
-    "k2": " "
+  "MUSIC_IN": {
+    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/manifest.mpd",
+    "k1": "e874f3a7e5de42fca2b2a93b318fa52e",
+    "k2": "a77f240d277c47a5a0bc934072c4d7da"
   },
-  "SZR_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/SZR_Cinema/DASH/SZR_Cinema.mpd",
-    "k1": "7817620076e17e50a0f24b6169b72d12",
-    "k2": "846cf6983bdefbb20576d7126b99dcc8"
+  "Z_CINEMA_HD": {
+    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/manifest.mpd",
+    "k1": "f56beaac9f124616872c741c9ce4fa4e",
+    "k2": "5d40a903238f4ad98abbed1877d4e3d1"
   },
-  "JTU_Movies": {
-    "url": "https://live3.shoq.com.pk/live/eds/JTU_Movies/DASH/JTU_Movies.mpd",
-    "k1": "7a345a476f49cc8d36d3f6c103997c39",
-    "k2": "811c126835620722920e6dd2bdbb1208"
+  "HUM_TV": {
+    "url": "https://live3.shoq.com.pk/live/eds/HUM_TV/DASH/HUM_TV.mpd",
+    "k1": "83404dd4292fec9e27173696f6e42dee",
+    "k2": "a9dd477034d4fb2e7e5dc7c21ce73fed"
   },
-  "AIC_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/AIC_Cinema/DASH/AIC_Cinema.mpd",
-    "k1": "69085bfe7d7574ec4dd0bec774d4ad02",
-    "k2": "48a8a2fdec4dd5a18d65990532ad1e02"
+  "GEOPK": {
+    "url": "https://live3.shoq.com.pk/live/eds/Geo_Entertainment/DASH/Geo_Entertainment.mpd",
+    "k1": "4150a88a441372bcc8899aee17df71f9",
+    "k2": "e43b95c25267faea20b2582e978f7f70"
   },
-  "SZA_News": {
-    "url": "https://live3.shoq.com.pk/live/eds/SZA_News/DASH/SZA_News.mpd",
-    "k1": "716b081149d0a9626c8f701cbff2876b",
-    "k2": "6d9df3140626892fac9e333428312c4b"
+  "B4U_MOVIES": {
+    "url": "https://live3.shoq.com.pk/live/eds/B4U_Movies/DASH/B4U_Movies.mpd",
+    "k1": "bb0c6b6f0e2c873a174e63e16f3a3f62",
+    "k2": "a8c4fae3ea8023b51707e470ec336209"
   },
-  "DCV_Cinema": {
-    "url": "https://live3.shoq.com.pk/live/eds/DCV_Cinema/DASH/DCV_Cinema.mpd",
-    "k1": "f485a4092688235e5685a0fd535fae8a",
-    "k2": "491a5ec052bc454aaee024ba67917ab0"
+  "&FLIX_SD": {
+    "url": "https://moblive.yuppcdn.net/drm/smil:nflixdrm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "RBB_HD": {
-    "url": "https://live3.shoq.com.pk/live/eds/RBB_HD/DASH/RBB_HD.mpd",
-    "k1": "257e49654a743542865fcdab60dfcb26",
-    "k2": "905d6f9aba144e2ad091342838397568"
+  "NIKKY": {
+    "url": "https://moblive.yuppcdn.net/drm/smil:planetfundrm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "TUB_Plus": {
-    "url": "https://live3.shoq.com.pk/live/eds/TUB_Plus/DASH/TUB_Plus.mpd",
-    "k1": "56fe39a9c8bdd879e15f27e134ab7e79",
-    "k2": "1ff573ae0cce4fd64fc3a261670681b0"
+  "EVENT_TV": {
+    "url": "https://moblive.yuppcdn.net/drm/smil:eventtvdrm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "9872e439f21f4a299cab249c6554daa3"
   },
-  "RCD_Movies": {
-    "url": "https://live3.shoq.com.pk/live/eds/RCD_Movies/DASH/RCD_Movies.mpd",
-    "k1": "b6837b8720f01c26ec35fa5e0750142b",
-    "k2": "582847d61de03be1c71018e7352c01c4"
+  "PEO_SPORTS": {
+    "url": "https://moblive.yuppcdn.net/drm/smil:peosportsdrm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "XRC_Prime": {
-    "url": "https://live3.shoq.com.pk/live/eds/XRC_Prime/DASH/XRC_Prime.mpd",
-    "k1": "891eb85e464428add4295cd5e8eb0b5a",
-    "k2": "76ef13b674ef027a9c1a383f0b776618"
+  "SS2_SD": {
+    "url": "https://moblive.yuppcdn.net/drm1/smil:starsports2drm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "RNY_Prime": {
-    "url": "https://live3.shoq.com.pk/live/eds/RNY_Prime/DASH/RNY_Prime.mpd",
-    "k1": "e7d48b231ee37755d6cfe4c8fecedff3",
-    "k2": "3c980bc9c5d2a521d81a3a956136b70f"
+  "SELECT_1": {
+    "url": "https://moblive.yuppcdn.net/drm1/smil:starsportsselect1drm.smil/manifest.mpd",
+    "k1": "9872e439f21f4a299cab249c6554daa3",
+    "k2": "0cdfcfe0d0f1fbe100554ce3ef4c4665"
   },
-  "PKT_News": {
-    "url": "https://live3.shoq.com.pk/live/eds/PKT_News/DASH/PKT_News.mpd",
-    "k1": "12a35d70e1ce48a3c0cec70b8072551d",
-    "k2": "27cbc7aa611a31aaee3d0b425ffe1fe2"
+  "MOVIES_NOW": {
+    "url": "https://times-ott-live.akamaized.net/moviesnow_wv_drm/index.mpd",
+    "k1": "40f019b86241d23ef075633fd7f1e927",
+    "k2": "058dec845bd340178a388edd104a015e"
   },
-  "VQH_Prime": {
-    "url": "https://live3.shoq.com.pk/live/eds/VQH_Prime/DASH/VQH_Prime.mpd",
-    "k1": "d0b40d6bc122acbf47fce68593b05d2d",
-    "k2": "afa941b403d0b8b8562f7b6626a56386"
+  "MNX": {
+    "url": "https://times-ott-live.akamaized.net/mnxhd_wv_drm/index.mpd",
+    "k1": "40f019b86241d23ef075633fd7f1e927",
+    "k2": "058dec845bd340178a388edd104a015e"
   },
-  "OYU_TV": {
-    "url": "https://live3.shoq.com.pk/live/eds/OYU_TV/DASH/OYU_TV.mpd",
-    "k1": "bf99538c106efb67dc642d76bb35466e",
-    "k2": "6d5d379a476258cbbc1f2f9c10feba14"
+  "ROMEDY_NOW": {
+    "url": "https://times-ott-live.akamaized.net/romedynow_wv_drm/index.mpd",
+    "k1": "40f019b86241d23ef075633fd7f1e927",
+    "k2": "058dec845bd340178a388edd104a015e"
   },
   "AII_Cinema": {
     "url": "https://live3.shoq.com.pk/live/eds/AII_Cinema/DASH/AII_Cinema.mpd",
