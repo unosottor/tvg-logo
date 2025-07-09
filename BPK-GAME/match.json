@@ -10,20 +10,9 @@
       "logo": ""
     },
     "matchTime": "2025-07-09T12:00:00+06:00"
-  },
-  {
-    "id": "",
-    "team1": {
-      "name": "Palmeiras",
-      "logo": "https://cdn.sportnanoapi.com/football/team/e6a85b64d28f448601e90857eb799140.png"
-    },
-    "team2": {
-      "name": "Chelsea",
-      "logo": "https://cdn.sportnanoapi.com/football/team/b365ad0e85e2b1bcbf63f7a0f2f70a79.png"
-    },
-    "matchTime": "2025-07-05T07:00:00+06:00"
   }
-
+  
+  }
   
 ]
 
