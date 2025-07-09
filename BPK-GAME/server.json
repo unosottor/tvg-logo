@@ -25,9 +25,9 @@
       "title": "Football Match 1",
       "servers": [
         { "name": "Server 1", "url": "https://dishlive24.vercel.app/cc?id=4249748" },
-        { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=SPORTV" },
+        { "name": "Server 2", "url": "" },
         { "name": "Server 3", "url": "" },
-        { "name": "Server 4", "url": "https://dishlive24.vercel.app/Player?url=https://zbpull3.dj2006.cn/live/6787569997998120185.m3u8" }
+        { "name": "Server 4", "url": "https://dishlive24.pages.dev/player?url=https://zbpull3.dj2006.cn/live/6787569997998120185.m3u8" }
       ]
     },
     {
