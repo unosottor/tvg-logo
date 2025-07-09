@@ -21,20 +21,20 @@
       ]
     },
     {
-      "id": "4249742",
+      "id": "4249748",
       "title": "Football Match 1",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.vercel.app/cc?id=4249742" },
+        { "name": "Server 1", "url": "https://dishlive24.vercel.app/cc?id=4249748" },
         { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=SPORTV" },
-        { "name": "Server 3", "url": "https://dishlive24.vercel.app/cx?url=https://vivosoccer.xyz/vivo/5.php" },
-        { "name": "Server 4", "url": "https://dishlive24.vercel.app/Player?url=" }
+        { "name": "Server 3", "url": "" },
+        { "name": "Server 4", "url": "https://dishlive24.vercel.app/Player?url=https://zbpull3.dj2006.cn/live/6787569997998120185.m3u8" }
       ]
     },
     {
-      "id": "4249743",
+      "id": "",
       "title": "Football Match 2",
       "servers": [
-        { "name": "Server 1", "url": "https://dishlive24.vercel.app/cc?id=4249741" },
+        { "name": "Server 1", "url": "" },
         { "name": "Server 2", "url": "https://dishlive24.pages.dev/mpd?id=SPORTV" },
         { "name": "Server 3", "url": "https://dishlive24.vercel.app/cc?url=https://vivosoccer.xyz/vivo/5.php" },
         { "name": "Server 4", "url": "" }
