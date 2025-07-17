@@ -47,7 +47,7 @@ const searchInput = document.getElementById("channel-search");
 let allChannelData = [];
 
 // Fetch channel data
-fetch("/channels.json")
+fetch("https://dishlive24.vercel.app/webtv/channels.json")
   .then((res) => res.json())
   .then((data) => {
     allChannelData = data;
