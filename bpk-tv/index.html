@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Zoom Disable -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>403 - Access Denied</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Disable scroll */
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9f9f9;
+      animation: fadeIn 0.6s ease;
+      touch-action: none; /* Prevent pinch-zoom on touch devices */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #d00;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      color: #d00;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 32px; }
+      p { font-size: 18px; }
+      .icon { font-size: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><i class="fas fa-lock"></i></div>
+    <h1>403 - Access Denied</h1>
+    <p>You do not have permission to access this page.<br>
+    Please contact the administrator if you believe this is a mistake.</p>
+  </div>
+</body>
+</html>
 
