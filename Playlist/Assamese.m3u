@@ -1,0 +1,46 @@
+#EXTM3U
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  PRAG NEWS 
+https://hls.pragnews.com/master.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="", JONAK CHANNEL 
+https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  RENGONI TV
+https://in1.sunilprasad.com.np/yuppLive/rengoni-tv/master.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  MAHA MAX 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mahaa-max/index.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  PRATADIN TIME
+https://server.thelegitpro.in/pratidintime/pratidintime/index.fmp4.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="", 18 NORTH EAST 
+https://nw18live.cdn.jio.com/bpk-tv/News18_Assam_North_East_NW18_MOB/output01/News18_Assam_North_East_NW18_MOB-audio_98835_eng=98800-video=658800.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  NORTH EAST LIVE 
+https://server.thelegitpro.in/northeastlive/northeastlive/index.fmp4.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  NEWS LIVE  
+https://prideeast.thelegitpro.in/newslive/newslive/tracks-a1/index.fmp4.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="", NKTV PLUS
+https://nktv.smartstream.video/smartstream-us/nktvplus/nktvplus/playlist.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  DY365 NEWS 
+https://yuppftalive.akamaized.net/080823/dy365/chunks.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",  NATIONAL GEOGRAPHIC 
+https://cors-proxy.cooks.fyi/https://streamer1.nexgen.bz/NAT_GEO/index.m3u8
+
+
+
