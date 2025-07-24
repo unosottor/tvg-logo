@@ -1,5 +1,24 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", HOME CHANNEL 
+https://ddy6new.newkso.ru/ddy6/premium717/mono.m3u8
+
+#EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", DISNEY INDIA 
+https://vodzong.mjunoon.tv:8087/streamtest/157-1M/playlist.m3u8
+
+
+
+#EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", COLORS HD
+http://195.181.169.162/COLORS_HD/index.m3u8?token=test
+
+
+#EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", ZEE CINEMA 
+http://195.181.169.162/ZEE_CINEMA_HD/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", AND TV HD 
+http://195.181.169.162/AND_TV_HD/index.m3u8?token=test
+
+
 #EXTINF:-1 tvg-id="1" tvg-logo="https://dishlive24.vercel.app/images/play.png" group-title="DISH LIVE 24", ETV CINEMA 
 https://d1q7j6ha51ro6f.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_CINEMA_H264-3_cloud_in/index.m3u8
 
