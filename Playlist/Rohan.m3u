@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="", FREE DISH BHAI  
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", FREE DISH BHAI  
 https://sabliveyupp.akamaized.net/mastii/playlist.m3u8
 
 
@@ -765,10 +765,9 @@ https://cdn-2.pishow.tv/live/226/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="b4u music" tvg-logo="https://dishlive24.vercel.app/images/b4umusic.png" group-title="MUSIC CHANNELS",B4U MUSIC 
 https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/de456a2b-b6f5-4afe-a222-5d2d6e885526/0.m3u8
 
-
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/mtv.png" group-title="", MTV INDIA 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/atnmusic.png" group-title="MUSIC CHANNELS",ATN MUSIC 
-
 
 #EXTINF:-1 tvg-id="Music" tvg-name="E24" tvg-logo="https://dishlive24.vercel.app/images/e24.png" group-title="MUSIC CHANNELS",E24 MUSIC 
 https://in1.sunilprasad.com.np/wavespb/10596/master.m3u8
@@ -1100,7 +1099,4 @@ https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", JANGAL BOOK 
 https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/mtv.png" group-title="", MTV INDIA 
-
 
