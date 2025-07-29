@@ -38,11 +38,11 @@ https://in1.sunilprasad.com.np/wavespb/10569/master.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD 
 https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports2hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 2 SD
- 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports2hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 2 
+http://103.120.172.74:4200 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD [2]
- 
+http://103.120.172.74:4600 
 
 
 
@@ -52,21 +52,33 @@ https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/select1.png" group-title="SPORTS CHANNELS", SELECT 1 HD
-  
+http://103.120.172.74:1030  
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/select2.png" group-title="SPORTS CHANNELS", SELECT 2 HD 
- 
+http://103.120.172.74:4700 
 
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tencricket.png" group-title="SPORTS CHANNELS", TEN CRICKET 
+https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/chunklist_b996000.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS HD
+http://app.hughag.store/api/6b9c461155/playlist.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/eurosport.png" group-title="SPORTS CHANNELS", EUROSPORT HD 
+http://app.hughag.store/api/ef22d71b0e/playlist.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/asports.png" group-title="SPORTS CHANNELS", A SPORTS HD
-
+http://125.209.88.166:45793/BRN/ArySports.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ptvsports.png" group-title="SPORTS CHANNELS", PTV SPORTS 
+http://125.209.88.166:45793/BRN/PTVSports.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS HD [2]
+http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8
+
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/astrocricket.png" group-title="SPORTS CHANNELS", ASTRO CRICKET 
@@ -775,7 +787,7 @@ https://in1.sunilprasad.com.np/wavespb/10596/master.m3u8
 #EXTINF:-1 tvg-id="Music" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/zoom.png" group-title="MUSIC CHANNELS",ZOOM MUSIC 
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8
  
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MUSIC CHANNELS", MUSIC BANGLA 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/musicbangla.png" group-title="MUSIC CHANNELS", MUSIC BANGLA 
 https://live.matribhumitv.com/music-bangla/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/balleballe.png" group-title="MUSIC CHANNELS", BALLE BALLE 
@@ -785,7 +797,7 @@ https://mcncdndigital.com/balleballetv/index.m3u8
 https://cdn2.in/7xPunjabihls/live.m3u8 
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MUSIC CHANNELS", PUNJABI HITS
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/punjabihits.png" group-title="MUSIC CHANNELS", PUNJABI HITS
 https://legitpro.co.in/punjabihits/punjabihits/index.m3u8 
   
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/onlymusic.png" group-title="MUSIC CHANNELS", ONLY MUSIC 
@@ -933,7 +945,7 @@ https://amg00416-amg00416c10-samsung-in-4883.playouts.now.amagi.tv/playlist/amg0
 https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="DOCUMENTARY", 4K TRAVEL 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/travel.png" group-title="DOCUMENTARY", 4K TRAVEL 
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/4k-travel-tv/manifest.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/historytv18.png" group-title="DOCUMENTARY", HISTORY TV 18
@@ -958,10 +970,10 @@ https://cdn-4.pishow.tv/live/1293/master.m3u8
 https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/SD504/SD504.m3u8
  
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sundaranitv.png" group-title="MIX CHANNELS", SUNDARANI TV 
- 
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sundrani-tv/index.m3u8 
  
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/pasand.png" group-title="MIX CHANNELS", PASAND TV
- 
+https://in1.sunilprasad.com.np/yuppLive/pasand/master.m3u8
  
 
 
