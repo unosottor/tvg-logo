@@ -1122,7 +1122,8 @@ https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/aryqtv.png" group-title="RELIGIOUS CHANNELS", ARY QTV 
 https://cdn149.anystream.uk:8082/app/qtvglmb/playlist.m3u8
 
-
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/deentvuk.png" group-title="RELIGIOUS CHANNELS", DEEN TV UK
+https://ap02.iqplay.tv:8082/iqb8002/d33ntv/playlist.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", MOTU PATLU 24/7 
