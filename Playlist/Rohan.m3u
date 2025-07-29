@@ -1125,22 +1125,22 @@ https://cdn149.anystream.uk:8082/app/qtvglmb/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/sonic.png" group-title="HOME CHANNELS", MOTU PATLU 24/7 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", MOTU PATLU 24/7 
 https://live20.bozztv.com/giatvplayout7/giatv-209622/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/disney.png" group-title="HOME CHANNELS", DOREMON 24/7 
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", DOREMON 24/7 
 https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", GOPAL BHAR 24/7 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", GOPAL BHAR 24/7 
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", BANGLA MUSIC 24/7
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", BANGLA MUSIC 24/7
 https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", BOLLYWOOD NONSTOP 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", BOLLYWOOD NONSTOP 
 http://146.59.253.52:8080/bollywoodnonstop/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", VISION BEATS
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", VISION BEATS
 http://a-edge.bliscdn.com/Visionbeats/index.m3u8
 
 
