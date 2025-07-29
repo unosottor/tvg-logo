@@ -7,11 +7,11 @@ https://sabliveyupp.akamaized.net/mastii/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/btv.png" group-title="BANGLADESHI", BTV NATIONAL 
 https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ptvsports.png" group-title="SPORTS CHANNELS", PTV SPORTS 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tsports2.png" group-title="SPORTS CHANNELS", PTV SPORTS 
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tsports1.png" group-title="SPORTS CHANNELS", T SPORTS HD
-
+http://103.15.140.138/tsports/index.m3u8
 
 
 
@@ -1124,6 +1124,11 @@ https://cdn149.anystream.uk:8082/app/qtvglmb/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/deentvuk.png" group-title="RELIGIOUS CHANNELS", DEEN TV UK
 https://ap02.iqplay.tv:8082/iqb8002/d33ntv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/islamchannelbangla.png" group-title="RELIGIOUS CHANNELS", ISLAM BANGLA 
+https://live-islamtv-bangla.simplestreamcdn.com/live12/islamtv_bangla/bitrate1.isml/live.m3u8
+
+
 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", MOTU PATLU 24/7 
