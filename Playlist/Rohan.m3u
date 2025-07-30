@@ -1,7 +1,6 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="HOME CHANNELS", FREE DISH BHAI  
-https://mac.iamfreedishbhai.workers.dev/dishlive24/277424.m3u8|user-agent=@dishlive24
 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/btv.png" group-title="BANGLADESHI", BTV NATIONAL 
