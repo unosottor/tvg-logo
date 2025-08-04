@@ -19,7 +19,7 @@ https://solhtvhls.wns.live/hls/stream.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/atn.png" group-title="SPORTS CHANNELS", ATN NATIONAL 
-https://live20.bozztv.com/dvrfl05/gin-ariana/index.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/rtasport.png" group-title="SPORTS CHANNELS", RTA SPORT 
 https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA3)/index.m3u8
@@ -40,7 +40,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports2hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 2 
 http://103.120.172.74:4200 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD [2]
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starsports1hd.png" group-title="SPORTS CHANNELS", STAR SPORTS 1 HD 
 http://103.120.172.74:4600 
 
 
@@ -75,7 +75,7 @@ http://125.209.88.166:45793/BRN/ArySports.stream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ptvsports.png" group-title="SPORTS CHANNELS", PTV SPORTS 
 http://125.209.88.166:45793/BRN/PTVSports.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS HD [2]
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/tensports.png" group-title="SPORTS CHANNELS", TEN SPORTS HD
 http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8
 
 
@@ -543,8 +543,8 @@ http://banglajagotv.livebox.co.in:80/banglajagohls/24x7.m3u8
 https://account19.livebox.co.in/Anandabarta2hls/live.m3u8
 
 
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", KALIYAGANJ TV
-https://live-stream.utkalbongo.com/utkalbongo/stream1/hls/kaliyaganjtvlive.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/rplusgold.png" group-title="INDIAN BANGLA", RPLUS GOLD
+https://cdn-4.pishow.tv/live/1231/master.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/onkarbangla.png" group-title="INDIAN BANGLA", ONKAR BANGLA 
 https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/playlist.m3u8 
@@ -1002,8 +1002,8 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/pasand.png" group-title="MIX CHANNELS", PASAND TV
 https://in1.sunilprasad.com.np/yuppLive/pasand/master.m3u8
  
-
-
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/oscarmovies.png" group-title="MIX CHANNELS", OSCAR MOVIES 
+https://cdn-4.pishow.tv/live/233/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/moviesaction.png" group-title="MIX CHANNELS", MOVIE ACTION 
 https://shls-live-ak.akamaized.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8
@@ -1029,10 +1029,10 @@ https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ndtvindia.png"  group-title="MIX CHANNELS", NDTV INDIA
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
  
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", REPUBLIC TV
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/republicbharat.png" group-title="MIX CHANNELS", REPUBLIC TV
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-366023/main.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="MIX CHANNELS", REPUBLIC BHARAT 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/republicbharat.png" group-title="MIX CHANNELS", REPUBLIC BHARAT 
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-275673/main.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/abpnews.png" group-title="MIX CHANNELS", ABP NEWS INDIA 
