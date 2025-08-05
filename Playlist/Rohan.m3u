@@ -381,8 +381,6 @@ https://video1.getstreamhosting.com:1936/8264/8264/playlist.m3u8
 https://live20.bozztv.com/akamaissh101/ssh101/usbdjournal/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/ashtv.png" group-title="BANGLADESHI", ASH TV BANGLA 
-https://live20.bozztv.com/akamaissh101/ssh101/ashtv/playlist.m3u8
-
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/starjalsha.png" group-title="INDIAN BANGLA", STAR JALSHA 
@@ -393,16 +391,13 @@ https://server.playontv.in/SGCNCINEMABANGLA/tracks-v1a1/mono.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglahd.png" group-title="INDIAN BANGLA", ZEE BANGLA HD
-https://live.drmlive-02.workers.dev/zee/0-9-zeebangla.m3u8
-
+https://tvsen5.aynaott.com/PNEb3v2q6GBk/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebangla.png" group-title="INDIAN BANGLA", ZEE BANGLA 
  
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/zeebanglacinema.png" group-title="INDIAN BANGLA", ZEE BANGLA CINEMA 
-#https://live.drmlive-02.workers.dev/zee/0-9-zeebanglacinema.m3u8
-https://tv.bongoflix.top/toffee/live.php?id=3c1cc31a847f&e=.m3u8
- 
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbangla.png" group-title="INDIAN BANGLA", COLORS BANGLA 
 https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8
@@ -416,10 +411,8 @@ https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3
 https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8
 
 
-
-
-
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/colorsbanglacinema.png" group-title="INDIAN BANGLA", COLORS BANGLA CINEMA 
+https://live20.bozztv.com/giatvplayout7/giatv-209627/playlist.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/shemaroobangla.png" group-title="INDIAN BANGLA", SHEMAROO BANGLA 
@@ -430,8 +423,9 @@ http://103.145.48.150:90/laosat24/filmytv/index.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", DD BANGLA 
+https://cdn-4.pishow.tv/live/37/master.m3u8
 
- 
+
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/rplusnews.png" group-title="INDIAN BANGLA", RPLUS NEWS 
 https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8
 
@@ -468,6 +462,25 @@ https://live-stream.utkalbongo.com/utkalbongo/stream2/hls/amarbanglatwolivestrea
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/banglaplus.png" group-title="INDIAN BANGLA", BANGLA PLUS 
 https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8
 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ucndomjur.png" group-title="INDIAN BANGLA",  UCN DOMJUR 
+https://live-stream.utkalbongo.com/utkalbongo/stream12/hls/master/ucndomjurlive.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/snbcinema.png" group-title="INDIAN BANGLA",  SNB CINEMA 
+https://live-stream.utkalbongo.com/utkalbongo/stream11/hls/snbcinemalive.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/esnews.png" group-title="INDIAN BANGLA",  ES NEWS LIVE 
+https://live-stream.utkalbongo.com/utkalbongo/stream14/hls/esnewslive.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/kaliyaganjtv.png" group-title="INDIAN BANGLA",  KALIYAGANJ TV 
+https://live-stream.utkalbongo.com/utkalbongo/stream1/hls/kaliyaganjtvlive.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/digital24.png" group-title="INDIAN BANGLA",  DIGITAL 24 
+https://digitalbangla.livebox.co.in/D24ENTERTAINMENThls/live.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/digitalbangla.png" group-title="INDIAN BANGLA",  DIGITAL BANGLA 
+https://digitalbangla.livebox.co.in/digitalbanglahls/live.m3u8
+
+ 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/sunbangla.png" group-title="INDIAN BANGLA", SUN BANGLA 
  
 
@@ -517,18 +530,18 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bangla-lgi
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-456368/main.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/calcuttanews.png" group-title="INDIAN BANGLA", CALCUTTA NEWS 
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/calcuttanews.png" group-title="INDIAN BANGLA", CALCUTTA NEWS 
 https://akdnetwork.co.in/live/cnnew/index.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Calcutta News" tvg-logo="https://dishlive24.vercel.app/images/ctvnakdplus.png" group-title="INDIAN BANGLA", CTVN AKD PlUS 
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/ctvnakdplus.png" group-title="INDIAN BANGLA", CTVN AKD PlUS 
 https://akdnetwork.co.in/live/ctvn/index.m3u8
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="HIGH News" tvg-logo="https://dishlive24.vercel.app/images/highnewsbangla.png" group-title="INDIAN BANGLA",HIGH NEWS
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/highnewsbangla.png" group-title="INDIAN BANGLA",HIGH NEWS
 https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 
 
-#EXTINF:-1 tvg-id="Kolkata" tvg-name="Onkar Bangla" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA 
+#EXTINF:-1 tvg-id="Kolkata" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/news18bangla.png" group-title="INDIAN BANGLA", NEWS 18 BANGLA 
 https://nw18live.cdn.jio.com/bpk-tv/News18_Bangla_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="Kolkata" tvg-name="News Time" tvg-logo="https://dishlive24.vercel.app/images/newstime.png" group-title="INDIAN BANGLA", NEWS TIME 
@@ -554,6 +567,10 @@ https://server.livelegitpro.in/tribetv/tribetv/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/sristitv.png" group-title="INDIAN BANGLA", SRISTI TV 
 https://legitpro.co.in/live7/sristitv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/channelvision.png" group-title="INDIAN BANGLA", CHANNEL VISION 
+https://channelvision.livebox.co.in/channelvisionhls/live.m3u8
+
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://dishlive24.vercel.app/images/raatdinbangla.png" group-title="INDIAN BANGLA", RAATDIN BANGLA 
 https://server.playontv.in/raatdinbangla/index.m3u8
@@ -930,8 +947,7 @@ https://tataplay.slivcdn.com/hls/live/2020594/SONYSIXSD/master.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/discovery.png" group-title="DOCUMENTARY", DISCOVERY CHANNEL 
-https://livecdn-bostaflix.global.ssl.fastly.net/toffee/live.php?id=77e72f2ba472&e=.m3u8
-
+http://fl4.moveonjoy.com/Discovery_Channel/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/animalplanet.png" group-title="DOCUMENTARY", ANIMAL PLANET 
 https://vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
@@ -960,8 +976,9 @@ https://travelxp-travelxp-1-gb.samsung.wurl.tv/3000.m3u8
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/cgtndoc.png" group-title="DOCUMENTARY", CGTN DOCUMENTARY
 https://mn-nl.mncdn.com/dogusdyg_drone/cgtn/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/travelxp.png" group-title="DOCUMENTARY", TRAVEL XP
-https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/id.png" group-title="DOCUMENTARY", INVESTIGATION DISCOVERY 
+http://fl3.moveonjoy.com/INVESTIGATION_DISCOVERY/index.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/foodxp.png" group-title="DOCUMENTARY", FOOD XP
 https://amg00416-amg00416c10-samsung-in-4883.playouts.now.amagi.tv/playlist/amg00416-travelxp-foodxp-samsungin/playlist.m3u8
