@@ -422,7 +422,7 @@ http://103.145.48.150:90/laosat24/shemarootv/index.m3u8
 http://103.145.48.150:90/laosat24/filmytv/index.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/dishlive24.png" group-title="INDIAN BANGLA", DD BANGLA 
+#EXTINF:-1 tvg-logo="https://dishlive24.vercel.app/images/ddbangla.png" group-title="INDIAN BANGLA", DD BANGLA 
 https://cdn-4.pishow.tv/live/37/master.m3u8
 
 
