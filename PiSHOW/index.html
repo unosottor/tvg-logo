@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PiSHOW</title>
-  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <title>Live Channel Player</title>
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -14,12 +13,6 @@
       text-align: center;
       padding: 20px;
     }
-    #player {
-      width: 100%;
-      max-width: 900px;
-      height: 500px;
-      margin: auto;
-    }
     #status {
       margin: 15px 0;
       font-size: 18px;
@@ -27,12 +20,6 @@
     select, input, button {
       margin: 5px;
       padding: 8px 12px;
-    }
-    #channelLink {
-      cursor: pointer;
-      color: lime;
-      display: block;
-      margin-top: 10px;
     }
   </style>
 </head>
@@ -52,10 +39,20 @@
     </select>
   </div>
 
-  <div id="player"></div>
+  <video
+    id="my-video"
+    class="video-js vjs-default-skin"
+    controls
+    preload="auto"
+    width="900"
+    height="500"
+    data-setup='{}'
+  >
+    <source src="" type="application/x-mpegURL" />
+  </video>
 
   <div id="status">Loading channel...</div>
-  <div id="channelLink" onclick="copyLink()">Click to Copy Channel Link</div>
+  <div id="channelLink" style="cursor:pointer;color:lime;" onclick="copyLink()">Click to Copy Channel Link</div>
 
   <div>
     <button onclick="changeChannel(-1)">Previous</button>
@@ -69,18 +66,19 @@
     <button onclick="startRangePlay()">Start Range Play</button>
   </div>
 
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
   <script>
-    let player;
+    const player = videojs('my-video');
+    const status = document.getElementById('status');
+    const cdnSelect = document.getElementById('cdn');
+    const linkDisplay = document.getElementById('channelLink');
+
     let currentChannel = 1;
     const maxChannels = 5000;
     const minChannels = 1;
     let rangeMode = false;
     let rangeStart = 1;
     let rangeEnd = 1;
-
-    const status = document.getElementById('status');
-    const cdnSelect = document.getElementById('cdn');
-    const linkDisplay = document.getElementById('channelLink');
 
     function getCDNBase() {
       return cdnSelect.value;
@@ -99,28 +97,8 @@
       const url = `https://${getCDNBase()}.pishow.tv/live/${num}/master.m3u8`;
       updateStatus(num);
       updateLink(url);
-
-      if (player) {
-        player.destroy();
-      }
-
-      player = new Clappr.Player({
-        source: url,
-        parentId: "#player",
-        autoPlay: true,
-        mute: false,
-        plugins: [LevelSelector],
-        mediacontrol: { seekbar: "#00ffe0", buttons: "#00ffe0" },
-        width: "100%",
-        height: "100%",
-        levelSelectorConfig: {
-          title: 'Quality',
-          labels: { 2: 'High', 1: 'Medium', 0: 'Low' },
-          labelCallback: function(playbackLevel, customLabel) {
-            return customLabel + ' (' + playbackLevel.height + 'p)';
-          }
-        }
-      });
+      player.src({ src: url, type: 'application/x-mpegURL' });
+      player.play();
     }
 
     function autoSkip(current) {
@@ -170,7 +148,6 @@
       });
     }
 
-    // Initial Play
     playChannel(currentChannel);
   </script>
 </body>
