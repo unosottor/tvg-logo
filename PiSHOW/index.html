@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PiSHOW</title>
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #player {
+      width: 100%;
+      max-width: 900px;
+      height: 500px;
+      margin: auto;
+    }
+    #status {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+    select, input, button {
+      margin: 5px;
+      padding: 8px 12px;
+    }
+    #channelLink {
+      cursor: pointer;
+      color: lime;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Live Channel Player</h1>
+
+  <div>
+    <label>Select CDN:</label>
+    <select id="cdn" onchange="playChannel(currentChannel)">
+      <option value="cdn-1">cdn-1</option>
+      <option value="cdn-2">cdn-2</option>
+      <option value="cdn-3">cdn-3</option>
+      <option value="cdn-4" selected>cdn-4</option>
+      <option value="cdn-5">cdn-5</option>
+      <option value="cdn-6">cdn-6</option>
+    </select>
+  </div>
+
+  <div id="player"></div>
+
+  <div id="status">Loading channel...</div>
+  <div id="channelLink" onclick="copyLink()">Click to Copy Channel Link</div>
+
+  <div>
+    <button onclick="changeChannel(-1)">Previous</button>
+    <button onclick="changeChannel(1)">Next</button>
+  </div>
+
+  <div>
+    <h3>Play Channels in a Range</h3>
+    <input type="number" id="rangeStart" placeholder="Start" min="1" max="5000">
+    <input type="number" id="rangeEnd" placeholder="End" min="1" max="5000">
+    <button onclick="startRangePlay()">Start Range Play</button>
+  </div>
+
+  <script>
+    let player;
+    let currentChannel = 1;
+    const maxChannels = 5000;
+    const minChannels = 1;
+    let rangeMode = false;
+    let rangeStart = 1;
+    let rangeEnd = 1;
+
+    const status = document.getElementById('status');
+    const cdnSelect = document.getElementById('cdn');
+    const linkDisplay = document.getElementById('channelLink');
+
+    function getCDNBase() {
+      return cdnSelect.value;
+    }
+
+    function updateStatus(num) {
+      status.textContent = `Channel ${num}`;
+    }
+
+    function updateLink(url) {
+      linkDisplay.textContent = url;
+      linkDisplay.setAttribute("data-link", url);
+    }
+
+    function playChannel(num) {
+      const url = `https://${getCDNBase()}.pishow.tv/live/${num}/master.m3u8`;
+      updateStatus(num);
+      updateLink(url);
+
+      if (player) {
+        player.destroy();
+      }
+
+      player = new Clappr.Player({
+        source: url,
+        parentId: "#player",
+        autoPlay: true,
+        mute: false,
+        plugins: [LevelSelector],
+        mediacontrol: { seekbar: "#00ffe0", buttons: "#00ffe0" },
+        width: "100%",
+        height: "100%",
+        levelSelectorConfig: {
+          title: 'Quality',
+          labels: { 2: 'High', 1: 'Medium', 0: 'Low' },
+          labelCallback: function(playbackLevel, customLabel) {
+            return customLabel + ' (' + playbackLevel.height + 'p)';
+          }
+        }
+      });
+    }
+
+    function autoSkip(current) {
+      let next = current + 1;
+      if (rangeMode && next <= rangeEnd) {
+        currentChannel = next;
+        playChannel(currentChannel);
+      } else if (!rangeMode && next <= maxChannels) {
+        currentChannel = next;
+        playChannel(currentChannel);
+      } else {
+        status.textContent = rangeMode
+          ? `Range ended (${rangeStart} to ${rangeEnd})`
+          : "No more channels.";
+        rangeMode = false;
+      }
+    }
+
+    function changeChannel(offset) {
+      let target = currentChannel + offset;
+      if (target >= minChannels && target <= maxChannels) {
+        currentChannel = target;
+        playChannel(currentChannel);
+        rangeMode = false;
+      }
+    }
+
+    function startRangePlay() {
+      const start = parseInt(document.getElementById("rangeStart").value);
+      const end = parseInt(document.getElementById("rangeEnd").value);
+      if (isNaN(start) || isNaN(end) || start < minChannels || end > maxChannels || start >= end) {
+        alert("Enter a valid range (e.g., 5 to 100)");
+        return;
+      }
+      rangeStart = start;
+      rangeEnd = end;
+      currentChannel = rangeStart;
+      rangeMode = true;
+      playChannel(currentChannel);
+    }
+
+    function copyLink() {
+      const link = linkDisplay.getAttribute("data-link");
+      navigator.clipboard.writeText(link).then(() => {
+        linkDisplay.textContent = "Copied!";
+        setTimeout(() => updateLink(link), 1000);
+      });
+    }
+
+    // Initial Play
+    playChannel(currentChannel);
+  </script>
+</body>
+</html>
