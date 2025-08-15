@@ -3,23 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Live Channel Player</title>
-  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      background: #000;
-      color: #fff;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f0f0f0;
       font-family: sans-serif;
-      text-align: center;
       padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00ffe0;
+      text-shadow: 0 0 10px #00ffe0;
+    }
+    video {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 10px;
+      background: #000;
+      margin-top: 20px;
     }
     #status {
+      font-size: 1.2em;
       margin: 15px 0;
-      font-size: 18px;
     }
-    select, input, button {
+    button {
+      padding: 10px 20px;
       margin: 5px;
+      font-size: 14px;
+      background: #111;
+      border: 1px solid #00ffe0;
+      color: #00ffe0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00ffe0;
+      color: #000;
+    }
+    select, input[type="number"] {
       padding: 8px 12px;
+      font-size: 14px;
+      background: #111;
+      border: 1px solid #444;
+      color: #fff;
+      margin: 5px;
+      border-radius: 4px;
+    }
+    #channelLink {
+      margin-top: 15px;
+      padding: 10px;
+      background: #141414;
+      border: 1px dashed #0f0;
+      color: #0f0;
+      display: inline-block;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #channelLink:hover {
+      background: #222;
     }
   </style>
 </head>
@@ -28,7 +72,7 @@
   <h1>Live Channel Player</h1>
 
   <div>
-    <label>Select CDN:</label>
+    <label for="cdn">Select CDN:</label>
     <select id="cdn" onchange="playChannel(currentChannel)">
       <option value="cdn-1">cdn-1</option>
       <option value="cdn-2">cdn-2</option>
@@ -39,20 +83,9 @@
     </select>
   </div>
 
-  <video
-    id="my-video"
-    class="video-js vjs-default-skin"
-    controls
-    preload="auto"
-    width="900"
-    height="500"
-    data-setup='{}'
-  >
-    <source src="" type="application/x-mpegURL" />
-  </video>
-
+  <video id="video" controls autoplay></video>
   <div id="status">Loading channel...</div>
-  <div id="channelLink" style="cursor:pointer;color:lime;" onclick="copyLink()">Click to Copy Channel Link</div>
+  <div id="channelLink" onclick="copyLink()">Click to Copy Channel Link</div>
 
   <div>
     <button onclick="changeChannel(-1)">Previous</button>
@@ -61,14 +94,14 @@
 
   <div>
     <h3>Play Channels in a Range</h3>
-    <input type="number" id="rangeStart" placeholder="Start" min="1" max="5000">
-    <input type="number" id="rangeEnd" placeholder="End" min="1" max="5000">
+    <input type="number" id="rangeStart" placeholder="Start Channel" min="1" max="5000">
+    <input type="number" id="rangeEnd" placeholder="End Channel" min="1" max="5000">
     <button onclick="startRangePlay()">Start Range Play</button>
   </div>
 
-  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <script>
-    const player = videojs('my-video');
+    const video = document.getElementById('video');
     const status = document.getElementById('status');
     const cdnSelect = document.getElementById('cdn');
     const linkDisplay = document.getElementById('channelLink');
@@ -76,6 +109,7 @@
     let currentChannel = 1;
     const maxChannels = 5000;
     const minChannels = 1;
+
     let rangeMode = false;
     let rangeStart = 1;
     let rangeEnd = 1;
@@ -84,8 +118,8 @@
       return cdnSelect.value;
     }
 
-    function updateStatus(num) {
-      status.textContent = `Channel ${num}`;
+    function updateStatus(number) {
+      status.textContent = `Channel ${number}`;
     }
 
     function updateLink(url) {
@@ -93,12 +127,27 @@
       linkDisplay.setAttribute("data-link", url);
     }
 
-    function playChannel(num) {
-      const url = `https://${getCDNBase()}.pishow.tv/live/${num}/master.m3u8`;
-      updateStatus(num);
+    function playChannel(number) {
+      const url = `https://${getCDNBase()}.pishow.tv/live/${number}/master.m3u8`;
+      updateStatus(number);
       updateLink(url);
-      player.src({ src: url, type: 'application/x-mpegURL' });
-      player.play();
+
+      if (Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+        hls.on(Hls.Events.ERROR, (_, d) => {
+          if (d.fatal) {
+            hls.destroy();
+            autoSkip(number);
+          }
+        });
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = url;
+        video.addEventListener('loadedmetadata', () => video.play());
+        video.onerror = () => autoSkip(number);
+      }
     }
 
     function autoSkip(current) {
