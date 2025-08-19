@@ -1,6 +1,5 @@
-## TV Logos
-A Collection Of Tv Logos For India , Bangladesh And Pakistan And Much More. 
+# TV logos
+A collection of tv logos for India, Bangladesh, Pakistan And Much More. 
 
 # How to use
-
-Clone The Repo Or Download As Zip
+Clone the repo or download as zip.
