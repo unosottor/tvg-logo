@@ -1,5 +1,5 @@
 # TV logos
-A collection of tv logos for India, Bangladesh, Pakistan And Much More 
+Collection of Asia Pacific tv channels logos India Bangladesh Pakistan Afganistan SriLanka & Much More
 
 # How to use
 Clone the repo or download as zip
